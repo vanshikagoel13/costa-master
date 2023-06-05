@@ -1,0 +1,427 @@
+.v-scroll {
+    height: 100vh;
+    /* Set the height of the container to occupy the full viewport height */
+    overflow-y: scroll;
+    /* background-color: red; */
+    /* Enable vertical scrolling */
+}
+
+.two-column-container {
+    margin-top: 50px;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr;
+    /* Divide the container into two columns with equal width */
+    gap: 20px;
+    /* Add a gap between the columns */
+}
+
+@media (max-width: 768px) {
+    .two-column-container {
+        grid-template-columns: 1fr;
+        /* Change to a single column layout */
+        gap: 0px;
+    }
+}
+
+.left-column,
+.right-column {
+    /* margin-top: 30px;
+    margin-left: 40px;
+    margin-right: 40px; */
+    padding: 20px;
+    background-color: #fff;
+    align-self: center;
+    justify-self: center;
+}
+
+@media (max-width: 768px) {
+
+    .left-column,
+    .right-column {
+        padding: 5px;
+        /* margin-top: 30px;
+        margin-left: 40px;
+        margin-right: 40px; */
+    }
+}
+
+.l1 {
+    font-size: 60px;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .l1 {
+        font-size: 35px;
+    }
+}
+
+.l2 {
+    font-size: 22px;
+    font-weight: medium;
+    display: flex;
+    justify-content: flex-start;
+}
+
+@media (max-width: 768px) {
+    .l2 {
+        font-size: 16px;
+        justify-content: center;
+    }
+}
+
+.two-column-container2 {
+    margin-top: 50px;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr;
+    /* Divide the container into two columns with equal width */
+    gap: 10px;
+}
+
+@media (max-width: 768px) {
+    .two-column-container2 {
+        grid-template-columns: 1fr;
+        /* Change to a single column layout */
+        gap: 0px;
+    }
+}
+
+.left-column2 {
+    padding-left: 50px;
+    background-color: #fff;
+    /* align-self: center;
+    justify-self: center; */
+}
+
+.right-column2 {
+
+    padding-right: 50px;
+    background-color: #fff;
+    /* align-self: center;
+    justify-self: center; */
+}
+
+.left-text {
+    padding-right: 20px;
+    padding-top: 40px;
+    padding-left: 40px;
+    padding-bottom: 40px;
+    background-color: #fff;
+    /* margin-left: 00px; */
+    /* align-self: center; */
+    /* justify-self: center; */
+    align-self: center;
+    /* background-color: orange; */
+    /* align-self: flex-end; */
+}
+
+.right-text {
+
+    padding-left: 20px;
+    padding-top: 40px;
+    padding-right: 20px;
+    padding-bottom: 40px;
+    background-color: #fff;
+    /* margin-right: 20px; */
+    align-self: center;
+}
+
+.image-container {
+
+    /* margin-top: 50px; */
+    max-width: 100%;
+    overflow: hidden;
+    /* background-color: purple; */
+    /* background-color: #FFEF00; */
+}
+
+.zoom {
+    transition: transform 0.3s;
+}
+
+@media (min-width: 576px) {
+    .zoom:hover {
+        transform: scale(1.2);
+    }
+}
+
+.row {
+
+    margin-top: 15px;
+    /* max-width: 100%; */
+    justify-content: center;
+    /* margin-bottom: 50px; */
+    /* background-color: pink; */
+}
+
+.container {
+
+    /* display: flex; */
+    /* width: 100%; */
+    /* background-color: blue; */
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 1050px) {
+
+    /* .col-md-12 {
+
+        grid-template-columns: 1fr !important;
+        gap: 0px !important;
+    } */
+
+    .left-text, .right-text {
+
+        padding-left: 0px;
+        padding-top: 15px;
+        padding-right: 0px;
+        padding-bottom: 10px;
+        /* background-color: purple; */
+    }
+
+    .category-style-left, .category-style-right {
+
+        font-size: 13.5px !important;
+        text-align: left !important;
+        justify-content: flex-start !important;
+        /* background-color: orange; */
+    }
+
+    .title-style-left, .title-style-right {
+
+        font-size: 30px !important;
+        justify-content: flex-start !important;
+        text-align: left !important;
+        /* background-color: purple; */
+        padding-left: 0px !important;
+    }
+
+    .text-style-left, .text-style-right {
+
+        font-size: 14.5px !important;
+        text-align: left !important;
+        padding-top: 6px !important;
+        padding-bottom: 6px !important;
+        /* background-color: yellow; */
+    }
+
+    .button-left, .button-right {
+
+        width: 100% !important;
+        height: 40px !important;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .left-text, .right-text {
+
+        padding-left: 0px;
+        padding-top: 15px;
+        padding-right: 0px;
+        padding-bottom: 10px;
+        /* background-color: purple; */
+    }
+
+    .category-style-left, .category-style-right {
+
+        font-size: 13.5px !important;
+        text-align: left !important;
+        justify-content: flex-start !important;
+        /* background-color: orange; */
+    }
+
+    .title-style-left, .title-style-right {
+
+        font-size: 30px !important;
+        justify-content: flex-start !important;
+        text-align: left !important;
+        /* background-color: purple; */
+        padding-left: 0px !important;
+    }
+
+    .text-style-left, .text-style-right {
+
+        font-size: 14.5px !important;
+        text-align: left !important;
+        padding-top: 6px !important;
+        padding-bottom: 6px !important;
+        /* background-color: yellow; */
+    }
+
+    .button-left, .button-right {
+
+        width: 100% !important;
+        height: 40px !important;
+    }
+}
+
+.text-container {
+
+    width: 100%;
+}
+
+.col-lg-6 {
+
+    /* background-color: red; */
+}
+
+.image-style {
+
+    max-width: 100%;
+    max-height: 100%;
+    justify-content: center;
+    align-self: center;
+}
+
+.category-style-right {
+    font-size: 18px;
+    color: grey;
+    justify-self: flex-start;
+    align-self: center;
+}
+
+.title-style-right {
+    font-weight: bold;
+    font-size: 50px;
+    /* justify-self: flex-start; */
+    align-self: center;
+    padding-right: 50px;
+}
+
+.text-style-right {
+    font-size: 18px;
+    /* justify-self: flex-start; */
+    align-self: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 0px;
+    color: grey;
+    /* background-color: blue; */
+}
+
+.category-style-left {
+    display: flex;
+    font-size: 18px;
+    color: grey;
+    justify-content: flex-end;
+    align-self: center;
+    /* background-color: black; */
+}
+
+.title-style-left {
+    display: flex;
+    font-weight: bold;
+    font-size: 50px;
+    justify-content: flex-end;
+    align-self: center;
+    text-align: right;
+    padding-left: 100px;
+}
+
+.text-style-left {
+    display: flex;
+    text-align: right;
+    font-size: 18px;
+    justify-self: flex-end;
+    align-self: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 0px;
+    color: grey;
+    /* background-color: pink; */
+}
+
+.button-left {
+    display: flex;
+    margin-left: auto;
+    background-color: #FFEF00;
+    font-size: 14px;
+    width: 265px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    border: 0px;
+    border-radius: 3px;
+}
+
+.button-right {
+    background-color: #FFEF00;
+    width: 265px;
+    height: 50px;
+    font-size: 14px;
+    justify-content: center;
+    align-items: center;
+    border: 0px;
+    border-radius: 3px;
+}
+
+.sec-last-head {
+    margin-top: 60px;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.sec-last-text {
+    margin: 10px 0;
+    font-size: 20px;
+    /* font-weight:; */
+    color: grey;
+    text-align: center;
+}
+
+.last-image-scroller {
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.image-last-style {
+    margin-top: 30px;
+    margin-left: 5px;
+    display: inline-block;
+    white-space: nowrap;
+    max-width: 100%;
+    height: auto;
+}
+
+.last-image {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .last-image-scroller {
+        overflow-x: scroll;
+    }
+}
+
+@media (max-width: 767px) {
+    .row {
+        flex-direction: column;
+    }
+
+    .col-lg-6 {
+        width: 100%;
+    }
+}
+
+/* -------------------------------- */
+
+/* .image-container {
+
+    margin-top: 50px;
+} */
+
+/* 
+@media (max-width: 1050px) {
+
+    .text-container {
+
+
+    }
+} */

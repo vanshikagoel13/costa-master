@@ -1,0 +1,11 @@
+.home-style{
+    margin-left: 80px;
+    font-size: 14px;
+}
+
+@media (max-width: 400px) {
+    .home-style{
+      margin-left: 60px; 
+      font-size: 14px;
+    }
+  }

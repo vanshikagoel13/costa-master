@@ -1,0 +1,67 @@
+.logo-wrapper {
+    display: flex;
+    align-items: center;
+  }
+  
+.logo {
+    height: 80%;
+}
+  
+.top-right-text {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+  
+@media (max-width: 768px) {
+    .logo-wrapper {
+      justify-content: center;
+      margin-bottom: 1rem;
+}
+  
+.top-right-text {
+      align-items: center;
+    }
+  }
+  
+  .usa {
+    display: inline;
+    color: white !important;
+    font-weight: bold;
+    font-size: 14px;
+    text-decoration: none;
+  }
+
+.usa:visited {
+    color: white;
+    text-decoration: none;
+}
+
+.link-style{
+    display: inline;
+    color: white !important;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.link-style:visited {
+    color: white;
+    text-decoration: none;
+}
+
+.ul {
+    list-style: none;
+    padding-left: 5px;
+}
+
+.bottom{
+    text-align: left;
+    font-size: 13px;
+}
+
+.icon{
+    justify-self: flex-end;
+}
+  /* .usa:hover {
+    text-decoration: underline;
+  } */
