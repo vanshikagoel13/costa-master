@@ -1,10 +1,20 @@
 import "bootstrap/dist/css/bootstrap.css";
-import Costa_exp from "./pages/Costa_exp";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import CostaExp from "./pages/CostaExp";
+import Home from "./pages/Home";
 
-
-function App() {
+export function App() {
   return (
-    <div> <Costa_exp/> </div>
+    <Router>
+      <Routes>
+        <Route path="/CostaExp" element={<CostaExp />} />
+          {/* <CostaExp />
+        </Route> */}
+        <Route exact path="/" element={<Home />} />
+        {/* <Home />
+        </Route> */}
+      </Routes>
+    </Router>
   );
 }
 

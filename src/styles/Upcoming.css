@@ -1,0 +1,83 @@
+.upcoming-container{
+    width: 90%;
+    
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+.grid-img img{
+    /* width:100%; */
+    max-width: 100%;
+    max-height: 100%;
+    /* margin-left:0; */
+}
+.Date{
+    align-items: center;
+}
+.nights{
+    color: rgb(109, 107, 107);
+}
+.cell-2{
+    display:flex;
+    width:20%;
+    align-items:center;
+    justify-content:center;
+    flex-direction: column;
+    text-align: center;
+}
+.arrow{
+    color: grey;
+    font-weight: 500;
+}
+.cell-3{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction: column;
+    width:35%;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2); 
+    text-align: center;
+    background-color: rgb(221, 219, 219);
+}
+.destination-text{
+    font-weight: 700;
+
+}
+.cell-4{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction: row;
+    width:20%;
+    text-align: center;
+}
+.cell-4-sub-1{
+    display:flex;
+    flex-direction: column;
+    text-align: right;
+}
+.From{
+    font-size: 15px;
+    font-weight:600;
+}
+.price-grid{
+    font-weight: 700;
+}
+.per-guest{
+    font-size: 12px;
+    color: grey;
+}
+.Book-Now{
+    color: purple;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.container-settings{
+    padding-bottom: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    /* justify-content: space-between; */
+
+}
+
+.filled-moon{
+    color:grey;
+}

@@ -3,6 +3,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "../styles/Hstyle.css";
+import "../styles/Fonts.css";
 
 function HorizontalScroll() {
 	const items = [
@@ -22,7 +23,7 @@ function HorizontalScroll() {
 
 	return (
 		<div className="horizontal-scroll-container">
-			<h3 className="header-style" >Unmissable news</h3>
+			<h3 className="header-style AltBold" >Unmissable news</h3>
 			<div>
 				<Slider {...settings}>
 					{items.map((item) => (

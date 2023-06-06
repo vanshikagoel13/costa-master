@@ -1,5 +1,8 @@
 import React, { useState } from "react";
 import "../styles/Hstyle.css";
+// import { Link, Route } from 'react-router-dom';
+import "../styles/Fonts.css";
+// import CostaExp from "../pages/CostaExp";
 
 function Header() {
   const [isNavCollapsed, setIsNavCollapsed] = useState(true);
@@ -9,9 +12,10 @@ function Header() {
   };
 
   const navLinkStyle = {
-    fontSize: isNavCollapsed ? "15px" : "20px",
+    fontSize: isNavCollapsed ? "13px" : "20px",
     fontWeight: 750,
     margin: isNavCollapsed ? "0" : "10px",
+    color: "#2F2F30",
   };
 
   return (
@@ -36,13 +40,13 @@ function Header() {
             <span className="navbar-toggler-icon"></span>
           </button>
 
-          <a className={`navbar-brand mx-auto`} href="#">
+          <a className={`navbar-brand mx-auto`} href="/">
             <img
               src={process.env.PUBLIC_URL + "/logo.png"}
               alt="Costa"
               width="65"
               height="50"
-              style={{ marginLeft: isNavCollapsed ? "20px" : "60px" }}
+              style={{ marginLeft: isNavCollapsed ? "0px" : "62px" }}
             />
           </a>
 
@@ -59,7 +63,7 @@ function Header() {
                 }`}
               >
                 <a
-                  className="nav-link"
+                  className="nav-link AltReg"
                   aria-current="page"
                   href="#"
                   style={navLinkStyle}
@@ -68,13 +72,17 @@ function Header() {
                 </a>
               </li>
               <li className="nav-item active px-2">
-                <a className="nav-link" href="#" style={navLinkStyle}>
+                <a
+                  className="nav-link AltReg"
+                  href="#"
+                  style={navLinkStyle}
+                >
                   Costa Experience
                 </a>
               </li>
               <li className="nav-item px-2">
                 <a
-                  className="nav-link"
+                  className="nav-link AltReg"
                   href="#"
                   // role="button"
                   // data-bs-toggle="dropdown"
@@ -83,29 +91,9 @@ function Header() {
                 >
                   Costa Toscana
                 </a>
-                {/* <ul className="dropdown-menu">
-								<li>
-									<a className="dropdown-item" href="#">
-										Action
-									</a>
-								</li>
-								<li>
-									<a className="dropdown-item" href="#">
-										Another action
-									</a>
-								</li>
-								<li>
-									<hr className="dropdown-divider" />
-								</li>
-								<li>
-									<a className="dropdown-item" href="#">
-										Something else here
-									</a>
-								</li>
-							</ul> */}
               </li>
               <li className="nav-item px-2">
-                <a className="nav-link" href="#" style={navLinkStyle}>
+                <a className="nav-link AltReg" href="#" style={navLinkStyle}>
                   Costa Serene
                 </a>
               </li>
@@ -120,7 +108,7 @@ function Header() {
             >
               <li className="nav-item px-3">
                 <a href="#" className="nav-link" style={navLinkStyle}>
-                  <i className="fas fa-phone-alt fa-lg"></i>
+                  <i className="fas fa-phone-alt fa-lg "></i>
                   <span className="d-lg-inline d-none">
                     1-800-462-6782 (1-800-Go-Costa)
                   </span>
@@ -130,24 +118,15 @@ function Header() {
           </div>
         </div>
       </nav>
-      <div
-        className={`d-flex align-items-center ${isNavCollapsed ? "" : "show"}`}
-      >
-        {isNavCollapsed && (
-          <div className="d-flex">
-            <a
-              href="#"
-              className="nav-link me-2 home-text"
-              style={{ marginLeft: 25, fontSize: 12 }}
-            >
-              Home
-            </a>
-            <span className="nav-link me-2 home-text" style={{ fontSize: 12 }}>
-              &mdash;&mdash; Travel with Costa
-            </span>
-          </div>
-        )}
-      </div>
+      {/* <div className={`d-flex align-items-center ${isNavCollapsed ? "" : "show"}`} >
+			{isNavCollapsed && (
+				<div className='d-flex'>
+					<a href='#' className="nav-link me-2 home-text AltReg" style={{marginLeft: 25}}>Home</a>
+					<span  className="nav-link me-2 home-text AltReg" >&mdash;&mdash; Travel with Costa</span>
+				</div>
+			)}
+		</div> */}
+    {/* <Route exact path="/CostaExp" component={CostaExp} /> */}
     </>
   );
 }

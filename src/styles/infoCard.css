@@ -1,0 +1,50 @@
+
+.card-info{
+    width: 200px;
+    justify-content: center;
+}
+
+.card-title-info{
+    color: rgb(17, 167, 216);
+}
+.card-img-top{
+    height: 60%;
+    /* width:300px; */
+    object-fit: cover;
+}
+.button-info{
+    /* display: flex; */
+    margin-top: 15px;
+    font-size: 12px;
+    width: 50%;
+    color:rgb(17, 167, 216);
+    padding: 10px;
+    height: 30%;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid;
+    background-color: white;
+    border-radius: 2px;
+}
+.card-info .card-subtitle {
+    font-weight: 400;
+    padding-top: 10px;
+    color: black;
+    font-size: 12px;
+
+}
+.departure{
+    margin-top: 10px;
+}
+.departure-date{
+    margin-top: -17px;
+}
+.price{
+    margin-top: -10px;
+    color: rgba(42, 80, 247, 0.953);
+}
+.taxes{
+    margin-top: 15px;
+    font-size: 12px;
+    font-weight:200;
+}

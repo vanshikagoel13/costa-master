@@ -1,0 +1,54 @@
+.card-group{
+    width: 100%;
+    margin: auto;
+}
+
+.card {
+
+    border: none;
+}
+
+.button {
+    display: flex;
+    margin:auto;
+    background-color: #f7ec29;
+    font-size: 14px;
+    width: 100%;
+    height: 35px;
+    justify-content: center;
+    align-items: center;
+    border: 0px;
+    border-radius: 2px;
+}
+
+.card-subtitle{
+    font-weight: 200;
+    padding-top: 2px;
+
+}
+
+.departure{
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+.departure-date{
+    margin-top: -17px;
+    font-size: 15px;
+}
+
+.price{
+    margin-top: -10px;
+    color: rgba(42, 80, 247, 0.953);
+}
+
+.price-per-person {
+
+    font-size: 15px;
+}
+
+.taxes{
+    margin-top: 15px;
+    font-size: 12px;
+    font-weight:200;
+}

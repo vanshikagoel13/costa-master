@@ -1,0 +1,56 @@
+.con-style{
+    border: 1px solid #ccc; /* Add border */
+    border-radius: 4px; /* Add border radius for rounded corners */
+    padding: 5px; /* Add padding for spacing inside the box */
+    background-color: #f5f5f5; /* Add background color */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add box shadow for depth */
+    margin-top: 70px;
+    margin-bottom:70px;
+}
+
+.grid-title {
+
+    font-size: 20px;
+    height: 14%;
+    /* background-color: blue; */
+}
+
+.col-style {
+
+    padding-left: 50px;
+    padding-right: 40px;
+    /* background-color: blue; */
+}
+
+.heading{
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    margin: 25px 0;
+}
+
+.img {
+
+    display: flex;
+    /* background-color: blue; */
+    justify-content: center;
+    height: 23%;
+    /* background-color: blue; */
+}
+
+.image-styles{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    /* width: 14%;
+    height: 20%; */
+}
+
+.text-style{
+    font-size: 14px;
+    padding-top: 10px;
+    padding-left: 10px;
+    /* padding-right: 10px; */
+}

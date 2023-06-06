@@ -1,0 +1,136 @@
+.test-box{
+    width: 90%;
+    /* height: 500px; */
+    margin-top: 70px;
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom: 70px;
+    background-color: rgb(9, 113, 186);
+    padding: 20px;
+    display: flex;
+    justify-content: center;  
+  }
+  
+  .test-content {
+    width: 90%;
+    /* background-color: pink; */
+    /* max-width:auto; */
+    /* max-width: 800px; */
+  }
+  
+  .test-heading {
+    margin-bottom: 10px;
+    /* text-align: left; */
+  }
+  
+  .test-title {
+    font-size: 23px;
+    font-weight: 400;
+    color: white;
+    margin-top: 30px;
+    text-align: left;
+    /* margin-left: -5rem; */
+  }
+  
+  .test-subtitle {
+    font-size: 17px;
+    margin-top: 13px;
+    /* margin-left: -5rem; */
+    font-weight: 400;
+    text-align: left;
+    color: white;
+  }
+  
+  .test-videos {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    justify-self:center;
+    justify-content: center;
+    margin-bottom: 0px;
+  }
+
+  .box {
+    background-color: white;
+    padding: 20px;
+    border: 15px solid rgb(9, 113, 186);
+    /* border-radius: 4px; */
+  }
+
+  .info-set{
+    /* background-color: white; */
+    /* padding: 20px; */
+    gap: 10%;
+    /* border: 15px solid rgb(9, 113, 186); */
+    /* border-radius: 4px; */
+  }
+  
+  .test-video-box {
+    width: 400px;
+    height: 280px;
+    background-color: #cccccc;
+    margin: 40px 5px;
+    padding: 0px;
+  }
+
+  .col-setting{
+    /* background-color: white; */
+    /* padding: 10px; */
+  }
+
+  .star-setting{
+    width: 40%;
+    height: 10%;
+  }
+
+  .dp-setting{
+    width: 18%;
+    height: 65%;
+    border-radius: 50%;
+    overflow: hidden;
+    justify-self:left ;
+  }
+
+  @media(max-width: 1000px){
+      .dp-setting{
+        width: 20%;
+        height: 45%;
+      }
+
+  }
+  @media(max-width: 750px){
+    .dp-setting{
+      width: 18%;
+      height: 30%;
+    }
+
+}
+  .text-setting{
+    font-size: 14px;
+  }
+
+  .name{
+    font-size: 18px;
+    font-weight: 100px;
+    /* text-align: right; */
+
+  }
+  
+  .loc{
+    font-size: 16px;
+    font-weight: 60px;
+    color: blue;
+    /* text-align: right; */
+  }
+
+  .info-settings{
+    display:flex !important;
+    justify-self: flex-end !important;
+    text-align: right !important;
+
+  }
+
+  
+  
+  
+  
