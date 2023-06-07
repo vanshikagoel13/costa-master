@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "../styles/Hstyle.css";
 // import { Link, Route } from 'react-router-dom';
 import "../styles/Fonts.css";
+import { Link } from 'react-router-dom';
 // import CostaExp from "../pages/CostaExp";
 
 function Header() {
@@ -40,7 +41,7 @@ function Header() {
             <span className="navbar-toggler-icon"></span>
           </button>
 
-          <a className={`navbar-brand mx-auto`} href="/">
+          <a className={`navbar-brand mx-auto`} href="../">
             <img
               src={process.env.PUBLIC_URL + "/logo.png"}
               alt="Costa"
@@ -62,24 +63,22 @@ function Header() {
                   isNavCollapsed ? "mb-2" : "mb-lg-0"
                 }`}
               >
-                <a
+                <Link
                   className="nav-link AltReg"
                   aria-current="page"
-                  href="#"
+                  to="../Destination"
                   style={navLinkStyle}
                 >
                   Destinations
-                </a>
+                </Link>
               </li>
-              <li className="nav-item active px-2">
-                <a
+              <Link
                   className="nav-link AltReg"
-                  href="#"
+                  to="../CostaExp"
                   style={navLinkStyle}
                 >
                   Costa Experience
-                </a>
-              </li>
+                </Link>
               <li className="nav-item px-2">
                 <a
                   className="nav-link AltReg"

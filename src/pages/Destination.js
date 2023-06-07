@@ -1,187 +1,111 @@
 import React from "react";
-// import { useState } from "react";
 import "bootstrap/dist/css/bootstrap.css";
 import Header from "../components/Header.js";
 import HorizontalScroll from "../components/HorizontalScroll.js";
-import "../styles/CostaExp.css";
+import "../styles/Destination.css";
 import "../styles/Fonts.css";
-import GridText from "../components/GridText.js";
 import Footer from "../components/Footer.js";
+import HomeDestinations from "../components/HomeDestinations.js";
 
 const images = [
-  // {
-  // 	id: 1,
-  // 	url: "https://www.costacruises.com/content/dam/costa/costa-asset/discovery/shorex/C442_Scegli_escursione_696x423_2.jpg.image.696.420.high.jpg",
-  // 	category: "OUR TOURS",
-  // 	title: "The longest Shore Excursions ever",
-  // 	text: "In every destination real travel experiences await you, the discovery of new and unexpected places, with no hurry whatsoever.",
-  // },
-  {
-    id: 1,
-    url: "https://www.costacruises.com/content/dam/costa/costa-asset/discovery/new-pillars-2021/C442_Una_nuova_esperienza_di_gusto_3Renditions_696x423.jpg",
-    category: "RESTAURANTS & BARS",
-    title: "A new <u class='underline-textcs'>taste experience</u>",
-    text: "The exploration of new places begins at the table. Each night, you’ll be treated to a signature dish by world-renowned chefs.",
-  },
-  {
-    id: 2,
-    url: "https://www.costacruises.com/content/dam/costa/costa-asset/discovery/new-pillars-2021/C442_Emozioni_a_non_finire_3Renditions_696x423.jpg.image.696.420.high.jpg",
-    category: "ENTERTAINMENT",
-    title: "Endless <u class='underline-textcs'>thrills</u>",
-    text: "A dip in the pool, an aperitif with friends, a spectacular show with acrobats at the theatre... a world of thrills and laughter awaits you!",
-  },
-  {
-    id: 3,
-    url: "https://www.costacruises.com/content/dam/costa/costa-asset/images/people/C442_Benessere_696x423_v5.jpg.image.696.420.high.jpg",
-    category: "SPORT, BEAUTY & RELAX",
-    title: "All the <u class='underline-textcs'>wellness</u> you deserve",
-    text: "Take time for yourself: a relaxing massage, a yoga class or, for the really sporty, a gym overlooking the sea are at your disposal.",
-  },
-  {
-    id: 4,
-    url: "https://www.costacruises.com/content/dam/costa/costa-asset/discovery/new-pillars-2021/C442_Il_tuo_risveglio_sul_mare_3Renditions_696x423.jpg.image.696.420.high.jpg",
-    category: "YOUR CABIN",
-    title: "<u class='underline-textcs'>Wake up on the sea</u>",
-    text: "Every day a different vista: the perfect way to start the next day of your vacation.",
-  },
-  {
-    id: 5,
-    url: "https://www.costacruises.com/content/dam/costa/costa-asset/discovery/new-pillars-2021/C442_Anche_in_vacanza_dalla_parte_del_mare_3Renditions_696x423.jpg.image.696.420.high.jpg",
-    category: "SUSTAINABILITY",
-    title:
-      "Even on vacation, <u class='underline-textcs'>we’re looking out for the sea</u>",
-    text: "The environment is <b>one of our priorities.</b> Find out how to enjoy a vacation as a <b>responsible explorer.</b>",
-  },
-];
 
-const subImages = [
-  { subid: 2, url: "/sub1.png" },
-  { subid: 3, url: "/sub2.png" },
-  { subid: 4, url: "/sub3.png" },
-  { subid: 5, url: "/sub4.png" },
-  { subid: 6, url: "/sub5.png" },
+	{
+		id: 1,
+		url: "https://www.costacruises.com/content/dam/costa/inventory-assets/destinations/ME/C031-mediterraneo.jpg.image.696.420.high.jpg",
+		title: "<u class='underline-textds'>Mediterranean</u>",
+		price: "Starting from <u class='starting-priceds'>$90</u>",
+		price2: "Taxes, fees and port expenses are $23.44 per person and are additional to the price displayed. Subject to change.",
+		text: "Your Mediterranean cruise will consist of history, culture, stunning landscapes and iconic tourist destinations. The “Mare Nostrum” (Mediterranean Sea) is the cradle of civilization, and provides dazzling landscapes that change with every season.",
+	},
+	{
+		id: 2,
+		url: "https://www.costacruises.com/content/dam/costa/inventory-assets/destinations/NO/desktop/Img_1_Top_NordEuropa_1680x786bis.jpeg.image.696.420.high.jpeg",
+		price: "Starting from <u class='starting-priceds'>$289</u>",
+		price2: "Taxes, fees and port expenses are $58.80 per person and are additional to the price displayed. Subject to change.",
+		title: "<u class='underline-textds'>Northern Europe</u>",
+		text: "The clear, cold, sharp light will accompany us on our way to Northern Europe. Embark on a unique experience among mazes of rock, where the glaciers along the sea and small, colorful villages welcome us like in a fairy tale.",
+	},
+	{
+		id: 3,
+		url: "https://www.costacruises.com/content/dam/costa/inventory-assets/destinations/CA/desktop/Img_1_Top_Caraibi_1680x786.jpg.image.696.420.high.jpg",
+		price: "Starting from <u class='starting-priceds'>$629</u>",
+		price2: "Taxes, fees and port expenses are $64.10 per person and are additional to the price displayed. Subject to change.",
+		title: "<u class='underline-textds'>Caribbean</u>",
+		text: "If you love the sea, beaches and dreams, and maybe you like music and good food, then our Caribbean cruise is the ideal solution. We head towards “treasure island”, full of good humor and shining sun.",
+	},
 ];
 
 const scrollimages = [
-  { id: 1, url: "/dc1.png" },
-  { id: 2, url: "/dc2.png" },
-  { id: 3, url: "/dc3.png" },
+
+	{ id: 1, url: "/dc1.png" },
+	{ id: 2, url: "/dc2.png" },
+	{ id: 3, url: "/dc3.png" },
 ];
 
-const txt1 =
-  "Our aim is to accompany you as you explore <b>the world in the most sustainable, delicious, relaxing and surprising way.</b>";
+const txt1 = "Our aim is to accompany you as you explore <b>the world in the most sustainable, delicious, relaxing and surprising way.</b>";
+const htext = " ";
 
 function CostaExp() {
-  // const [isLeft, setIsLeft] = useState(false);
 
-  // const handleLeftSide = () => {
-  //   setIsLeft(!isLeft);
-  // };
+	return (
 
-  return (
-    <div className="v-scrollcs">
-      <Header />
-      <HorizontalScroll />
-      <div className="two-column-containercs mx-3">
-        <div className="left-columncs">
-          <h2 className="l1cs AltBold">A new way to travel</h2>
-        </div>
-        <div className="right-columncs">
-          <p className="l2cs AltReg">
-            <span dangerouslySetInnerHTML={{ __html: txt1 }} />
-          </p>
-          <p className="l2cs AltReg">
-            There are so many new things to tell you about: find out now what
-            awaits you on your next cruise, both on board and ashore.{" "}
-          </p>
-        </div>
-      </div>
-      <div className="container">
-        {images.map((image, index) => (
-          <div
-            key={image.id}
-            className={`row rowcs ${
-              (index + 1) % 2 === 0 ? "flex-row-reverse" : ""
-            }`}
-          >
-            <div className="col-lg-6 d-flex">
-              <div className="image-containercs">
-                <img
-                  src={image.url}
-                  className="img-fluid zoom image-stylecs"
-                  alt={image.title}
-                />
-              </div>
-            </div>
-            <div className="col-lg-6 d-flex">
-              <div
-                className={`text-container align-self-end ${
-                  (index + 1) % 2 !== 0 ? "right-textcs" : "left-textcs"
-                }`}
-              >
-                <h4
-                  className={`PoppReg ${
-                    (index + 1) % 2 !== 0
-                      ? "category-style-rightcs"
-                      : "category-style-leftcs"
-                  }`}
-                >
-                  {image.category}
-                </h4>
-                <h3
-                  className={`AltBold ${
-                    (index + 1) % 2 !== 0
-                      ? "title-style-rightcs"
-                      : "title-style-leftcs"
-                  }`}
-                >
-                  <span dangerouslySetInnerHTML={{ __html: image.title }} />
-                </h3>
-                <p
-                  className={`AltReg ${
-                    (index + 1) % 2 !== 0
-                      ? "text-style-rightcs"
-                      : "text-style-leftcs"
-                  }`}
-                >
-                  <span dangerouslySetInnerHTML={{ __html: image.text }} />
-                </p>
-                {/* <button className={`${index % 2 !== 0 ? "button-right" : "button-left"}`}>Find out more...</button> */}
-                {index >= 0 && (
-                  <img
-                    src={process.env.PUBLIC_URL + subImages[index].url}
-                    className={`${
-                      index % 2 !== 0
-                        ? "subimage-style-rightcs"
-                        : "subimage-style-leftcs"
-                    }`}
-                    alt=""
-                  />
-                )}
-              </div>
-            </div>
-          </div>
-        ))}
-      </div>
-      {/* <div>
-				<h3 className="sec-last-head">And it doesn't stop there...</h3>
-				<p className="sec-last-text">
-					Find out how to make the most of your cruise
-				</p>
-			</div> */}
-      {/* <div className="last-image-scroller">
-				<div className="last-image">
-					<img
-						className="image-last-style"
-						src={process.env.PUBLIC_URL + "/ceImage1.png"}
-						alt="last image"
-					></img>
+		<div className="v-scrollds">
+			<Header />
+			<HorizontalScroll scrollimg={[scrollimages,htext]} />
+			<div className="two-column-containerds mx-3">
+				<div className="left-columnds">
+					<h2 className="l1ds AltBold">Explore the World</h2>
 				</div>
-			</div> */}
-      <GridText />
-      <Footer />
-    </div>
-  );
+				<div className="right-columnds">
+					{/* <p className="l2ds AltReg"><span dangerouslySetInnerHTML={{ __html: txt1 }} /></p> */}
+					<p className="l2ds AltReg">
+						We take you to discover every corner of the world: from the white
+						beaches of the Caribbean to the unspoiled nature of Northern Europe,
+						from the silence of the desert in the Arab Emirates to the bright
+						colors of South America. The world is all to be explored: you just
+						have to pack your bags!.{" "}
+					</p>
+				</div>
+			</div>
+			<div className="container">
+				{images.map((image, index) => (
+					<div key={image.id}	className={`row rowds ${(index + 1) % 2 === 0 ? "flex-row-reverse" : ""}`}>
+						<div className="col-lg-6 d-flex">
+							<div className="image-containerds">
+								<img src={image.url} className="img-fluid zoom image-styleds" alt={image.title} />
+							</div>
+						</div>
+						<div className="col-lg-6 d-flex">
+							<div className={`text-container align-self-center ${(index + 1) % 2 !== 0 ? "right-textds" : "left-textds" }`}>
+								<h3 className={`AltBold ${(index + 1) % 2 !== 0 ? "title-style-rightds" : "title-style-leftds" }`}> 
+									<span dangerouslySetInnerHTML={{ __html: image.title }} />
+								</h3>
+								<p className={`AltReg ${(index + 1) % 2 !== 0 ? "text-style-rightds" : "text-style-leftds" }`}>
+									<span dangerouslySetInnerHTML={{ __html: image.text }} />
+								</p>
+								<h4 className={`PoppReg ${(index + 1) % 2 !== 0 ? "price-style-rightds" : "price-style-leftds" }`}>
+									<span dangerouslySetInnerHTML={{ __html: image.price}} />
+								</h4>
+								<p className={`PoppReg ${(index + 1) % 2 !== 0 ? "tax-style-rightds" : "tax-style-leftds" }`}>
+									<span dangerouslySetInnerHTML={{ __html: image.price2 }} />
+								</p>
+								<div style={{ display: "flex", justifyContent: "space-between"}}>
+									<button className={`PoppReg itin-buttonds`} style={{ width: "calc(50% - 5px)" }}>
+										Look at the itinenaries &rarr;
+									</button>
+									<button className={`PoppReg dis-buttonds`} style={{ width: "calc(50% - 5px)" }}>
+										Know more &rarr;
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				))}
+			</div>
+			<HomeDestinations />
+			<Footer />
+		</div>
+	);
 }
 
 export default CostaExp;

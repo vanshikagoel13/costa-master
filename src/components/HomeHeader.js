@@ -5,18 +5,25 @@ import "../styles/HomeHeader.css";
 import { Link, Route } from 'react-router-dom';
 // import CostaExp from "../pages/CostaExp";
 
-function Header() {
+function HomeHeader({ isExpanded, onExpand, onCollapse }) {
   const [isNavCollapsed, setIsNavCollapsed] = useState(true);
 
   const handleNavCollapse = () => {
+
     setIsNavCollapsed(!isNavCollapsed);
+
+    if (isExpanded) {
+      onCollapse();
+    } else {
+      onExpand();
+    }
   };
 
   const navLinkStyle = {
     fontSize: isNavCollapsed ? "13px" : "20px",
     fontWeight: 750,
     margin: isNavCollapsed ? "0" : "10px",
-    color: "#fff",
+    color: isNavCollapsed ? "#fff" : "#000",
   };
 
   return (
@@ -38,10 +45,10 @@ function Header() {
               // backgroundColor: "#000",
             }}
           >
-            <span className="hhnavbar-toggler-icon"></span>
+            <span className="navbar-toggler-icon hhnavbar-toggler-icon"></span>
           </button>
 
-          <a className={`navbar-brand mx-auto`} href="#">
+          <Link className={`navbar-brand mx-auto`} to="../">
             <img
               src={process.env.PUBLIC_URL + "/logo.png"}
               alt="Costa"
@@ -49,7 +56,7 @@ function Header() {
               height="50"
               style={{ marginLeft: isNavCollapsed ? "0px" : "62px" }}
             />
-          </a>
+          </Link>
 
           <div
             className={`collapse navbar-collapse ${
@@ -63,16 +70,15 @@ function Header() {
                   isNavCollapsed ? "mb-2" : "mb-lg-0"
                 }`}
               >
-                <a
+                <Link
                   className="nav-link AltReg"
-                  aria-current="page"
-                  href="#"
+                  to="Destination"
                   style={navLinkStyle}
                 >
-                  Destinations
-                </a>
+                  Destination
+                </Link>
               </li>
-              <Link
+              	<Link
                   className="nav-link AltReg"
                   to="CostaExp"
                   style={navLinkStyle}
@@ -129,4 +135,4 @@ function Header() {
   );
 }
 
-export default Header;
+export default HomeHeader;

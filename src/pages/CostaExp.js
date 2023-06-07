@@ -62,8 +62,13 @@ const subImages = [
 	{ subid: 6, url: "/sub5.png" },
 ];
 
-const txt1 = "Our aim is to accompany you as you explore <b>the world in the most sustainable, delicious, relaxing and surprising way.</b>";
+const scrollimages = [
+	{ id: 1, url: "/c1.png" },
+	{ id: 2, url: "/c2.png" },
+];
 
+const txt1 = "Our aim is to accompany you as you explore <b>the world in the most sustainable, delicious, relaxing and surprising way.</b>";
+const htext = "Unmissable News";
 function CostaExp() {
 
 	// const [isLeft, setIsLeft] = useState(false);
@@ -75,7 +80,7 @@ function CostaExp() {
 	return (
 		<div className="v-scrollcs">
 			<Header />
-			<HorizontalScroll />
+			<HorizontalScroll scrollimg={[scrollimages,htext]}/>
 			<div className="two-column-containercs mx-3">
 				<div className="left-columncs">
 					<h2 className="l1cs AltBold">A new way to travel</h2>

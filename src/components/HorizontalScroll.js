@@ -5,11 +5,8 @@ import "slick-carousel/slick/slick-theme.css";
 import "../styles/Hstyle.css";
 import "../styles/Fonts.css";
 
-function HorizontalScroll() {
-	const items = [
-		{ id: 1, url: "/c1.png" },
-		{ id: 2, url: "/c2.png" },
-	];
+function HorizontalScroll({scrollimg}) {
+	
 
 	const settings = {
 		dots: true,
@@ -23,10 +20,10 @@ function HorizontalScroll() {
 
 	return (
 		<div className="horizontal-scroll-container">
-			<h3 className="header-style AltBold" >Unmissable news</h3>
+			<h3 className="header-style AltBold" >{scrollimg[1]}</h3>
 			<div>
 				<Slider {...settings}>
-					{items.map((item) => (
+					{scrollimg[0].map((item) => (
 						<div className="image-container" key={item.id} style={{ backgroundColor: 'pink' }}>
 							<img
 								src={process.env.PUBLIC_URL + item.url}
