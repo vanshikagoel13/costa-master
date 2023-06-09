@@ -7,7 +7,6 @@ import "../styles/Fonts.css";
 
 function HorizontalScroll({scrollimg}) {
 	
-
 	const settings = {
 		dots: true,
 		infinite: true,

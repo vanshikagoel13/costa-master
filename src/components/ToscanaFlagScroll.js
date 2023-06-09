@@ -1,0 +1,62 @@
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
+import "../styles/ToscanaFlagScroll.css";
+
+const responsive = {
+  desktop: {
+    breakpoint: { max: 3000, min: 1024 },
+    items: 1,
+    slidesToSlide: 1, // optional, default to 1.
+    partialVisibilityGutter: 100
+  },
+
+  tablet: {
+    breakpoint: { max: 1024, min: 464 },
+    items: 1,
+    slidesToSlide: 1, // optional, default to 1.
+    partialVisibilityGutter: 100
+  },
+
+  mobile: {
+    breakpoint: { max: 464, min: 0 },
+    items: 1,
+    slidesToSlide: 1, // optional, default to 1.
+    partialVisibilityGutter: 100
+  },
+};
+
+function ToscanaFlagScroll({ scrollimg }) {
+  return (
+    <div>
+      <Carousel
+        responsive={responsive}
+        showDots={true}
+        arrows={false}
+        swipeable={true}
+        centerMode={true}
+        infinite={true}
+        // partialVisbile={true}
+        autoPlay={true}
+        autoPlaySpeed={2000}
+        preventMovementUntilSwipeScrollTolerance={false}
+      >
+        {scrollimg.map((image) => {
+          return (
+            <div className="item-flag" key={image.id}>
+              <div className="image-container-flag carousel-dots">
+                <img
+                  className="image-carousel-flag"
+                  src={process.env.PUBLIC_URL + image.url}
+                  key={image.id}
+                />
+                {/* <div className='image-text'>{image.text}</div> */}
+              </div>
+            </div>
+          );
+        })}
+      </Carousel>
+    </div>
+  );
+}
+
+export default ToscanaFlagScroll;

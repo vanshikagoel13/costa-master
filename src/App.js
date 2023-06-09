@@ -2,7 +2,7 @@ import "bootstrap/dist/css/bootstrap.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import CostaExp from "./pages/CostaExp";
 import Home from "./pages/Home";
-import Destination from "./pages/Destination";
+import Destination from "./pages/Destinations";
 
 export function App() {
   return (

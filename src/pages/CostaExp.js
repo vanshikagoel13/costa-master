@@ -1,5 +1,4 @@
-import React from "react";
-// import { useState } from "react";
+import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.css";
 import Header from "../components/Header.js";
 import HorizontalScroll from "../components/HorizontalScroll.js";
@@ -9,13 +8,7 @@ import GridText from "../components/GridText.js";
 import Footer from "../components/Footer.js";
 
 const images = [
-	// {
-	// 	id: 1,
-	// 	url: "https://www.costacruises.com/content/dam/costa/costa-asset/discovery/shorex/C442_Scegli_escursione_696x423_2.jpg.image.696.420.high.jpg",
-	// 	category: "OUR TOURS",
-	// 	title: "The longest Shore Excursions ever",
-	// 	text: "In every destination real travel experiences await you, the discovery of new and unexpected places, with no hurry whatsoever.",
-	// },
+
 	{
 		id: 1,
 		url: "https://www.costacruises.com/content/dam/costa/costa-asset/discovery/new-pillars-2021/C442_Una_nuova_esperienza_di_gusto_3Renditions_696x423.jpg",
@@ -69,80 +62,77 @@ const scrollimages = [
 
 const txt1 = "Our aim is to accompany you as you explore <b>the world in the most sustainable, delicious, relaxing and surprising way.</b>";
 const htext = "Unmissable News";
+
 function CostaExp() {
 
-	// const [isLeft, setIsLeft] = useState(false);
+	const [isHeaderExpanded, setIsHeaderExpanded] = useState(false);
 
-	// const handleLeftSide = () => {
-	//   setIsLeft(!isLeft);
-	// };
+	const handleHeaderExpand = () => {
+		setIsHeaderExpanded(true);
+	};
+
+	const handleHeaderCollapse = () => {
+		setIsHeaderExpanded(false);
+	};
 
 	return (
 		<div className="v-scrollcs">
-			<Header />
-			<HorizontalScroll scrollimg={[scrollimages,htext]}/>
-			<div className="two-column-containercs mx-3">
-				<div className="left-columncs">
-					<h2 className="l1cs AltBold">A new way to travel</h2>
-				</div>
-				<div className="right-columncs">
-					<p className="l2cs AltReg"><span dangerouslySetInnerHTML={{ __html: txt1 }} /></p>
-					<p className="l2cs AltReg">
-						There are so many new things to tell you about: find out now what
-						awaits you on your next cruise, both on board and ashore.{" "}
-					</p>
-				</div>
-			</div>
-			<div className="container">
-				{images.map((image, index) => (
-					<div key={image.id} className={`row rowcs ${(index + 1) % 2 === 0 ? "flex-row-reverse" : ""}`}>
-						<div className="col-lg-6 d-flex">
-							<div className="image-containercs">
-								<img src={image.url} className="img-fluid zoom image-stylecs" alt={image.title} />
-							</div>
-						</div>
-						<div className="col-lg-6 d-flex">
-							<div className={`text-container align-self-end ${(index + 1) % 2 !== 0 ? "right-textcs" : "left-textcs"}`}>
-								<h4 className={`PoppReg ${(index + 1) % 2 !== 0 ? "category-style-rightcs" : "category-style-leftcs"}`}>{image.category}</h4>
-								<h3 className={`AltBold ${(index + 1) % 2 !== 0 ? "title-style-rightcs" : "title-style-leftcs"}`}><span dangerouslySetInnerHTML={{ __html: image.title }} /></h3>
-								<p className={`AltReg ${(index + 1) % 2 !== 0 ? "text-style-rightcs" : "text-style-leftcs"}`}><span dangerouslySetInnerHTML={{ __html: image.text }} /></p>
-								{/* <button className={`${index % 2 !== 0 ? "button-right" : "button-left"}`}>Find out more...</button> */}
-								{index >= 0 && (
-									<img
-										src={process.env.PUBLIC_URL + subImages[index].url}
-										className={`${
-										index % 2 !== 0
-											? "subimage-style-rightcs"
-											: "subimage-style-leftcs"
-										}`}
-										alt=""
-									/>
-								)}
-							</div>
-						</div>
+			<Header 
+				isExpanded={isHeaderExpanded}
+				onExpand={handleHeaderExpand}
+				onCollapse={handleHeaderCollapse}
+			/>
+			{isHeaderExpanded ? null :
+				<>
+				<HorizontalScroll scrollimg={[scrollimages,htext]}/>
+				<div className="two-column-containercs mx-3">
+					<div className="left-columncs">
+						<h2 className="l1cs AltBold">A new way to travel</h2>
 					</div>
-				))}
-			</div>
-			{/* <div>
-				<h3 className="sec-last-head">And it doesn't stop there...</h3>
-				<p className="sec-last-text">
-					Find out how to make the most of your cruise
-				</p>
-			</div> */}
-			{/* <div className="last-image-scroller">
-				<div className="last-image">
-					<img
-						className="image-last-style"
-						src={process.env.PUBLIC_URL + "/ceImage1.png"}
-						alt="last image"
-					></img>
+					<div className="right-columncs">
+						<p className="l2cs AltReg"><span dangerouslySetInnerHTML={{ __html: txt1 }} /></p>
+						<p className="l2cs AltReg">
+							There are so many new things to tell you about: find out now what
+							awaits you on your next cruise, both on board and ashore.{" "}
+						</p>
+					</div>
 				</div>
-			</div> */}
-			<GridText />
-			<Footer />
+				<div className="container">
+					{images.map((image, index) => (
+						<div key={image.id} className={`row rowcs ${(index + 1) % 2 === 0 ? "flex-row-reverse" : ""}`}>
+							<div className="col-lg-6 d-flex">
+								<div className="image-containercs">
+									<img src={image.url} className="img-fluid zoom image-stylecs" alt={image.title} />
+								</div>
+							</div>
+							<div className="col-lg-6 d-flex">
+								<div className={`text-container align-self-end ${(index + 1) % 2 !== 0 ? "right-textcs" : "left-textcs"}`}>
+									<h4 className={`PoppReg ${(index + 1) % 2 !== 0 ? "category-style-rightcs" : "category-style-leftcs"}`}>{image.category}</h4>
+									<h3 className={`AltBold ${(index + 1) % 2 !== 0 ? "title-style-rightcs" : "title-style-leftcs"}`}><span dangerouslySetInnerHTML={{ __html: image.title }} /></h3>
+									<p className={`AltReg ${(index + 1) % 2 !== 0 ? "text-style-rightcs" : "text-style-leftcs"}`}><span dangerouslySetInnerHTML={{ __html: image.text }} /></p>
+									{/* <button className={`${index % 2 !== 0 ? "button-right" : "button-left"}`}>Find out more...</button> */}
+									{index >= 0 && (
+										<img
+											src={process.env.PUBLIC_URL + subImages[index].url}
+											className={`${
+											index % 2 !== 0
+												? "subimage-style-rightcs"
+												: "subimage-style-leftcs"
+											}`}
+											alt=""
+										/>
+									)}
+								</div>
+							</div>
+						</div>
+					))}
+				</div>
+				<GridText />
+				<Footer />
+				</>
+			}
 		</div>
 	);
 }
-
 
 export default CostaExp;

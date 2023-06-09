@@ -139,8 +139,9 @@
 .image-containercs {
 
     /* margin-top: 50px; */
-    max-width: 100%;
-    overflow: hidden;
+    display: flex;
+    width: 100%;
+    /* overflow: hidden; */
     /* background-color: purple; */
     /* background-color: #FFEF00; */
 }

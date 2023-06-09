@@ -1,0 +1,48 @@
+.containerta {
+
+	max-width: 80%;
+	margin: auto;
+	padding: 2%;
+	margin-bottom: 7%;
+}
+
+.custom-col-1 {
+	
+	position: "relative";
+	z-index: "2";
+}
+
+.custom-col-2 {
+
+	width: 100%;
+	/* margin: 3%; */
+	margin-right: 4%;
+	position: "relative";
+	z-index: "1";
+}
+
+.categoryta {
+
+	font-size: 14px;
+}
+
+.titleta {
+
+	font-size: 70px;
+	padding-top: 2%;
+	position: relative;
+	z-index: 2;
+}
+
+.subtitleta {
+
+	font-size: 14px;
+	padding-top: 10%;
+	padding-right: 10%;
+}
+
+.image-containerta {
+
+	width: 100%;
+	height: 600px;
+}
