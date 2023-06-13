@@ -61,7 +61,7 @@ function Footer() {
                     </Link>
                   </li>
                   <li>
-                    <a className="link-style" href="#">
+                    <a className="link-style" href="../PrivacyPolicy">
                       Privacy Policy
                     </a>
                   </li>
@@ -85,22 +85,22 @@ function Footer() {
                 />
                 <ul className="ul">
                   <li>
-                    <a href="#!" className="link-style">
+                    <a href="../Destinations" className="link-style">
                       Destionations
                     </a>
                   </li>
                   <li>
-                    <a href="#!" className="link-style">
+                    <a href="../CostaExp" className="link-style">
                       Experience
                     </a>
                   </li>
                   <li>
-                    <a href="#!" className="link-style">
+                    <a href="../CostaToscana" className="link-style">
                       Costa Toscana
                     </a>
                   </li>
                   <li>
-                    <a href="#!" className="link-style">
+                    <a href="../CostaSerena" className="link-style">
                       Costa Serena
                     </a>
                   </li>

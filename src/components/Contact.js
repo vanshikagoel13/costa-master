@@ -1,53 +1,88 @@
-import React from 'react';
-import '../styles/Contact.css';
-import contactimg from '../images/contact.png';
+import React from "react";
+import "../styles/Contact.css";
+import contactimg from "../images/contact.png";
+// import styles from "../styles/Contact.css";
 
 function Contact() {
+  const handleInputChange = (e) => {
+    // Prevent the user from manually typing non-numeric characters
+    if (isNaN(e.target.value)) {
+      e.target.value = "";
+    }
+  };
+  return (
+    <section id="Contact">
+      <div className="card contact-card mb-3">
+        <div className="row rowcon g-0">
+          <div className="col-lg-6 d-flex" style={{ width: "40%" }}>
+            <div className="image-container">
+              <img src={contactimg} className="img-fluid img-style"></img>
+            </div>
+          </div>
+          <div className="col-lg-6 d-flex" style={{ width: "60%" }}>
+            <div className="contact-body">
+              <h5 className="contact-title KepStd">Get in touch with us</h5>
+              <p className="contact-text PoppReg">
+                To make your seacation safe and memorable, we have added all the
+                necessary precautions.
+              </p>
 
-	return (
-
-		<section id="Contact" >
-			<div className="card contact-card mb-3">
-				<div className="row rowcon g-0">
-					<div className="col-lg-6 d-flex" style={{ width: "40%" }}>
-						<div className="image-container">
-							<img src={contactimg} className="img-fluid img-style"></img>
-						</div>
-					</div>
-					<div className="col-lg-6 d-flex" style={{ width: "60%"}}>
-						<div className="contact-body">
-							<h5 className="contact-title KepStd">Get in touch with us</h5>
-							<p className="contact-text AltReg">To make your seacation safe and memorable, we have added all the necessary precautions.</p>
-
-							<form method="POST">
-								<div className="first-name">
-									<input type="text" placeholder="First Name" className="name-input" />
-								</div>
-								<div className="row rowcon">
-									<div className="col-md-3 contact-dropdown">
-										<select className="dropdown">
-											<option value="91">+91</option>
-											<option value="80">+80</option>
-											<option value="65">+65</option>
-										</select>
-									</div>
-									<div className="col-md-9">
-										<input className="phone-contact" type="number" placeholder="Phone Number"></input>
-									</div>
-								</div>
-								<button className="contact-button">Submit</button>
-							</form>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-	)
+              <form method="POST">
+                <div className="first-name">
+                  <input
+                    type="text"
+                    placeholder="First Name"
+                    className="name-input"
+                  />
+                </div>
+                <div className="row rowcon">
+                  <div className="col-md-3 contact-dropdown">
+                    <select className="dropdown">
+                      <option value="91">+91</option>
+                      <option value="80">+80</option>
+                      <option value="65">+65</option>
+                    </select>
+                  </div>
+                  <div className="col-md-9">
+                    {/* <input  className={styles['number-input'] } type="number" placeholder="Phone Number"></input> */}
+                    <input
+                      type="text"
+                      pattern="[0-9]*"
+                      onInput={handleInputChange}
+                      placeholder="Phone Number"
+                      className="phone-contact"
+                    />
+                  </div>
+                  <div className="row rowcon" style={{ paddingTop: "10px" }}>
+                    <div className="col-md-3 otp-container">
+                      <p className="contact-otp PoppMed">Get OTP</p>
+                    </div>
+                    <div className="col-md-9">
+                      {/* <input  className={styles['number-input'] } type="number" placeholder="Phone Number"></input> */}
+                      <input
+                        type="text"
+                        pattern="[0-9]*"
+                        onInput={handleInputChange}
+                        placeholder="Enter OTP"
+                        className="otp-container-input"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <button className="contact-button">Submit</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
 }
 
-export default Contact
+export default Contact;
 
-{/* 
+{
+  /* 
 
 <div className="col-lg-6 d-flex">
 	<div className="image-container">
@@ -73,4 +108,5 @@ export default Contact
 	</div>
 </div> 
 
-*/}
+*/
+}

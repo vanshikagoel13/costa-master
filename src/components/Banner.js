@@ -74,7 +74,7 @@ function Banner({ onBanner, offBanner }) {
 				<>
 					<div className="component-background">
 						<video autoPlay loop muted className="background-video">
-							<source src={process.env.PUBLIC_URL + "/video_banner.mp4"} type="video/mp4" />
+							<source src={process.env.PUBLIC_URL + "/Homebannervideo.mp4"} type="video/mp4" />
 						</video>
 					</div>
 					<div className="banner-content">

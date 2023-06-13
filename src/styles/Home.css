@@ -1,0 +1,90 @@
+  .logo-popup {
+    width: 23%;
+    height: 23%;
+    justify-self:center;
+    margin-bottom: -10px;
+    /* margin-left: 40%; */
+  }
+  .allin-logo-popup{
+    display: flex;
+    justify-content: center;
+  }
+
+.heading {
+
+    line-height: 2;;
+    color: #1d6ca8;
+    font-weight: 700;
+    font-size: 30px;
+    margin-bottom: 1%;
+  }
+
+  .subheading {
+    color: #1d6ca8;
+    line-height: 0;
+    font-size: 18px;
+    margin-bottom: 3%;
+    text-align: center;
+  }
+
+  .form-input{
+    width: 70%;
+    /* object-fit: cover; */
+    /* max-width: 70%; */
+   }
+
+   .input-field{
+    width: 100%;
+   }
+
+   .submit-button {
+    background-color: #fbc02d;
+    color: #000000;
+    width: 70%;
+    margin:auto;
+  }
+  .otp-button{
+    background-color: transparent;
+    color: #000000;
+    border: none;
+    font-weight: 800;
+    color: #1d6ca8;
+
+  }
+ 
+  .submit-button:hover {
+    background-color: #fdd65e;
+  }
+  @media (max-width: 768px) {
+    /* .popup {
+      max-width: 100%;
+      
+    } */
+    .form-box{
+        align-items: center;
+    }
+  }
+
+  .input-settings{
+    /* background-color: white; */
+    width:100%;
+    padding: 0.5rem;
+    /* margin-top: 30px; */
+    height: 40px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    font-size: 14px;
+    background-color: rgb(244, 242, 242);
+
+  }
+  
+
+  input[type="text"]{
+    
+}
+
+.font-otp-popup:hover {
+    text-decoration: underline;
+	text-decoration-thickness: 2px;
+	text-underline-offset:4px;
+}

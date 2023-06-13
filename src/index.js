@@ -9,6 +9,7 @@ import CostaToscana from './pages/CostaToscana';
 import CostaSerena from './pages/CostaSerena';
 import ContactUs from './components/ContactUs';
 import FAQ from './components/FAQ';
+import PrivacyPolicy from './components/PrivacyPolicy';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -40,6 +41,10 @@ const router = createBrowserRouter([
 	{
 		path: "/FAQ",
 		element: <FAQ />,
+	},
+	{
+		path: "/PrivacyPolicy",
+		element: <PrivacyPolicy />,
 	},
 ]);
 
