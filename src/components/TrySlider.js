@@ -32,7 +32,7 @@ function TrySlider({ scrollimages}) {
 				return (
 					<div className='item' key={image.id}>
 						<div className='image-container'>
-							<img className='image-carousel' src={process.env.PUBLIC_URL + image.url} key={image.id} />
+							<img className='image-carousel' style={{filter:"brightness(65%)"}} src={process.env.PUBLIC_URL + image.url} key={image.id} />
 							<div className='image-text'>{image.text}</div>
 						</div>
 					</div>

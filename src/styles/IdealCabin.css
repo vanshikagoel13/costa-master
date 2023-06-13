@@ -4,17 +4,20 @@
     margin-bottom: 7%;
     margin-top: 7%;
 }
+
 .container-idealcabin{
     /* margin-top:70px; */
     background-color: rgb(240, 239, 239);
     width:90%;
     text-align: center;
 }
+
 .heading-idealcabin{
     margin-top:30px;
     font-size: 28px;
     color:rgb(62, 58, 58);
 }
+
 .text-idealcabin{
     font-size: 12px;
     color:grey;
@@ -43,6 +46,7 @@
     color:rgb(89, 86, 86);
     margin-bottom:20px;
 }
+
 .allin-text-last-ideal1{
     display: flex;
     text-align: center;
@@ -51,5 +55,9 @@
 
 .allin-text-last-ideal{
     width:65%;
+}
 
+.cabin-below-text-flag {
+	margin-top: 1%;
+	font-size: 12px;
 }

@@ -3,17 +3,35 @@
     
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
 }
+.image-upcoming-set{
+    /* width: 100%; */
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+   
+}
 .grid-img img{
     /* width:100%; */
-    max-width: 100%;
-    max-height: 100%;
+    height: 15vw;
+    overflow:hidden;
     /* margin-left:0; */
 }
 .Date{
     align-items: center;
 }
 .nights{
+    font-size: 26px;
     color: rgb(109, 107, 107);
+}
+
+.cell-1{
+    display:flex;
+    width:25%;
+    align-items:center;
+    justify-content:center;
+    flex-direction: column;
+    /* text-align: center; */
 }
 .cell-2{
     display:flex;
@@ -32,13 +50,14 @@
     align-items:center;
     justify-content:center;
     flex-direction: column;
-    width:35%;
+    width:25%;
     box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2); 
     text-align: center;
     background-color: rgb(221, 219, 219);
 }
 .destination-text{
     font-weight: 700;
+    font-size: 28px;
 
 }
 .cell-4{
@@ -46,26 +65,37 @@
     align-items:center;
     justify-content:center;
     flex-direction: row;
-    width:20%;
+    width:30%;
     text-align: center;
 }
 .cell-4-sub-1{
+    width:50%;
     display:flex;
     flex-direction: column;
     text-align: right;
 }
+.cell-4-sub-2{
+    margin:auto;
+    width:50%;
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    /* background-color: burlywood; */
+}
 .From{
-    font-size: 15px;
+    font-size: 20px;
     font-weight:600;
 }
 .price-grid{
-    font-weight: 700;
+    font-size: 26px;
+    font-weight: 500;
 }
 .per-guest{
-    font-size: 12px;
+    font-size: 15px;
     color: grey;
 }
 .Book-Now{
+    font-size: 20px;
     color: purple;
     text-decoration: none;
     font-weight: 700;
@@ -81,3 +111,142 @@
 .filled-moon{
     color:grey;
 }
+
+.color-text{
+    color: grey;
+    text-decoration: none;
+}
+
+/* Media settings */
+
+@media(min-width:900px) and (max-width:1100px){
+    .destination-text{
+        font-size: 22px;
+    }
+    .price-grid{
+        font-size: 22px;
+    }
+    .per-guest{
+        font-size: 12px;
+    }
+    .From{
+        font-size: 16px;
+    }
+    .Book-Now{
+        font-size: 17px;
+    }
+    .Date{
+        font-size: 18px;
+    }
+    .nights{
+        font-size: 23px;
+    }
+}
+
+@media(min-width:750px) and (max-width:900px){
+    .destination-text{
+        font-size: 19px;
+    }
+    .price-grid{
+        font-size: 17px;
+    }
+    .per-guest{
+        font-size: 11px;
+    }
+    .From{
+        font-size: 13px;
+    }
+    .Book-Now{
+        font-size: 15px;
+    }
+    .Date{
+        font-size: 16px;
+    }
+    .nights{
+        font-size: 19px;
+    }
+}
+@media(min-width:600px) and (max-width:750px){
+    .destination-text{
+        font-size: 15px;
+    }
+    .price-grid{
+        font-size: 14px;
+    }
+    .per-guest{
+        font-size: 8px;
+    }
+    .From{
+        font-size: 9px;
+    }
+    .Book-Now{
+        font-size: 11px;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+    .Date{
+        font-size: 11px;
+    }
+    .nights{
+        font-size: 13px;
+    }
+    .cell-4-sub-2{
+        text-align: left;
+    }
+}
+
+
+@media(min-width:500px) and (max-width:600px){
+    .destination-text{
+        font-size: 14px;
+    }
+    .price-grid{
+        font-size: 12px;
+    }
+    .per-guest{
+        font-size: 6px;
+    }
+    .From{
+        font-size: 7px;
+    }
+    .Book-Now{
+        font-size: 8px;
+    }
+    .Date{
+        font-size: 11px;
+    }
+    .nights{
+        font-size: 13px;
+    }
+    .cell-4-sub-2{
+        text-align: left;
+    }
+}
+
+@media(max-width:500px){
+    .destination-text{
+        font-size: 11px;
+    }
+    .price-grid{
+        font-size: 9px;
+    }
+    .per-guest{
+        font-size: 6px;
+    }
+    .From{
+        font-size: 6px;
+    }
+    .Book-Now{
+        font-size: 7px;
+    }
+    .Date{
+        font-size: 10px;
+    }
+    .nights{
+        font-size: 10px;
+    }
+    
+}
+
+
+

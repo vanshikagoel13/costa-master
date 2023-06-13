@@ -12,7 +12,7 @@ const images = [
 		loc: "From Bremerhaven",
 		date: "08 Jul 2023",
 		price: "$2869",
-		button: "Explore Cruises....",
+		button: "Explore Cruises",
 		text: "Taxes, fees and port expenses are $188.86 per person and are additional to the mentioned price, subject to change",
 	},
 	{
@@ -22,7 +22,7 @@ const images = [
 		loc: "From Istanbul",
 		date: "20 Oct 2023",
 		price: "$699",
-		button: "Explore Cruises....",
+		button: "Explore Cruises",
 		text: "Taxes, fees and port expenses are $120.52 per person and are additional to the mentioned price, subject to change",
 	},
 	{
@@ -32,7 +32,7 @@ const images = [
 		loc: "From Savona",
 		date: "30 Oct 2024",
 		price: "$899",
-		button: "Explore Cruises....",
+		button: "Explore Cruises",
 		text: "Taxes, fees and port expenses are $96.39 per person and are additional to the mentioned price, subject to change",
 	},
 	{
@@ -42,7 +42,7 @@ const images = [
 		loc: "From Barcelona",
 		date: "11 Nov 2023",
 		price: "$879",
-		button: "Explore Cruises....",
+		button: "Explore Cruises",
 		text: "Taxes, fees and port expenses are $162 per person and are additional to the mentioned price, subject to change",
 	},
 ];
@@ -52,10 +52,10 @@ function HomeDestinations() {
 	return (
 		<div className="best-offer-head" style={{ margin: "50px" }}>
 			<div>
-				<h3 className="PoppBold" style={{ marginBottom: "10px", marginLeft: "10px" }}>
+				<h3 className="PoppBold" style={{ marginBottom: "10px", marginLeft: "10px", fontSize: '32px' }}>
 					Our Most Unique Destinations
 				</h3>
-				<h6 className="AltReg" style={{ marginBottom: "30px", marginLeft: "10px", fontWeight: 500 }}>
+				<h6 className="PoppReg" style={{ marginBottom: "30px", marginLeft: "10px", fontWeight: 500,  fontSize: '18px' }}>
 					Explore some of our most exotic destinations
 				</h6>
 			</div>
@@ -67,4 +67,5 @@ function HomeDestinations() {
 		</div>
 	);
 }
+
 export default HomeDestinations;

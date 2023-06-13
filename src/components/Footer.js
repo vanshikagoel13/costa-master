@@ -1,5 +1,6 @@
 import React from "react";
 import "../styles/Footer.css";
+import { Link } from 'react-router-dom';
 function Footer() {
   return (
     <div>
@@ -7,12 +8,10 @@ function Footer() {
         className="text-center text-lg-start text-white"
         style={{ backgroundColor: "#1078FC ", marginTop: "40px" }}
       >
-        {/* Section: Social media */}
         <section
-          className="d-flex justify-content-between p-4"
+          className="d-flex justify-content-between p-3 mb-0"
           style={{ backgroundColor: "#1078FC " }}
         >
-          {/* Left */}
           <div className="logo-wrapper me-5">
             <img
               src={process.env.PUBLIC_URL + "/logo2.png"}
@@ -20,12 +19,8 @@ function Footer() {
               className="logo"
               style={{ height: "80%" }}
             />
-            {/* <span>Get connected with us on social networks:</span> */}
           </div>
-          {/* Left */}
-
-          {/* Right */}
-          <div className="top-right-text">
+          {/* <div className="top-right-text">
             <span>
               <a
                 className="usa"
@@ -34,45 +29,17 @@ function Footer() {
                 USA - Choose your Country/Region
               </a>
             </span>
-          </div>
-          {/* <div>
-
-            <a href="" className="text-white me-4">
-              <i className="fab fa-facebook-f"></i>
-            </a>
-            <a href="" className="text-white me-4">
-              <i className="fab fa-twitter"></i>
-            </a>
-            <a href="" className="text-white me-4">
-              <i className="fab fa-google"></i>
-            </a>
-            <a href="" className="text-white me-4">
-              <i className="fab fa-instagram"></i>
-            </a>
-            <a href="" className="text-white me-4">
-              <i className="fab fa-linkedin"></i>
-            </a>
-            <a href="" className="text-white me-4">
-              <i className="fab fa-github"></i>
-            </a>
           </div> */}
-          {/* Right */}
         </section>
-        {/* Section: Social media */}
-
-        {/* Section: Links */}
         <section>
-          <div className="container text-center text-md-start mt-5">
-            {/* Grid row */}
-            <div className="row mt-3">
-              {/* Grid column */}
-              <div className="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-                {/* Content */}
-                <h6 className="text-uppercase fw-bold">COMPANY INFORMATION</h6>
+          <div className="container text-center mt-3">
+            <div className="row mt-3 justify-content-between">
+              <div className="col-md-4 col-lg-4 col-xl-4 mx-auto mb-4">
+                <h5 className="text-uppercase heading-footer fw-bold">COMPANY INFORMATION</h5>
                 <hr
                   className="mb-4 mt-0 d-inline-block mx-auto"
                   style={{
-                    width: "60px",
+                    width: "80px",
                     backgroundColor: "#7c4dff",
                     height: "2px",
                   }}
@@ -80,182 +47,112 @@ function Footer() {
                 <ul className="ul">
                   <li>
                     <a className="link-style" href="#">
-                      The Company
+                      Info about company
                     </a>
                   </li>
                   <li>
-                    <a className="link-style" href="#">
-                      Sustainability
-                    </a>
-                  </li>
-                  <li>
-                    <a className="link-style" href="#">
-                      Legal Notes
-                    </a>
-                  </li>
-                  <li>
-                    <a className="link-style" href="#">
-                      Work with us
-                    </a>
-                  </li>
-                  <li>
-                    <a className="link-style" href="#">
-                      Web Accessibility Statement
-                    </a>
-                  </li>
-                  <li>
-                    <a className="link-style" href="#">
-                      Business Partner Code of Conduct
-                    </a>
-                  </li>
-                </ul>
-              </div>
-              {/* Grid column */}
-
-              {/* Grid column */}
-              <div className="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-                {/* Links */}
-                <h6 className="text-uppercase fw-bold">
-                  SERVICES FOR COMPANIES
-                </h6>
-                <hr
-                  className="mb-4 mt-0 d-inline-block mx-auto"
-                  style={{
-                    width: "60px",
-                    backgroundColor: "#7c4dff",
-                    height: "2px",
-                  }}
-                />
-                <ul className="ul">
-                  <li>
-                    <a href="#!" className="link-style">
-                      Costa Press Center
-                    </a>
-                  </li>
-                </ul>
-              </div>
-              {/* Grid column */}
-
-              {/* Grid column */}
-              <div className="col-md-3 col-lg-3 col-xl-3 mx-auto mb-4">
-                {/* Links */}
-                <h6 className="text-uppercase fw-bold">USEFUL LINKS</h6>
-                <hr
-                  className="mb-4 mt-0 d-inline-block mx-auto"
-                  style={{
-                    width: "60px",
-                    backgroundColor: "#7c4dff",
-                    height: "2px",
-                  }}
-                />
-                <ul className="ul">
-                  <li>
-                    <a href="#!" className="link-style">
-                      Contact us
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#!" className="link-style">
+                    <Link className="link-style" to="../FAQ">
                       FAQs
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="#!" className="link-style">
-                      Travel ealth requirements
-                    </a>
+                    <Link className="link-style" to="../ContactUs">
+                      Contact us
+                    </Link>
                   </li>
                   <li>
-                    <a href="#!" className="link-style">
-                      Useful info
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#!" className="link-style">
-                      Carefree Travel Protection
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#!" className="link-style">
-                      Terms & Conditions
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#!" className="link-style">
+                    <a className="link-style" href="#">
                       Privacy Policy
                     </a>
                   </li>
                   <li>
-                    <a href="#!" className="link-style">
-                      Cookie
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#!" className="link-style">
-                      Passenger bill of rights
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#!" className="link-style">
-                      List of prohibited articles
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#!" className="link-style">
-                      Sitemap
+                    <a className="link-style" href="#">
+                      Terms and Conditions
                     </a>
                   </li>
                 </ul>
               </div>
-              {/* Grid column */}
 
-              {/* Grid column */}
-              <div className="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-                {/* Links */}
-                <h6 className="text-uppercase fw-bold">OUR FOUNDATION</h6>
-                <div className="logo-wrapper me-5">
+              <div className="col-md-4 col-lg-4 col-xl-4 mx-auto mb-4">
+                <h5 className="text-uppercase heading-footer fw-bold">USEFUL LINKS</h5>
+                <hr
+                  className="mb-4 mt-0 d-inline-block mx-auto"
+                  style={{
+                    width: "80px",
+                    backgroundColor: "#7c4dff",
+                    height: "2px",
+                  }}
+                />
+                <ul className="ul">
+                  <li>
+                    <a href="#!" className="link-style">
+                      Destionations
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#!" className="link-style">
+                      Experience
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#!" className="link-style">
+                      Costa Toscana
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#!" className="link-style">
+                      Costa Serena
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+              <div className="col-md-4 col-lg-4 col-xl-4 mx-auto mb-4">
+                <h5 className="text-uppercase heading-footer text-align-center fw-bold">OUR FOUNDATION</h5>
+                <hr
+                  className="mb-4 mt-0 d-inline-block mx-auto"
+                  style={{
+                    width: "80px",
+                    backgroundColor: "#7c4dff",
+                    height: "2px",
+                  }}
+                />
+                <div className="logo-wrapper d-flex justify-content-center me-5">
                   <img
                     src={process.env.PUBLIC_URL + "/foundationLogo.png"}
                     alt="Company Logo"
-                    className="logo"
-                    style={{ height: "80%" }}
+                    // className="logo"
+                    style={{ height: "80%", marginLeft:"14%", }}
                   />
-                  {/* <span>Get connected with us on social networks:</span> */}
                 </div>
               </div>
-              {/* Grid column */}
             </div>
-            {/* Grid row */}
           </div>
         </section>
-        {/* Section: Links */}
-
-        {/* Copyright */}
         <section
           className="d-flex justify-content-between p-4"
           style={{ backgroundColor: "rgba(0, 0, 0, 0.2)" }}
         >
           <div
-            className="logo-wrapper me-5"
-            // style={{ backgroundColor: "rgba(0, 0, 0, 0.2)" }}
+            className="logo-wrapper gst-size me-5"
           >
-            © 2023 Costa Cruises S.p.A. - VAT No. IT 0254900108 - All rights
+            © 2023 Costa Cruises S.p.A. - GST No. xxxxxxxxxxx - All rights
             reserved
           </div>
           {/* Copyright */}
-          <div className="icon">
+          <div className="icon col-lg-3 col-sm-3 col-md-3 d-flex justify-content-end">
             <a href="#!" className="text-white me-4">
-              <i className="fab fa-twitter icon"></i>
+              <i className="fab fa-facebook-f icon size-icon"></i>
+            </a>
+            <a href="https://www.instagram.com/costacruisesindia/" className="text-white me-4">
+              <i className="fab fa-instagram icon  size-icon"></i>
             </a>
             <a href="#!" className="text-white me-4">
-              <i className="fab fa-facebook-f icon"></i>
-            </a>
-            <a href="#!" className="text-white me-4">
-              <i className="fab fa-youtube icon"></i>
+              <i className="fab fa-youtube icon size-icon" ></i>
             </a>
           </div>
         </section>
       </footer>
-      {/* Footer */}
     </div>
   );
 }

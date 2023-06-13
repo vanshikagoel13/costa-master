@@ -1,0 +1,227 @@
+/* ToscanaFlagScroll.css */
+.container-offersec {
+
+	width: 92%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 4%;
+}
+
+/* ToscanaFlagScroll.css */
+
+.horizontal-scroll-container-flag-os {
+	/* display: flex; */
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.offer-zone-os {
+
+	width: 100%;
+	/* margin-top: 7%; */
+	height: 100%;
+	/* margin: auto; */
+}
+
+.image-container-flag-os {
+	width: 90%;
+	height: 100%;
+	/* Adjust the desired height of the container */
+	overflow: hidden;
+	/* display: flex; */
+	position: relative;
+	justify-content: center;
+	align-items: center;
+	/* background-color: purple; */
+}
+
+.image-container-flag-os .image-wrapper-os {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	width: 100%;
+	/* background-color: blue; */
+	height: 100%;
+}
+
+.image-container-flag-os .image-wrapper-os img {
+	justify-self: center;
+	margin: auto;
+	align-items: center;
+	width: 100%;
+	/* background-color: brown; */
+	height: auto;
+	object-fit: contain;
+}
+
+.zoom-os {
+	transition: transform 0.3s;
+}
+
+
+@media (min-width: 576px) {
+	.zoom-os:hover {
+		transform: scale(1.1);
+	}
+}
+
+.pos-flag-os {}
+
+.item-flag-os {
+
+	border-radius: 5px;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.item .item-flag-os {}
+
+.image-carousel-flag-os {
+
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	cursor: grab;
+}
+
+.image-carousel-os .image-carousel-flag-os {}
+
+.image-container-flag-os {
+	/* position: relative; */
+	padding: 20px;
+	margin: auto;
+}
+
+.image-container-os .image-container-flag-os {}
+
+.carousel-dots-os {
+
+	bottom: 20px;
+}
+
+.heading-offersection{
+	font-size: 32px;
+}
+
+.subhead-offersection{
+	font-size: 18px;
+	padding-bottom: 8px;
+}
+
+.component-background-offer{
+	position: relative;
+    top: 0;
+    left: 0;
+	text-align: flex-start;
+}
+
+.content-offer-pos{
+	position: absolute;
+	z-index:2;
+	position: absolute;
+	top: 20%;
+	left: 20%;
+	transform: translate(-50%, -50%);
+	padding: 10px;
+}
+
+.image-cta{
+	text-align:left;
+	font-size: 15px;
+	color:rgb(255, 221, 2);
+	font-weight: 800px;
+	text-decoration: none;
+}
+
+.font-nav-cta:hover {
+    text-decoration: underline;
+	text-decoration-thickness: 2px;
+	text-underline-offset:6px;
+}
+
+@media(max-width:1300px){
+	.image-container-flag-os{
+		height:40vh;
+	}
+	.image-cta{
+		font-size: 13px;
+	}
+	.content-offer-pos{
+		/* top:15%; */
+		left: 21%;
+	}
+}
+
+@media(max-width:1200px){
+	.image-container-flag-os{
+		/* height:60vh; */
+	}
+	.image-cta{
+		font-size: 11px;
+	}
+	.content-offer-pos{
+		/* top:15%; */
+		left: 23%;
+	}
+}
+
+@media(max-width:1000px){
+	.image-container-flag-os{
+		height:60vh;
+	}
+	.image-cta{
+		font-size: 14px;
+	}
+}
+
+@media(max-width:900px){
+	.image-container-flag-os{
+		height:50vh;
+	}
+	.image-cta{
+		font-size: 13px;
+	}
+}
+@media(max-width:800px){
+	.image-container-flag-os{
+		/* height:50vh; */
+	}
+	.image-cta{
+		font-size: 12px;
+	}
+}
+@media(max-width:700px){
+	.image-container-flag-os{
+		/* height:40vh; */
+	}
+	.image-cta{
+		font-size: 10px;
+	}
+}
+@media(max-width:500px){
+	.image-container-flag-os{
+		/* height:30vh; */
+	}
+	.image-cta{
+		font-size: 8px;
+	}
+	.content-offer-pos{
+		top:15%;
+	}
+}
+@media (max-width: 767px) {
+	.heading-offersection{
+		font-size: 25px;
+	}
+	
+	.subhead-offersection{
+		font-size: 14px;
+		/* padding-bottom: 8px; */
+	}
+}
+
+
+

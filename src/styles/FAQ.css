@@ -1,0 +1,16 @@
+.container-faq{
+    margin: 2% auto;
+    width: 70%;
+    text-align: center;
+}
+
+.allin-faq{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.container .container-faq{
+
+}

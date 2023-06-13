@@ -1,11 +1,11 @@
 .sail {
-	width: 90%;
+	width: 92%;
 	/* Adjust the width as needed */
-	margin-top: 40px;
+	margin-top: 7%;
 	margin-left: auto;
 	margin-right: auto;
-	background-color: rgba(214, 205, 205, 0.197);
-	padding: 20px;
+	/* background-color: rgba(214, 205, 205, 0.197); */
+	/* padding: 20px; */
 	display: flex;
 	justify-content: center;
 	/* text-align: center; */
@@ -17,7 +17,8 @@
 	justify-content: space-between;
 	align-self: center;
 	align-items: center;
-	width: 80%;
+	width: 100%;
+	/* background-color: bisque; */
 }
 
 .sail-content {
@@ -34,17 +35,18 @@
 }
 
 .sail-title {
-	font-size: 25px;
-	font-weight: 500;
+	font-size: 32px;
+	font-weight: 1000;
 }
 
 .sail-subtitle {
-	font-size: 15px;
-	margin-top: 10px;
+	font-size: 18px;
+	/* margin-top: 10px; */
 	font-weight: 300;
 }
 
 .sail-videos {
+
 	display: flex;
 	justify-content: center;
 	margin-bottom: 20px;
@@ -55,24 +57,23 @@
 	flex-grow: 1;
 	width: 60%;
 	height: 300px;
+	/* object-fit: cover; */
 	/* Decreased width to make the videos closer */
 	/* height: 300px; */
-	background-color: #cccccc;
-	margin: 2%;
+	/* background-color: #cccccc; */
+	margin: 2% 0;
 	/* Decreased margin to make the videos closer */
 }
 
 .sail-button {
 	display: block;
 	margin-inline: auto;
-	background-color: #007bff;
-	color: #ffffff;
+	background-color: rgb(255, 221, 2);
+	color: black;
 	border: none;
-	padding: 10px 20px;
-	font-size: 13px;
+	padding: 10px 30px;
+	font-size: 14px;
 }
-
-.contian
 
 /* ------------------- */
 
@@ -88,4 +89,90 @@
 .card-settings{
 	justify-items: center;
 	justify-content: center;
+}
+
+/* Media Settings */
+
+@media (max-width: 1300px) {
+	
+	.sail-video-box {
+
+		height: 300px;
+	}
+}
+
+@media (max-width: 1200px) {
+	
+	.sail-video-box {
+
+		height: 270px;
+	}
+}
+
+@media (max-width: 1100px) {
+	
+	.sail-video-box {
+
+		height: 235px;
+	}
+}
+
+@media (max-width: 1000px) {
+	
+	.sail-video-box {
+
+		height: 200px;
+	}
+} 
+
+@media (max-width: 767px) {
+
+	.sail-video-box {
+
+		height: 300px;
+		/* background-color: red; */
+	}
+	.sail-title {
+		font-size: 25px;
+		font-weight: 1000;
+	}
+	.sail-subtitle {
+		font-size: 14px;
+	}
+}
+
+@media (max-width: 710px) {
+
+	.sail-video-box {
+
+		height: 280px;
+		/* background-color: yellow; */
+	}
+}
+
+@media (max-width: 650px) {
+
+	.sail-video-box {
+
+		height: 250px;
+		/* background-color: pink; */
+	}
+}
+
+@media (max-width: 600px) {
+
+	.sail-video-box {
+
+		height: 230px;
+		/* background-color: green; */
+	}
+}
+
+@media (max-width: 550px) {
+
+	.sail-video-box {
+
+		height: 210px;
+		/* background-color: blue; */
+	}
 }

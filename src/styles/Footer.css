@@ -1,6 +1,8 @@
 .logo-wrapper {
     display: flex;
     align-items: center;
+    justify-content: center;
+    /* background-color: aqua; */
   }
   
 .logo {
@@ -16,7 +18,11 @@
 @media (max-width: 768px) {
     .logo-wrapper {
       justify-content: center;
-      margin-bottom: 1rem;
+      margin-bottom: 0.5rem;
+}
+
+.heading-footer{
+  /* font-size:28px; */
 }
   
 .top-right-text {
@@ -40,7 +46,7 @@
 .link-style{
     display: inline;
     color: white !important;
-    font-size: 15px;
+    font-size: 17px;
     text-decoration: none;
 }
 
@@ -56,12 +62,38 @@
 
 .bottom{
     text-align: left;
-    font-size: 13px;
+    font-size: 14px;
 }
 
 .icon{
     justify-self: flex-end;
+
 }
   /* .usa:hover {
     text-decoration: underline;
   } */
+.size-icon{
+  font-size: 23px;
+}
+
+.gst-size{
+  font-size: 16px;
+}
+
+@media(max-width:767px){
+  .size-icon{
+    font-size:18px;
+  }
+  .gst-size{
+    font-size: 14px;
+  }
+}
+
+@media(max-width:500px){
+  .size-icon{
+    font-size:16px;
+  }
+  .gst-size{
+    font-size: 13px;
+  }
+}

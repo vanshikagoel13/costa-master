@@ -6,6 +6,9 @@ import Home from './pages/Home';
 import CostaExp from './pages/CostaExp';
 import Destinations from './pages/Destinations';
 import CostaToscana from './pages/CostaToscana';
+import CostaSerena from './pages/CostaSerena';
+import ContactUs from './components/ContactUs';
+import FAQ from './components/FAQ';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -25,6 +28,18 @@ const router = createBrowserRouter([
 	{
 		path: "/CostaToscana",
 		element: <CostaToscana />,
+	},
+	{
+		path: "/CostaSerena",
+		element: <CostaSerena />,
+	},
+	{
+		path: "/ContactUs",
+		element: <ContactUs />,
+	},
+	{
+		path: "/FAQ",
+		element: <FAQ />,
 	},
 ]);
 

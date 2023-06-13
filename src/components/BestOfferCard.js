@@ -10,9 +10,9 @@ const images = [
     title: "Transoceanic",
     loc: "From Savona",
     date: "08 Dec 2023",
-    price: "$2329",
+    price: "$2,329",
     text: "Taxes, fees and port expenses are $153.67 per person and are additional to the mentioned price, subject to change",
-	button: "Learn more...."
+	// button: "Learn more...."
   },
   {
     id: 2,
@@ -21,7 +21,7 @@ const images = [
     loc: "From Dubai",
     date: "06 Jan 2024",
     price: "$769",
-	button: "Learn more....",
+	// button: "Learn more....",
     text: "Taxes, fees and port expenses are $94.69 per person and are additional to the mentioned price, subject to change",
   },
   {
@@ -31,7 +31,7 @@ const images = [
     loc: "From La Romana",
     date: "21 Jan 2024",
     price: "$719",
-	button: "Learn more....",
+	// button: "Learn more....",
     text: "Taxes, fees and port expenses are $113.91 per person and are additional to the mentioned price, subject to change",
   },
   {
@@ -41,7 +41,7 @@ const images = [
     loc: "From Buenos Aires",
     date: "21 Feb 2024",
     price: "$709",
-	button: "Learn more....",
+	// button: "Learn more....",
     text: "Taxes, fees and port expenses are $199.13 per person and are additional to the mentioned price, subject to change",
   },
 ];

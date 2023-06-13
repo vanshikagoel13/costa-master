@@ -1,5 +1,5 @@
 .test-box{
-    width: 90%;
+    width: 91%;
     /* height: 500px; */
     margin-top: 70px;
     margin-left:auto;
@@ -12,10 +12,14 @@
   }
   
   .test-content {
-    width: 90%;
-    /* background-color: pink; */
-    /* max-width:auto; */
-    /* max-width: 800px; */
+    width: 95%;
+   
+  }
+
+
+  .row-testimonial{
+    width:100%;
+    /* background-color: blueviolet; */
   }
   
   .test-heading {
@@ -24,7 +28,7 @@
   }
   
   .test-title {
-    font-size: 23px;
+    font-size: 32px;
     font-weight: 400;
     color: white;
     margin-top: 30px;
@@ -33,7 +37,7 @@
   }
   
   .test-subtitle {
-    font-size: 17px;
+    font-size: 18px;
     margin-top: 13px;
     /* margin-left: -5rem; */
     font-weight: 400;
@@ -43,76 +47,165 @@
   
   .test-videos {
     display: flex;
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
     justify-self:center;
-    justify-content: center;
+    /* justify-content:space-evenly; */
     margin-bottom: 0px;
+  }
+  @media (max-width:600px) {
+    .test-videos{
+      /* flex-wrap: wrap; */
+      /* width: 95% !important; */
+    }
+    /* .box{
+      width: 100%;
+    } */
+  }
+  @media (min-width: 600px) and (max-width: 800px) {
+    .test-videos{
+      /* flex-wrap: wrap; */
+      /* width:70% ; */
+    }
+    .box{
+      /* width: 100% !important; */
+    }
+  }
+
+  @media (min-width: 800px) and (max-width: 1000px) {
+    .test-videos{
+      /* flex-wrap: wrap; */
+      /* width:60%; */
+    }
+    /* .box{
+      width: 100%;
+    } */
+    .star-setting{
+      width: 20%;
+    }
+  }
+
+  @media (min-width: 1000px) and (max-width: 1100px) {
+    .test-videos{
+      /* width:100%; */
+    }
+    .box{
+      /* width: 33.33%; */
+    }
+  }
+  @media (min-width: 1100px){
+    .test-videos{
+      /* width:100%; */
+    }
+    .box{
+      /* width: 33.33%; */
+    }
   }
 
   .box {
+    /* display: flex; */
+    flex-direction: column;
     background-color: white;
     padding: 20px;
+    width: 100%;
+    height:100%;
+    margin: 0 auto;
     border: 15px solid rgb(9, 113, 186);
     /* border-radius: 4px; */
   }
+  .end-allin{
+    display: flex;
+  }
 
   .info-set{
-    /* background-color: white; */
-    /* padding: 20px; */
-    gap: 10%;
-    /* border: 15px solid rgb(9, 113, 186); */
-    /* border-radius: 4px; */
+    display: flex;
+    align-self: flex-end;
+    justify-content: space-between;
   }
   
-  .test-video-box {
+  /* .test-video-box {
     width: 400px;
     height: 280px;
     background-color: #cccccc;
     margin: 40px 5px;
     padding: 0px;
-  }
+  } */
 
   .col-setting{
+    /* flex-wrap: wrap; */
     /* background-color: white; */
     /* padding: 10px; */
   }
 
   .star-setting{
-    width: 40%;
+    width: 50%;
     height: 10%;
   }
 
-  .dp-setting{
-    width: 18%;
-    height: 65%;
+  .circular-image-container3 {
+    width: 4vw; /* Adjust the width as needed */
+    height: 4vw; /* Adjust the height as needed */
     border-radius: 50%;
     overflow: hidden;
+  }
+  
+  .circular-image-container3 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  
+  .dp3-setting{
     justify-self:left ;
   }
 
-  @media(max-width: 1000px){
-      .dp-setting{
-        width: 20%;
-        height: 45%;
+  @media(min-width: 1024px){
+      .circular-image-container3{
+        height: 4vw;
+        width: 4vw;
+      }
+      .name{
+        font-size: 14px;
       }
 
   }
-  @media(max-width: 750px){
-    .dp-setting{
-      width: 18%;
-      height: 30%;
+  @media(min-width:700px) and (max-width: 1024px){
+    .circular-image-container3{
+      height: 6vw;
+      width: 6vw;
     }
-
+    .name{
+      font-size: 12px;
+    }
+    .star-setting{
+      width: 40%;
+    }
+}
+  @media(max-width: 700px){
+    .circular-image-container3{
+      height: 10vw;
+      width: 10vw;
+    }
+    .name{
+      font-size: 12px;
+    }
+    .star-setting{
+      width: 40%;
+    }
 }
   .text-setting{
-    font-size: 14px;
+    font-size: 13.5px;
+    /* align-self: flex-end; */
+    
   }
 
   .name{
-    font-size: 18px;
+
+    font-size: 16px;
     font-weight: 100px;
-    /* text-align: right; */
+    text-align: right;
+    justify-self: end;
 
   }
   
@@ -126,8 +219,8 @@
   .info-settings{
     display:flex !important;
     justify-self: flex-end !important;
-    text-align: right !important;
-
+    /* text-align: right !important; */
+    align-self: flex-end !important;
   }
 
   

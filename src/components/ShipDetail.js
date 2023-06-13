@@ -1,6 +1,6 @@
 import React from "react";
 import "../styles/ShipDetail.css";
-import DetailPic from "../images/travel.jpeg";
+import DetailPic from "../images/opendeck.jpg";
 import Plate from "../images/plate.png";
 import Glass from "../images/glass.png";
 import Pool from "../images/pool.png";
@@ -29,7 +29,7 @@ function ShipDetail() {
             <div class="col-sm-3">
               <img src={Pool} alt="Error" className="Icon-Img"></img>
               <p className="item-count">4</p>
-              <p className="item-detail">Swimming Pools and Bath Tubs</p>
+              <p className="item-detail">Swimming Pools and Hot Tubs</p>
             </div>
             <div class="col-sm-3">
               <img src={Plate} alt="Error" className="Icon-Img"></img>

@@ -1,12 +1,23 @@
-.home-style{
-    margin-left: 80px;
-    font-size: 14px;
+.home-style {
+	margin-left: 80px;
+	font-size: 14px;
+}
+
+.custom-navbar-toggler {
+	color: black !important;
+	border-color: black !important;
+	background-color: transparent !important;
 }
 
 @media (max-width: 400px) {
-    .home-style{
-      margin-left: 60px; 
-      font-size: 14px;
-    }
-  }
-  
+	.home-style {
+		margin-left: 60px;
+		font-size: 14px;
+	}
+}
+
+.font-nav2:hover {
+    text-decoration: underline;
+	text-decoration-thickness: 3px;
+	text-underline-offset:9px;
+}

@@ -1,6 +1,6 @@
 .banner {
     position : relative;
-    /* background-image: url('/public/travel.jpeg'); */
+    background-image: url('/public/travel.jpeg');
     background-size: cover;
     background-position: center;
     height: 500px; /* Adjust the height as needed */

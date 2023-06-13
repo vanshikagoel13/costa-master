@@ -1,50 +1,125 @@
-
-.card-info{
-    width: 200px;
-    justify-content: center;
+.card-info {
+	width: 200px;
+	height: auto;
+	justify-content: center;
+	display: flex;
+	border: 2px;
+	border-radius: 0;
+	margin: 2%;
+	/* flex-direction: column; */
 }
 
-.card-title-info{
-    color: rgb(17, 167, 216);
+.card-title-info {
+	color: rgb(17, 167, 216);
 }
-.card-img-top{
-    height: 60%;
-    /* width:300px; */
-    object-fit: cover;
+
+.card-img-top {
+	height: 60%;
+	/* width:300px; */
+	object-fit: cover;
 }
-.button-info{
-    /* display: flex; */
-    margin-top: 15px;
-    font-size: 12px;
-    width: 50%;
-    color:rgb(17, 167, 216);
-    padding: 10px;
-    height: 30%;
-    justify-content: center;
-    align-items: center;
-    border: 2px solid;
-    background-color: white;
-    border-radius: 2px;
+
+.button-info {
+	/* display: flex; */
+	/* margin-top: 15px; */
+	font-size: 14px;
+	width: 60%;
+	color: rgb(17, 167, 216);
+	padding: 10px;
+	height: auto;
+	justify-content: center;
+	align-items: center;
+	border: 3px solid;
+	background-color: white;
+	border-radius: 3px;
 }
+
 .card-info .card-subtitle {
-    font-weight: 400;
-    padding-top: 10px;
-    color: black;
-    font-size: 12px;
+	font-weight: 400;
+	padding-top: 10px;
+	color: black;
+	font-size: 12px;
 
 }
-.departure{
-    margin-top: 10px;
+
+/* --------------------------- */
+
+.card-ic {
+
+	border: none;
+	height: 100%;
 }
-.departure-date{
-    margin-top: -17px;
+
+.image-body-ic {
+
+	height: 20vw;
+	width: 100%;
+	object-fit: fill;
 }
-.price{
-    margin-top: -10px;
-    color: rgba(42, 80, 247, 0.953);
+
+.card-img-top-ic {
+
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
 }
-.taxes{
-    margin-top: 15px;
-    font-size: 12px;
-    font-weight:200;
+
+.zoom {
+	transition: transform 0.3s;
+}
+
+@media {
+	.zoom:hover {
+		transform: scale(1.1);
+	}
+}
+
+/* Media Settings */
+
+@media (max-width: 700px) {
+
+	.card-info {
+
+		width: 400px !important;
+		/* background-color: blue; */
+	}
+
+	.cg {
+
+		flex-direction: column;
+	}
+
+	.image-body-ic {
+
+		height: 50vw;
+	}
+
+	.button-info {
+
+		font-size: 12px;
+	}
+}
+
+@media (max-width: 900px) and (min-width: 700px){
+
+	.card-info {
+
+		width: 400px !important;
+		/* background-color: pink; */
+	}
+
+	.cg {
+
+		flex-direction: column;
+	}
+
+	.image-body-ic {
+
+		height: 40vw;
+	}
+
+	.button-info {
+
+		font-size: 12px;
+	}
 }

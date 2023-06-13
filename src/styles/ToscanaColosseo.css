@@ -1,9 +1,12 @@
 .containertc {
 
-	max-width: 80%;
+	max-width: 80% !important;
 	margin: auto;
-	padding: 2%;
-    margin-bottom: 7%;
+	padding-left: 2%;
+	padding-bottom: 2%;
+	padding-top: 2%;
+	padding-right: 4%;
+	margin-bottom: 7%;
 }
 
 .custom-col-1-tc {
@@ -32,11 +35,12 @@
 	padding-top: 2%;
 	position: relative;
 	z-index: 2;
+	text-shadow: 2px 2px 4px white;
 }
 
 .subtitletc {
 
-	font-size: 14px;
+	font-size: 15px;
 	padding-top: 10%;
 	padding-right: 10%;
 }
