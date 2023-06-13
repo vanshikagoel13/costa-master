@@ -135,8 +135,9 @@ function ScrollHome() {
 				<Carousel
 					responsive={responsive}
 					showDots={false}
-					arrows={true}
+					arrows={false}
 					swipeable={true}
+					draggable={true}
 					centerMode={false}
 					infinite={true}
 					autoPlay={true}
@@ -147,7 +148,7 @@ function ScrollHome() {
 				>
 					{images.map((image) => {
 						return (
-							<div className="card-sh mx-4 flex">
+							<div className="card-sh flex" style={{marginRight:'5%'}}>
 								<div className="image-body-sh" style={{ height: "40%" }}>
 									<img src={process.env.PUBLIC_URL + image.url} className="card-img-top-sh img-fluid zoom" alt="..."></img>
 								</div>
