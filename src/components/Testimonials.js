@@ -67,7 +67,7 @@ function Testimonials() {
             </p>
             <div className="test-videos ">
                {/* <div className="container container-tesimonial"> */}
-                <div className="row row-testimonial"> 
+                <div className="row row-testimonial" style={{backgroundColor:'black'}}> 
                 <Carousel
                   responsive={responsive}
                   showDots={false}
