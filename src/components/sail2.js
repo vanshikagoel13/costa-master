@@ -82,7 +82,6 @@ const expr2 = [
 	},
 ];
 
-
 function Sail2() {
 
 	const [seeMore, setSeeMore] = useState(false);
@@ -98,17 +97,17 @@ function Sail2() {
 			<div className="sail">
 				<div className="sail-content">
 					<div className="sail-heading">
-						<h1 className="sail-title PoppBold" style={{ marginBottom: "1%" }}>
+						<h3 className="sail-title PoppBold" style={{ marginBottom: "1%" }}>
 							Costa Cruises, believe your eyes
-						</h1>
-						<p className="sail-subtitle PoppReg" style={{ marginBottom: "1%", fontWeight: 500 }}>
+						</h3>
+						<h6 className="sail-subtitle PoppReg" style={{ marginBottom: "1%", fontWeight: 500 }}>
 							Are you thinking of treating yourself to a memorable holiday? For
 							more than 75 years the ships of the historic Costa Cruises brand
 							have plied the seas of the world, providing dream holidays with
 							the utmost in terms of fun and relaxation. Are you ready to look
 							at the world with new eyes? We are waiting for you onboard to
 							embark on an unforgettable journey!
-						</p>
+						</h6>
 						{!seeMore ?
 							<>
 								<div className="sail-videos-container row flex-wrap">
@@ -118,7 +117,7 @@ function Sail2() {
 											height="100%"
 											src="https://www.youtube.com/embed/bymaa1FzhJ4?list=PLID-JYl2JnP2J_1Zi21Gryunn-RtGM12r"
 											title="Costa Toscana Ship Tour"
-											frameborder="0"
+											frameborder="00"
 											allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen"
 										></iframe>
 									</div>
@@ -185,28 +184,6 @@ function Sail2() {
 										></iframe>
 									</div>
 								</div>
-								<div className="sail-videos-container row flex-wrap">
-									<div className="sail-video-box col-md">
-										<iframe
-											width="100%"
-											height="100%"
-											src="https://www.youtube.com/embed/S1uxOeVsKr0"
-											title="Costa Cruise Brand Video"
-											frameborder="0"
-											allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen"
-										></iframe>
-									</div>
-									<div className="sail-video-box col-md">
-										<iframe
-											width="100%"
-											height="100%"
-											src="https://www.youtube.com/embed/lAYds1sRqP0"
-											title="Costa Serena Sailing in India"
-											frameborder="0"
-											allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen"
-										></iframe>
-									</div>
-								</div>
 								<button
 									className="sail-button PoppReg"
 									// style={{ fontWeight: "500" }}
@@ -220,8 +197,8 @@ function Sail2() {
 				</div>
 			</div>
 			{/* <div style={{ marginBottom: "2%" }}> </div> */}
-			{/* <div className="sail">
-				<div className="card-settings">
+			<div className="sail">
+				<div className="card-settings" style={{width:'100%'}}>
 					<div className="card-group cg">
 						{expr1.map((com) => (
 							<InfoCard comp={com} />
@@ -232,7 +209,7 @@ function Sail2() {
 						))}
 					</div>
 				</div>
-			</div> */}
+			</div>
 		</section>
 	);
 }

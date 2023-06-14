@@ -5,82 +5,92 @@ import HomeHeader from "../components/HomeHeader";
 import { useState } from "react";
 
 function Banner({ onBanner, offBanner }) {
+  const [isHeaderExpanded, setIsHeaderExpanded] = useState(false);
+  const [where, setWhere] = useState(false);
+  const [when, setWhen] = useState(false);
+  const [who, setWho] = useState(false);
 
-	const [isHeaderExpanded, setIsHeaderExpanded] = useState(false);
-	const [where, setWhere] = useState(false);
-	const [when, setWhen] = useState(false);
-	const [who, setWho] = useState(false);
+  const settWhere = () => {
+    setWhere(!where);
 
-	const settWhere = () => {
+    if (when) {
+      settWhen(!when);
+    }
 
-		setWhere(!where);
-		
-		if (when) {
-			settWhen(!when);
-		}
+    if (who) {
+      settWho(!who);
+    }
+  };
 
-		if (who) {
-			settWho(!who);
-		}
-	}
+  const settWhen = () => {
+    setWhen(!when);
 
-	const settWhen = () => {
+    if (where) {
+      settWhere(!where);
+    }
 
-		setWhen(!when);
-		
-		if (where) {
-			settWhere(!where);
-		}
+    if (who) {
+      settWho(!who);
+    }
+  };
 
-		if (who) {
-			settWho(!who);
-		}
-	}
+  const settWho = () => {
+    setWho(!who);
 
-	const settWho = () => {
+    if (where) {
+      settWhere(!where);
+    }
 
-		setWho(!who);
+    if (when) {
+      settWhen(!when);
+    }
+  };
 
-		if (where) {
-			settWhere(!where);
-		}
+  const handleHeaderExpand = () => {
+    setIsHeaderExpanded(true);
+    offBanner();
+  };
 
-		if (when) {
-			settWhen(!when);
-		}
-	}
+  const handleHeaderCollapse = () => {
+    setIsHeaderExpanded(false);
+    onBanner();
+  };
 
-	const handleHeaderExpand = () => {
-		setIsHeaderExpanded(true);
-		offBanner();
-	};
+  return (
+    <div className="banner">
+      <div className="banner-header">
+        <HomeHeader
+          isExpanded={isHeaderExpanded}
+          onExpand={handleHeaderExpand}
+          onCollapse={handleHeaderCollapse}
+        />
+      </div>
+      {isHeaderExpanded ? null : (
+        <>
+          <div className="component-background">
+            <video autoPlay loop muted className="background-video">
+              <source
+                src={process.env.PUBLIC_URL + "/Homebannervideo.mp4"}
+                type="video/mp4"
+              />
+            </video>
+          </div>
+          <div className="banner-content">
+            <h1 className="banner-title PoppBold">Book Your Cruise</h1>
+            <p className="banner-subtitle PoppReg">
+              Discover the world from the unique perpective of the sea
+            </p>
+			<button className="booknow-button-banner PoppReg">Book Now -&gt;</button>
+          </div>
+          
+        </>
+      )}
+    </div>
+  );
+}
+export default Banner;
 
-	const handleHeaderCollapse = () => {
-		setIsHeaderExpanded(false);
-		onBanner();
-	};
-
-	return (
-
-		<div className="banner">
-			<div className="banner-header">
-				<HomeHeader
-					isExpanded={isHeaderExpanded}
-					onExpand={handleHeaderExpand}
-					onCollapse={handleHeaderCollapse}
-				/>
-			</div>
-			{isHeaderExpanded ? null :
-				<>
-					<div className="component-background">
-						<video autoPlay loop muted className="background-video">
-							<source src={process.env.PUBLIC_URL + "/Homebannervideo.mp4"} type="video/mp4" />
-						</video>
-					</div>
-					<div className="banner-content">
-						<h1 className="banner-title">Book Your Cruise</h1>
-						<p className="banner-subtitle">Discover the world from the unique perpective of the sea</p>
-						<div className="d-flex" style={{ width: '100%' }}>
+/* <div className="d-flex" style={{ width: '100%' }}>
 							<div className="d-flex" style={{ width: '80%' }}>
 								<div className="banner-3">
 									<button onClick={settWhere} aria-haspopup="true" style={{ width: '100%', height: '100%', borderRadius: '5px', textAlign: 'left', border: 'none', }}>
@@ -159,16 +169,4 @@ function Banner({ onBanner, offBanner }) {
 										</button>
 									</div>
 								</div>
-							</div>
-						</div>
-					}
-					{!when ? null : 
-						<p>Hello</p>
-					}
-				</>
-			}
-		</div>
-	);
-}
-
-export default Banner;
+							</div>*/

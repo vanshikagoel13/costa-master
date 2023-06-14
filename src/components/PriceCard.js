@@ -7,7 +7,7 @@ function PriceCard({ imagecom }) {
 	return (
 
 		<div className="card mx-2">
-			<img src={imagecom.url} className="card-img-top" alt="..."></img>
+			<img src={imagecom.url} className="card-img-top img-fluid zoom" alt="..."></img>
 			<div className="card-body card-allin">
 				<h5 className="card-title PoppReg" style={{fontWeight: "700"}}>{imagecom.title}</h5>
 				<h6 className="card-title card-subtitle PoppReg">{imagecom.loc}</h6>

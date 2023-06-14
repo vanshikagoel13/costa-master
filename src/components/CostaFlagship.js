@@ -17,14 +17,14 @@ function CostaFlagship() {
         <h1 className="heading-flagship PoppBold">
           Welcome to the new Costa flagship
         </h1>
-        <p className="text-flagship AltReg">
+        <p className="text-flagship PoppReg">
           Climb aboard Costa Toscana: you will discover a whole new way to enjoy
           the sea
         </p>
         <div className="flag-scroll-container">
           <div className="toscana-flag-scroll">
             <ToscanaFlagScroll scrollimg={scrollimages} />
-            <p className="below-text-flag AltReg">A 'smart city', more than a ship: Costa Toscana was designed to offer a mix of technology, comfort and care for the environment.</p>
+            <p className="below-text-flag PoppReg">A 'smart city', more than a ship: Costa Toscana was designed to offer a mix of technology, comfort and care for the environment.</p>
           </div>
         </div>
 

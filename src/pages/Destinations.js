@@ -9,28 +9,29 @@ import HomeDestinations from "../components/HomeDestinations.js";
 // import BestOfferCardfrom "../components/BestOfferCard.js";
 // import DestinationDetail from "../components/DestinationDetail.js";
 import DestinationSubBanner from "../components/DestinationSubBanner.js";
+import CallNowButton from "../components/CallNowButton.js";
 
 const images = [
 	{
 		id: 1,
-		url: "/Destination/Santorini.png",
+		url: "/Destination/IndiaDestination.png",
 		title: "<u class='underline-textds'>India</u>",
 		subtitle: "A tapestry of colours",
-		text1: "Prepare to be enchanted by the alluring beauty of India, where a vibrant tapestry of colors creates a mesmerizing backdrop. Picture azure blues merging seamlessly with the earthy browns, ochres, and greens of coffee and spice plantations, crafting an infinite palette of breathtaking beauty.",
+		text1: "Prepare to be enchanted by the alluring beauty of India, where a vibrant tapestry of colors creates a mesmerizing backdrop. Picture azure blues merging seamlessly with the earthy browns, ochres, and greens of coffee and spice plantations, crafting an infinite palette ",
 		text: "Prepare to be enchanted by the alluring beauty of India, where a vibrant tapestry of colors creates a mesmerizing backdrop. Picture azure blues merging seamlessly with the earthy browns, ochres, and greens of coffee and spice plantations, crafting an infinite palette of breathtaking beauty. Every corner of this enchanting landscape holds a story that will awaken your senses and leave an indelible mark on your soul. Embark on a journey that will take you from the magnificence of Mumbai to the serene blue hues of Goa and Kochi Lakshwadeep. Explore the cultural richness, heritage, and sheer beauty that India has to offer as you cruise in ultimate style with Costa. Uncover the secrets of ancient civilizations, witness architectural marvels, and immerse yourself in a tapestry of traditions and vibrant celebrations.",
 	},
 	{
 		id: 2,
-		url: "/Destination/Santorini.png",
+		url: "/Destination/Mediterranean.png",
 		title: "<u class='underline-textds'>Mediterranean</u>",
 		subtitle: "Sunny and astounding, all year round",
-		text1:"Choose your cruise and embark at your nearest port, either in winter or summer. Depart from the Ligurian beaches of Savona or from the lively Marseilles seafront. With confidence in our decades of experience, allow us take you on a cruise across the Mediterranean Sea.",
+		text1:"Choose your cruise and embark at your nearest port, either in winter or summer. Depart from the Ligurian beaches of Savona or from the lively Marseilles seafront. With confidence in our decades of experience, allow us take you on a cruise across the Mediterranean Sea. ",
 		text: "Choose your cruise and embark at your nearest port, either in winter or summer. Depart from the Ligurian beaches of Savona or from the lively Marseilles seafront. With confidence in our decades of experience, allow us take you on a cruise across the Mediterranean Sea. Be seduced by magic sunsets and savour the best recipes and typical local dishes. Find the right route for you: choose to embark on a journey of discovery in the Eastern Mediterranean and be overwhelmed by the charms of sailing, from Dubrovnik to Athens and onward to the Aegean Sea, and end with a few days in the splendid Greek islands, with a stopover in Santorini and Mykonos, with their crystalline waters, white sandy beaches and beautiful, deep blue sky. If you're looking for history and nightlife, opt instead for the Western Mediterranean and let us guide you to the places of interest, monuments and works of art in Barcelona and Palma de Mallorca. The fun continues to the lights of Ibiza, the most sensual of the Balearic Islands, and even further, passing through the pillars of Hercules and sailing to the shores of Madeira, the Canary Islands archipelago, and Lisbon.",
 	},
 
 	{
 		id: 3,
-		url: "/Destination/Copenhagen.png",
+		url: "/Destination/NorthEurope.png",
 		title: "<u class='underline-textds'>North Europe</u>",
 		subtitle: "A sense of discovery",
 		text1: "The unspoiled, proud beauty of the wilderness that dominates the northern seas reflects the characteristics of the Viking people, once masters of these waters. Admire the majesty of the Norwegian fjords aboard our Costa ships on our cruises in the North Sea. ",
@@ -38,7 +39,7 @@ const images = [
 	},
 	{
 		id: 4,
-		url: "/Destination/Copenhagen.png",
+		url: "/Destination/Caribbean.png",
 		title: "<u class='underline-textds'>Caribbean</u>",
 		subtitle: "A tropical wonder",
 		text1: "A rainbow of colours creates the allure of this location, where the clear blues of the sea and sky mix with the infinite variety of the browns, ochres and greens of coffee and spices plantations, all framed in a breathtaking scenery. The cities you will visit during the Caribbean cruise come alive with music and fragrances ",
@@ -49,21 +50,23 @@ const images = [
 		url: "/Destination/UAE.png ",
 		title: "<u class='underline-textds'>Dubai and the Emirates</u>",
 		subtitle: "One land, a thousand and one souls",
-		text1: "Every house and every street in the desert has been painstakingly reclaimed from the suffocating presence of the sand. That's why in the UAE everything aims at greatness, excess and amazement. Magnificent mosques, one of the highest skyscrapers in the world, hotels with more stars than the vault of the sky ",
+		text1: "Every house and every street in the desert has been painstakingly reclaimed from the suffocating presence of the sand. That's why in the UAE everything aims at greatness, excess and amazement. Magnificent mosques, one of the highest skyscrapers in the world, hotels with more stars ",
 		text: "Every house and every street in the desert has been painstakingly reclaimed from the suffocating presence of the sand. That's why in the UAE everything aims at greatness, excess and amazement. Magnificent mosques, one of the highest skyscrapers in the world, hotels with more stars than the vault of the sky, theme parks from the Guinness Book of Records. This is a country where, against the backdrop of a harsh and difficult nature to tame, there is no lack of luxury, beauty, shopping and, above all, a crystal clear sea for fantastic diving. A thrill not to be missed during our cruise to Dubai is watching the sunset as the blackest of nights is created, full of stars, peace and immense beauty.",
 	},
 ];
 
 const scrollimages = [
 
-	{ id: 1, url: "/dc1.png" },
-	{ id: 2, url: "/dc2.png" },
-	{ id: 3, url: "/dc3.png" },
+	{ id: 1, url: "/DestinationBanner/India Banner - Destination.png" },
+	{ id: 2, url: "/DestinationBanner/Lakshadweep Banner - Destination .png" },
 ];
 
 const details = [
 	{
 		id: 1,
+		i1: "/Destination/November to December.png",
+		i2: "/Destination/2-5 Nights to explore.png",
+		i3: "/Destination/Departure.png",
 		img1: "/Destination/Santorini.png",
 		img2: "/Destination/Savona.png",
 		title: "A summer that never ends",
@@ -73,6 +76,9 @@ const details = [
 	},
 	{
 		id: 2,
+		i1: "/Destination/November to December.png",
+		i2: "/Destination/2-5 Nights to explore.png",
+		i3: "/Destination/Departure.png",
 		img1: "/Destination/Santorini.png",
 		img2: "/Destination/Savona.png",
 		title: "A summer that never ends",
@@ -82,6 +88,9 @@ const details = [
 	},
 	{
 		id: 3,
+		i1: "/Destination/November to December.png",
+		i2: "/Destination/2-5 Nights to explore.png",
+		i3: "/Destination/Departure.png",
 		img1: "/Destination/Copenhagen.png",
 		img2: "/Destination/Copenhagen2.png",
 		title: "A summer in the North",
@@ -91,6 +100,9 @@ const details = [
 	},
 	{
 		id: 4,
+		i1: "/Destination/November to December.png",
+		i2: "/Destination/2-5 Nights to explore.png",
+		i3: "/Destination/Departure.png",
 		img1: "/Destination/Copenhagen.png",
 		img2: "/Destination/Copenhagen2.png",
 		title: "A winter in the sun",
@@ -100,6 +112,9 @@ const details = [
 	},
 	{
 		id: 5,
+		i1: "/Destination/November to December.png",
+		i2: "/Destination/2-5 Nights to explore.png",
+		i3: "/Destination/Departure.png",
 		img1: "/Destination/Dubai_image2.jpg",
 		img2: "/Destination/Dubai.png",
 		title: "A winter between sea and desert",
@@ -109,13 +124,13 @@ const details = [
 	},
 ];
 
-const subImages = [
-	{ subid: 2, url: "/sub1.png" },
-	{ subid: 3, url: "/sub2.png" },
-	{ subid: 2, url: "/sub1.png" },
-	{ subid: 3, url: "/sub2.png" },
-	{ subid: 2, url: "/sub1.png" },
-];
+// const subImages = [
+// 	{ subid: 2, url: "/sub1.png" },
+// 	{ subid: 3, url: "/sub2.png" },
+// 	{ subid: 2, url: "/sub1.png" },
+// 	{ subid: 3, url: "/sub2.png" },
+// 	{ subid: 2, url: "/sub1.png" },
+// ];
 
 const htext = " ";
 
@@ -161,15 +176,15 @@ function Destinations() {
 					<HorizontalScroll scrollimg={[scrollimages, htext]} />
 					<div className="two-column-containerds mx-3">
 						<div className="left-columnds">
-							<h2 className="l1ds PoppBold">Explore the World</h2>
+							<h1 className="l1ds PoppBold">Explore the World</h1>
 						</div>
 						<div className="right-columnds">
-							<p className="l2ds PoppReg">
+							<h3 className="l2ds PoppReg">
 								We take you to discover unique destinations of India: from the
 								white beaches of Lakshadweep to the enchanting culture & nature
 								of Kochin & Goa. India awaits your exploration! You just have to
 								pack your bags!.{" "}
-							</p>
+							</h3>
 						</div>
 					</div>
 					<div className="container" style={{ marginBottom: "80px" }}>
@@ -182,19 +197,19 @@ function Destinations() {
 								</div>
 								<div className="col-lg-6 d-flex">
 									<div className={`text-container ${(index + 1) % 2 !== 0 ? "right-textds" : "left-textds"}`}  style={{alignSelf: 'flex-end'}}>
-										<h3 className={`PoppExBold ${(index + 1) % 2 !== 0 ? "title-style-rightds" : "title-style-leftds"}`}>
+										<h3 className={`PoppBold ${(index + 1) % 2 !== 0 ? "title-style-rightds" : "title-style-leftds"}`}>
 											<span dangerouslySetInnerHTML={{ __html: image.title }} />
 										</h3>
-										<h3 className={`PoppMed ${(index + 1) % 2 !== 0 ? "subtitle-style-rightds" : "subtitle-style-leftds"}`}>
+										<h3 className={`PoppReg ${(index + 1) % 2 !== 0 ? "subtitle-style-rightds" : "subtitle-style-leftds"}`}>
 											<span dangerouslySetInnerHTML={{ __html: image.subtitle }}/>
 										</h3>
-										<p className={`PoppMed ${(index + 1) % 2 !== 0 ? "text-style-rightds" : "text-style-leftds"}`}>
+										<p className={`PoppReg ${(index + 1) % 2 !== 0 ? "text-style-rightds" : "text-style-leftds"}`}>
 											{!readMore[index] ? (
 												<>
 													<span>
 														{image.text1}{' '}
-														<a href="#" className="clickable-text-ds" onClick={() => xyz(index)}>
-															See More
+														<a href="#" className="clickable-text-ds PoppReg" onClick={() => xyz(index)}>
+															See More-&gt;
 														</a>
 													</span>
 												</>
@@ -202,8 +217,8 @@ function Destinations() {
 												<>
 													<span>
 														{image.text}{' '}
-														<a href="#" className="clickable-text-ds" onClick={() => xyz(index)}>
-															See Less
+														<a href="#" className="clickable-text-ds PoppReg" onClick={() => xyz(index)}>
+															See Less-&gt;
 														</a>
 													</span>
 												</>
@@ -218,6 +233,7 @@ function Destinations() {
 						))}
 					</div>
 					<HomeDestinations />
+					<CallNowButton />
 					<Footer />
 				</>
 			)}

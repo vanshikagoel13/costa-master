@@ -29,18 +29,14 @@ function BannerToscana({ onBanner, offBanner }) {
 			{ isHeaderExpanded ? null : 
       		<>
 			<div className="component-backgroundts">
-				<video autoPlay loop muted className="background-videots">
-					<source
-						src={process.env.PUBLIC_URL + "/video_banner.mp4"}
-						type="video/mp4"
-					/>
-				</video>
+                <img src={process.env.PUBLIC_URL + "/Toscana/Costa Toscana Banner Image.jpg"} className="background-imagets">
+                </img>
 			</div>
 			<div className="banner-contentts">
-				<p className="banner-subtitlets">
+				<p className="banner-subtitlets PoppReg">
 					Discover
 				</p>
-				<p className="banner-titlets">Costa Toscana</p>
+				<p className="banner-titlets PoppBold">Costa Toscana</p>
 			</div>
 			</>
       		}

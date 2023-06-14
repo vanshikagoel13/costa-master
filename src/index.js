@@ -10,7 +10,7 @@ import CostaSerena from './pages/CostaSerena';
 import ContactUs from './components/ContactUs';
 import FAQ from './components/FAQ';
 import PrivacyPolicy from './components/PrivacyPolicy';
-
+import TermsConditions from './components/TermsConditions';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 const router = createBrowserRouter([
@@ -45,6 +45,10 @@ const router = createBrowserRouter([
 	{
 		path: "/PrivacyPolicy",
 		element: <PrivacyPolicy />,
+	},
+	{
+		path: "/TermsConditions",
+		element: <TermsConditions />,
 	},
 ]);
 

@@ -35,7 +35,7 @@ function Footer() {
           <div className="container text-center mt-3">
             <div className="row mt-3 justify-content-between">
               <div className="col-md-4 col-lg-4 col-xl-4 mx-auto mb-4">
-                <h5 className="text-uppercase heading-footer fw-bold">COMPANY INFORMATION</h5>
+                <h5 className="text-uppercase heading-footer fw-bold PoppReg">COMPANY INFORMATION</h5>
                 <hr
                   className="mb-4 mt-0 d-inline-block mx-auto"
                   style={{
@@ -46,27 +46,27 @@ function Footer() {
                 />
                 <ul className="ul">
                   <li>
-                    <a className="link-style" href="#">
+                    <a className="link-style PoppReg" href="../ContactUs">
                       Info about company
                     </a>
                   </li>
                   <li>
-                    <Link className="link-style" to="../FAQ">
+                    <Link className="link-style PoppReg" to="../FAQ">
                       FAQs
                     </Link>
                   </li>
-                  <li>
+                  {/* <li>
                     <Link className="link-style" to="../ContactUs">
                       Contact us
                     </Link>
-                  </li>
+                  </li> */}
                   <li>
-                    <a className="link-style" href="../PrivacyPolicy">
+                    <a className="link-style PoppReg" href="../PrivacyPolicy">
                       Privacy Policy
                     </a>
                   </li>
                   <li>
-                    <a className="link-style" href="#">
+                    <a className="link-style PoppReg" href="../TermsConditions">
                       Terms and Conditions
                     </a>
                   </li>
@@ -74,7 +74,7 @@ function Footer() {
               </div>
 
               <div className="col-md-4 col-lg-4 col-xl-4 mx-auto mb-4">
-                <h5 className="text-uppercase heading-footer fw-bold">USEFUL LINKS</h5>
+                <h5 className="text-uppercase heading-footer fw-bold PoppReg">USEFUL LINKS</h5>
                 <hr
                   className="mb-4 mt-0 d-inline-block mx-auto"
                   style={{
@@ -85,22 +85,22 @@ function Footer() {
                 />
                 <ul className="ul">
                   <li>
-                    <a href="../Destinations" className="link-style">
+                    <a href="../Destinations" className="link-style PoppReg">
                       Destionations
                     </a>
                   </li>
                   <li>
-                    <a href="../CostaExp" className="link-style">
+                    <a href="../CostaExp" className="link-style PoppReg">
                       Experience
                     </a>
                   </li>
                   <li>
-                    <a href="../CostaToscana" className="link-style">
+                    <a href="../CostaToscana" className="link-style PoppReg">
                       Costa Toscana
                     </a>
                   </li>
                   <li>
-                    <a href="../CostaSerena" className="link-style">
+                    <a href="../CostaSerena" className="link-style PoppReg">
                       Costa Serena
                     </a>
                   </li>
@@ -108,7 +108,7 @@ function Footer() {
               </div>
 
               <div className="col-md-4 col-lg-4 col-xl-4 mx-auto mb-4">
-                <h5 className="text-uppercase heading-footer text-align-center fw-bold">OUR FOUNDATION</h5>
+                <h5 className="text-uppercase heading-footer text-align-center fw-bold PoppReg">OUR FOUNDATION</h5>
                 <hr
                   className="mb-4 mt-0 d-inline-block mx-auto"
                   style={{
@@ -134,20 +134,20 @@ function Footer() {
           style={{ backgroundColor: "rgba(0, 0, 0, 0.2)" }}
         >
           <div
-            className="logo-wrapper gst-size me-5"
+            className="logo-wrapper gst-size me-5 PoppReg"
           >
             © 2023 Costa Cruises S.p.A. - GST No. xxxxxxxxxxx - All rights
             reserved
           </div>
           {/* Copyright */}
           <div className="icon col-lg-3 col-sm-3 col-md-3 d-flex justify-content-end">
-            <a href="#!" className="text-white me-4">
+            <a href="https://www.facebook.com/CostaCruiseIndia" className="text-white me-4">
               <i className="fab fa-facebook-f icon size-icon"></i>
             </a>
             <a href="https://www.instagram.com/costacruisesindia/" className="text-white me-4">
               <i className="fab fa-instagram icon  size-icon"></i>
             </a>
-            <a href="#!" className="text-white me-4">
+            <a href="https://www.youtube.com/@costacruiseindia4623" className="text-white me-4">
               <i className="fab fa-youtube icon size-icon" ></i>
             </a>
           </div>

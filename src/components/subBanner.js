@@ -13,14 +13,14 @@ function subBanner({ cont }) {
 			{contLength === 10 ?
 				<div className="d-flex" style={{ backgroundColor: 'lightgrey' }}>
 					<div style={{ width: '60%' }}>
-						<p className="PoppMed sub-head-text-1">{cont.h1}</p>
+						<p className="PoppReg sub-head-text-1">{cont.h1}</p>
 						<div className="d-flex" style={{ justifyContent: 'space-between' }}>
 							<div className="small-box" style={{ width:'25%'}}>
 								<div style={{height: '50%', width: '40%'}}>
 									<img src={Plate} className="chotu" alt="" />
 								</div>
 								<div style={{height: '50%'}}>
-									<p className="PoppMed sub-head-text">{cont.t1}</p>
+									<p className="PoppReg sub-head-text">{cont.t1}</p>
 								</div>
 							</div>
 							<div className="small-box" style={{ width:'25%'}}>
@@ -28,7 +28,7 @@ function subBanner({ cont }) {
 									<img src={Plate} className="chotu" alt="" />
 								</div>
 								<div style={{height: '50%'}}>
-									<p className="PoppMed sub-head-text">{cont.t2}</p>
+									<p className="PoppReg sub-head-text">{cont.t2}</p>
 								</div>
 							</div>
 							<div className="small-box" style={{ width:'25%'}}>
@@ -36,7 +36,7 @@ function subBanner({ cont }) {
 									<img src={Plate} className="chotu" alt="" />
 								</div>
 								<div style={{height: '50%'}}>
-									<p className="PoppMed sub-head-text">{cont.t3}</p>
+									<p className="PoppReg sub-head-text">{cont.t3}</p>
 								</div>
 							</div>
 							<div className="small-box" style={{ width:'25%'}}>
@@ -44,7 +44,7 @@ function subBanner({ cont }) {
 									<img src={Plate} className="chotu" alt="" />
 								</div>
 								<div style={{height: '50%'}}>
-									<p className="PoppMed sub-head-text">{cont.t4}</p>
+									<p className="PoppReg sub-head-text">{cont.t4}</p>
 								</div>
 							</div>
 						</div>
@@ -61,14 +61,14 @@ function subBanner({ cont }) {
 				:
 				<div className="d-flex" style={{ backgroundColor: 'lightgrey' }}>
 					<div style={{ width: '60%' }}>
-						<p className="PoppMed sub-head-text-1">{cont.h1}</p>
+						<p className="PoppReg sub-head-text-1">{cont.h1}</p>
 						<div className="d-flex" style={{ justifyContent: 'space-between' }}>
 							<div className="small-box" style={{ width:'33.33%'}}>
 								<div style={{height: '60%', width: '40%'}}>
 									<img src={Plate} className="chotu" alt="" />
 								</div>
 								<div style={{height: '40%'}}>
-									<p className="PoppMed sub-head-text">{cont.t1}</p>
+									<p className="PoppReg sub-head-text">{cont.t1}</p>
 								</div>
 							</div>
 							<div className="small-box" style={{ width:'33.33%'}}>
@@ -76,7 +76,7 @@ function subBanner({ cont }) {
 									<img src={Plate} className="chotu" alt="" />
 								</div>
 								<div style={{height: '40%'}}>
-									<p className="PoppMed sub-head-text">{cont.t2}</p>
+									<p className="PoppReg sub-head-text">{cont.t2}</p>
 								</div>
 							</div>
 							<div className="small-box" style={{ width:'33.33%'}}>
@@ -84,7 +84,7 @@ function subBanner({ cont }) {
 									<img src={Plate} className="chotu" alt="" />
 								</div>
 								<div style={{height: '40%'}}>
-									<p className="PoppMed sub-head-text">{cont.t3}</p>
+									<p className="PoppReg sub-head-text">{cont.t3}</p>
 								</div>
 							</div>
 						</div>

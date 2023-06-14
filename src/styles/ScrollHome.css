@@ -27,6 +27,7 @@
 
 	height: 100%;
 	overflow: hidden;
+	position: relative;
 }
 
 .card-img-top-sh {
@@ -34,6 +35,7 @@
 	height: 100%;
 	width: 100%;
 	object-fit: cover;
+	z-index: 0;
 }
 
 .button-sh {
@@ -173,5 +175,58 @@
 
 	.taxes-sh {
 		font-size: 12px;
+	}
+}
+
+.banner-content-home {
+
+	position: absolute;
+	height: 25%;
+	width: 20%;
+	z-index: 1;
+	bottom: 0;
+	left: 0;
+	text-align: start;
+	margin-left: auto;
+	/* background-color: red; */
+	/* filter: brightness(95%); */
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	/* background: transparent; */
+	background-color: rgba(0, 0, 0, 0.6);
+}
+
+.banner-title-home {
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 22px;
+	/* text-align: center; */
+	margin-bottom: 0;
+	color: white;
+	z-index: 3;
+	cursor: pointer;
+}
+
+
+.banner-subtitle-home {
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 12px;
+	/* text-align: center; */
+	margin-bottom: 0;
+	color: white;
+	z-index: 3;
+	cursor: pointer;
+}
+
+@media (max-width: 500px) {
+
+	.container-sh{
+		margin-top: 70px;
 	}
 }

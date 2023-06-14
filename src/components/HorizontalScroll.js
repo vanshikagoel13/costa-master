@@ -19,7 +19,7 @@ function HorizontalScroll({scrollimg}) {
 
 	return (
 		<div className="horizontal-scroll-container">
-			<h3 className="header-style AltBold" >{scrollimg[1]}</h3>
+			<h3 className="header-style PoppBold" >{scrollimg[1]}</h3>
 			<div>
 				<Slider {...settings}>
 					{scrollimg[0].map((item) => (

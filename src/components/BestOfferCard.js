@@ -57,7 +57,7 @@ function BestOfferCard() {
           Discover the Caribbean, Emirates and South America
         </h3>
         <h6
-          className="AltReg"
+          className="PoppReg"
           style={{ marginBottom: "30px", marginLeft: "10px", fontWeight: 500 }}
         >
           Escape the winter cold with these sunny destinations

@@ -33,11 +33,11 @@ function BannerSerena({ onBanner, offBanner }) {
                 </img>
 			</div>
 			<div className="banner-contentser">
-				<p className="banner-subtitleser shadow-text">
+				<p className="banner-subtitleser PoppReg">
 					Discover
 				</p>
-				<p className="banner-titleser shadow-text">Costa Serena</p>
-				<p className="banner-titleser2 shadow-text">Sailing India Nov & Dec 2023</p>
+				<p className="banner-titleser PoppBold">Costa Serena</p>
+				<p className="banner-titleser2 PoppMed">Sailing India Nov & Dec 2023</p>
 			</div>
 			</>
       		}

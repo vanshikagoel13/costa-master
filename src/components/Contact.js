@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "../styles/Contact.css";
 import contactimg from "../images/contact.png";
 // import styles from "../styles/Contact.css";
@@ -10,13 +10,22 @@ function Contact() {
       e.target.value = "";
     }
   };
+  const [otp, setOtp] = useState(false);
+
+  const handlerOtp = () => {
+    setOtp(true);
+  };
+
   return (
     <section id="Contact">
       <div className="card contact-card mb-3">
         <div className="row rowcon g-0">
           <div className="col-lg-6 d-flex" style={{ width: "40%" }}>
             <div className="image-container">
-              <img src={contactimg} className="img-fluid img-style"></img>
+              <img
+                src={process.env.PUBLIC_URL + "/Contact Us.png"}
+                className="img-fluid  img-style"
+              ></img>
             </div>
           </div>
           <div className="col-lg-6 d-flex" style={{ width: "60%" }}>
@@ -53,23 +62,21 @@ function Contact() {
                       className="phone-contact"
                     />
                   </div>
-                  <div className="row rowcon" style={{ paddingTop: "10px" }}>
-                    <div className="col-md-3 otp-container">
-                      <p className="contact-otp PoppMed">Get OTP</p>
-                    </div>
-                    <div className="col-md-9">
-                      {/* <input  className={styles['number-input'] } type="number" placeholder="Phone Number"></input> */}
-                      <input
-                        type="text"
-                        pattern="[0-9]*"
-                        onInput={handleInputChange}
-                        placeholder="Enter OTP"
-                        className="otp-container-input"
-                      />
-                    </div>
-                  </div>
                 </div>
-                <button className="contact-button">Submit</button>
+                <div className="otp-container">
+                  <h className="getotp-button PoppReg">Get OTP</h>
+                </div>
+                <div>
+                  <input
+                    type="text"
+                    pattern="[0-9]*"
+                    onInput={handleInputChange}
+                    placeholder="Enter OTP"
+                    className="otp-receiver"
+                  />
+                </div>
+
+                <button className="contact-button PoppReg">Submit</button>
               </form>
             </div>
           </div>
@@ -109,4 +116,22 @@ export default Contact;
 </div> 
 
 */
+}
+
+{
+  /* <div className="row rowcon" style={{ paddingTop: "10px" }}>
+                    <div className="col-md-3 otp-container">
+                      <p className="contact-otp PoppMed">Get OTP</p>
+                    </div>
+                    <div className="col-md-9">
+                     
+                      <input
+                        type="text"
+                        pattern="[0-9]*"
+                        onInput={handleInputChange}
+                        placeholder="Enter OTP"
+                        className="otp-container-input"
+                      />
+                    </div>
+                  </div> */
 }

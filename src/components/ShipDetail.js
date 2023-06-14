@@ -1,52 +1,68 @@
 import React from "react";
 import "../styles/ShipDetail.css";
 import DetailPic from "../images/opendeck.jpg";
-import Plate from "../images/plate.png";
-import Glass from "../images/glass.png";
-import Pool from "../images/pool.png";
-import Cabin from "../images/cabin.png";
+import Plate from "../images/Plate.png";
+import Glass from "../images/Glass.png";
+import Pool from "../images/Pool.png";
+import Cabin from "../images/Cabin.png";
 
 function ShipDetail() {
-  return (
-    <div className="allin">
-    <div class="detail-container">
-      <div class="row g-0">
-        <div class="col-sm-3 pic-col">
-          <img src={DetailPic} alt="Error" className="Ship-Img"></img>
-        </div>
-        <div class="col-sm-9 main-column-2 d-flex flex-column">
-          <div class="row h-30">
-            <div className="col-sm-12">
-              <p class="ship-heading AltBold"><br/>The ship's details</p>
-            </div>
-          </div>
-          <div class="row h-70 row-2 d-flex justify-content-between">
-            <div class="col-sm-3">
-              <img src={Cabin} alt="Error" className="Icon-Img"></img>
-              <p className="item-count">505</p>
-              <p className="item-detail">Balcony Cabins</p>
-            </div>
-            <div class="col-sm-3">
-              <img src={Pool} alt="Error" className="Icon-Img"></img>
-              <p className="item-count">4</p>
-              <p className="item-detail">Swimming Pools and Hot Tubs</p>
-            </div>
-            <div class="col-sm-3">
-              <img src={Plate} alt="Error" className="Icon-Img"></img>
-              <p className="item-count">5</p>
-              <p className="item-detail">Restaurants</p>
-            </div>
-            <div class="col-sm-3">
-              <img src={Glass} alt="Error" className="Icon-Img"></img>
-              <p className="item-count">10</p>
-              <p className="item-detail">Bars and Lounges</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    </div>
-  );
+
+	return (
+
+		<div className="allin">
+			<div class="detail-container">
+				<div className="d-flex test" style={{ backgroundColor: 'rgb(240, 239, 239)' }}>
+					<div className="d-flex" style={{ width: '30%' }}>
+						<div className="image-wrapper-sd">
+							<img src={DetailPic} className="imagine" alt="" />
+						</div>
+					</div>
+					<div style={{ width: '100%' }}>
+						<p className="PoppReg sub-head-text-1-sd">The Ship's Details</p>
+						<div className="d-flex" style={{ justifyContent: 'space-between' }}>
+							<div className="small-box-sd" style={{ width: '25%' }}>
+								<div style={{ height: '45%', width: '40%' }}>
+									<img src={Cabin} className="chotu-sd" alt="" />
+								</div>
+								<div style={{ height: '50%' }}>
+									<p className="PoppReg sub-head-text-sd">505</p>
+									<p className="PoppReg sub-head-text-sd">Balcony Cabins</p>
+								</div>
+							</div>
+							<div className="small-box-sd" style={{ width: '25%' }}>
+								<div style={{ height: '45%', width: '40%' }}>
+									<img src={Pool} className="chotu-sd" alt="" />
+								</div>
+								<div style={{ height: '50%' }}>
+									<p className="PoppReg sub-head-text-sd">4</p>
+									<p className="PoppReg sub-head-text-sd">Swimming Pools & Hot Tubs</p>
+								</div>
+							</div>
+							<div className="small-box" style={{ width: '25%' }}>
+								<div style={{ height: '45%', width: '40%' }}>
+									<img src={Plate} className="chotu-sd" alt="" />
+								</div>
+								<div style={{ height: '50%' }}>
+									<p className="PoppReg sub-head-text-sd">5</p>
+									<p className="PoppReg sub-head-text-sd">Restaurants</p>
+								</div>
+							</div>
+							<div className="small-box-sd" style={{ width: '25%' }}>
+								<div style={{ height: '45%', width: '40%' }}>
+									<img src={Glass} className="chotu-sd" alt="" />
+								</div>
+								<div style={{ height: '50%' }}>
+									<p className="PoppReg sub-head-text-sd">10</p>
+									<p className="PoppReg sub-head-text-sd">Bars & Lounges</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	);
 }
 
 export default ShipDetail;

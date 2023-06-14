@@ -161,3 +161,30 @@
 	width: 50%;
 	object-fit: cover;
 }
+
+.booknow-button-banner{
+	background-color: #fbc02d;
+    color: white;
+	border-radius: 5%;
+	border-color: transparent;
+	margin-top: 2%;
+	padding: 9px;
+    width: 20%;
+	font-size: 16px;
+	font-weight: 500px;
+    /* margin:auto; */
+}
+
+@media(max-width:700px){
+	.booknow-button-banner{
+		width:30%;
+		font-size: 14px;
+	}
+}
+
+@media(max-width:400px){
+	.booknow-button-banner{
+		width:40%;
+		font-size: 12px;
+	}
+}

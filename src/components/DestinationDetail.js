@@ -31,7 +31,7 @@ function DestinationDetail({ details }) {
           <div class="col-sm-7 main-column-2-des flex-column">
             <div class="row h-20">
               <div className="col-sm-12 heading-des">
-                <p class="ship-heading-des AltBold">
+                <p class="ship-heading-des PoppBold">
                   {/* <br /> */}
                   {details.title}
                 </p>
@@ -41,17 +41,17 @@ function DestinationDetail({ details }) {
               <div class="col-sm-4 space-des">
                 <img src={Cabin} alt="Error" className="Icon-Img-des"></img>
                 {/* <p className="item-count">505</p> */}
-                <p className="item-detail-des">{details.text1}</p>
+                <p className="item-detail-des PoppReg">{details.text1}</p>
               </div>
               <div class="col-sm-4 space-des">
                 <img src={Pool} alt="Error" className="Icon-Img-des"></img>
                 {/* <p className="item-count">4</p> */}
-                <p className="item-detail-des">{details.text2}</p>
+                <p className="item-detail-des PoppReg">{details.text2}</p>
               </div>
               <div class="col-sm-4 space-des">
                 <img src={Plate} alt="Error" className="Icon-Img-des"></img>
                 {/* <p className="item-count">5</p> */}
-                <p className="item-detail-des">{details.text3}</p>
+                <p className="item-detail-des PoppReg">{details.text3}</p>
               </div>
               {/* <div class="col-sm-3">
               <img src={Glass} alt="Error" className="Icon-Img"></img>

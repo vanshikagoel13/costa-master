@@ -20,6 +20,7 @@
 @media (max-width: 800px) {
 	.two-column-containercs {
 		grid-template-columns: 1fr;
+		margin-bottom:50px;
 		/* Change to a single column layout */
 		gap: 0px;
 	}
@@ -66,7 +67,7 @@
 }
 
 .l2cs {
-	font-size: 20px;
+	font-size: 25px;
 	font-weight: medium;
 	display: flex;
 	justify-content: flex-start;
@@ -74,8 +75,8 @@
 
 @media (max-width: 768px) {
 	.l2cs {
-		font-size: 16px;
-		justify-content: center;
+		font-size: 14px;
+		text-align: center;
 	}
 }
 
@@ -161,7 +162,7 @@
 }
 
 .rowcs {
-	margin-top: 100px !important;
+	margin-bottom: 100px !important;
 }
 
 .row .rowcs {

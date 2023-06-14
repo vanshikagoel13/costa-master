@@ -15,6 +15,7 @@ import { Modal, FormControl } from "react-bootstrap";
 // import "bootstrap/dist/css/bootstrap.min.css";
 // import Newpopup from "../components/Newpopup";
 import "../styles/Home.css";
+import CallNowButton from "../components/CallNowButton";
 
 function Home() {
   const [isBannerCollapsed, setIsBannerCollapsed] = useState(false);
@@ -51,6 +52,7 @@ function Home() {
           <Testimonials />
           <Contact />
           <div style={{ marginBottom: "70px" }}></div>
+          <CallNowButton />
           <Footer />
           <Modal show={showModal}>
             <Modal.Header onClick={handleCloseModal} closeButton></Modal.Header>
@@ -63,8 +65,8 @@ function Home() {
                 />
               </div>
 
-              <h2 className="heading">Don't Miss The Chance</h2>
-              <p className="subheading">
+              <h2 className="heading-popup PoppReg">Don't Miss The Chance</h2>
+              <p className="subheading-popup PoppReg">
                 Explore a new world of ecstasy and fun with us
               </p>
               <div className="row justify-content-center form-box">
@@ -93,7 +95,7 @@ function Home() {
                         className="mb-3 input-settings"
                         placeholder="Enter your phone number"
                       />
-                      <button type="submit" className="otp-button font-otp-popup">
+                      <button type="submit" className="otp-button font-otp-popup PoppReg">
                         Get OTP
                       </button>
                     </div>
@@ -112,7 +114,7 @@ function Home() {
             <Modal.Footer>
               <button
                 type="button"
-                className="btn submit-button"
+                className="btn submit-button PoppReg"
                 onClick={handleCloseModal}
               >
                 Submit

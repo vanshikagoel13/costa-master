@@ -12,7 +12,7 @@ function GridText() {
 	return (
 		<>
 			<div className="container con-style">
-				<h3 className="heading AltBold">Protecting the sea is our priority</h3>
+				<h3 className="heading-gridtext PoppBold">Protecting the sea is our priority</h3>
 				<div className="row" style={{marginBottom:'-2%'}}>
 					<div className="col-sm-6 col-lg-3 col-style">
 						<div className="img">
@@ -21,8 +21,8 @@ function GridText() {
 								className="image-styles"
 							></img>
 						</div>
-						<p style = {{paddingLeft: "10px"}} className="AltBold grid-title">Reuse, not waste</p>
-						<p className="text-style AltReg"><span dangerouslySetInnerHTML={{ __html: t1 }} /></p>
+						<p style = {{paddingLeft: "10px"}} className="PoppBold grid-title">Reuse, not waste</p>
+						<p className="text-style PoppReg"><span dangerouslySetInnerHTML={{ __html: t1 }} /></p>
 					</div>
 					<div className="col-sm-6 col-lg-3 col-style">
 						<div className="img">
@@ -31,8 +31,8 @@ function GridText() {
 								className="image-styles"
 							></img>
 						</div>
-						<p style = {{paddingLeft: "10px"}} className="AltBold grid-title">Even less plastic on board</p>
-						<p className="text-style AltReg"><span dangerouslySetInnerHTML={{ __html: t2 }} /></p>
+						<p style = {{paddingLeft: "10px"}} className="PoppBold grid-title">Even less plastic on board</p>
+						<p className="text-style PoppReg"><span dangerouslySetInnerHTML={{ __html: t2 }} /></p>
 					</div>
 					<div className="col-sm-6 col-lg-3 col-style">
 						<div className="img">
@@ -41,8 +41,8 @@ function GridText() {
 								className="image-styles"
 							></img>
 						</div>
-						<p style = {{paddingLeft: "10px"}} className="AltBold grid-title">Water, the most precious asset</p>
-						<p className="text-style AltReg"><span dangerouslySetInnerHTML={{ __html: t3 }} /></p>
+						<p style = {{paddingLeft: "10px"}} className="PoppBold grid-title">Water, the most precious asset</p>
+						<p className="text-style PoppReg"><span dangerouslySetInnerHTML={{ __html: t3 }} /></p>
 					</div>
 					<div className="col-sm-6 col-lg-3 col-style">
 						<div className="img">
@@ -51,8 +51,8 @@ function GridText() {
 								className="image-styles"
 							></img>
 						</div>
-						<p style = {{paddingLeft: "10px"}} className="AltBold grid-title">LNG fueled ships</p>
-						<p className="text-style AltReg"><span dangerouslySetInnerHTML={{ __html: t4 }} /></p>
+						<p style = {{paddingLeft: "10px"}} className="PoppBold grid-title">LNG fueled ships</p>
+						<p className="text-style PoppReg"><span dangerouslySetInnerHTML={{ __html: t4 }} /></p>
 					</div>
 				</div>
 			</div>

@@ -50,7 +50,9 @@ function ToscanaFlagScroll({ scrollimg }) {
                   key={image.id}
                 />
                 {/* <div className='image-text'>{image.text}</div> */}
+                <p className="cabin-below-text-flag PoppReg">{image.text}</p>
               </div>
+              
             </div>
           );
         })}

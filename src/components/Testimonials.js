@@ -26,7 +26,7 @@ const content = [
     id: "4",
     text: "Costa Cruise provided me with a voyage filled with fine luxury and cherished memories. From the moment I stepped on board, I was greeted with impeccable service, luxurious accommodations, and exquisite gourmet options. Their attention to detail and the world-class entertainment made every moment truly unforgettable. I am already planning my next cruise vacation with Costa Cruise!",
     name: "Sanket Bolinjkar",
-    url: "/Testimonials/Krishna Nair.jpeg",
+    url: "/Testimonials/testimon4.jpeg",
   },
 ];
 
@@ -67,7 +67,7 @@ function Testimonials() {
             </p>
             <div className="test-videos ">
                {/* <div className="container container-tesimonial"> */}
-                <div className="row row-testimonial" style={{backgroundColor:'black'}}> 
+                <div className="row row-testimonial" > 
                 <Carousel
                   responsive={responsive}
                   showDots={false}

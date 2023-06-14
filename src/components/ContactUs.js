@@ -23,10 +23,10 @@ function ContactUs() {
           <>
             <div className="contact-box">
               <div className="heading">
-                <h1 className="Main-Heading">Contact Us</h1>
+                <h1 className="Main-Heading PoppBold">Contact Us</h1>
               </div>
               <div className="content">
-                <h6 className="content-sub">
+                <h6 className="content-sub PoppReg">
                   We are passionate about what we do and we want to make sure
                   that your cruise experience is the best you’ve ever had, as
                   only Italian hospitality knows how. Costa Cruises is here to
@@ -47,47 +47,47 @@ function ContactUs() {
               <div className="contact-info">
                 <hr className="bg-black m-0 w-100 " />
                 <div class="grid-contact-container">
-                  <div class="grid-contact-item">Costa Club information</div>
-                  <div class="grid-contact-item">costaclub@us.costa.it</div>
+                  <div class="grid-contact-item PoppReg">Costa Club information</div>
+                  <div class="grid-contact-item PoppReg">costaclub@us.costa.it</div>
                 </div>
                 <hr className="bg-black m-0 w-100 mt-3" />
                 <div class="grid-contact-container">
-                  <div class="grid-contact-item">
+                  <div class="grid-contact-item PoppReg">
                     Cruise Information / reservation​
                   </div>
-                  <div class="grid-contact-item">
+                  <div class="grid-contact-item PoppReg">
                     Please call 1-800-462-6782
                   </div>
                 </div>
                 <hr className="bg-black m-0 w-100 mt-3" />
 
                 <div class="grid-contact-container">
-                  <div class="grid-contact-item">
+                  <div class="grid-contact-item PoppReg">
                     Post Cruise Customer Service
                   </div>
-                  <div class="grid-contact-item">customercare@us.costa.it</div>
+                  <div class="grid-contact-item PoppReg">customercare@us.costa.it</div>
                 </div>
                 <hr className="bg-black m-0 w-100 mt-3" />
                 <div class="grid-contact-container">
-                  <div class="grid-contact-item">
+                  <div class="grid-contact-item PoppReg">
                     Group, Incentives & Meetings
                   </div>
-                  <div class="grid-contact-item">groupsales@us.costa.it</div>
+                  <div class="grid-contact-item PoppReg">groupsales@us.costa.it</div>
                 </div>
                 <hr className="bg-black m-0 w-100 mt-3" />
                 <div class="grid-contact-container">
-                  <div class="grid-contact-item">Job Opportunities</div>
-                  <div class="grid-contact-item">
+                  <div class="grid-contact-item PoppReg">Job Opportunities</div>
+                  <div class="grid-contact-item PoppReg">
                     Onboard personnel<br></br>Shoreside personnel
                   </div>
                 </div>
-                <hr className="bg-black m-0 w-100 mt-3" />
+                <hr className="bg-black m-0 w-100 mt-3 PoppReg" />
                 <div class="grid-contact-container">
-                  <div class="grid-contact-item">
+                  <div class="grid-contact-item PoppReg">
                     Privacy Policy<br></br> Personal data processing statutory
                     notice
                   </div>
-                  <div class="grid-contact-item">privacy@costa.it</div>
+                  <div class="grid-contact-item PoppReg">privacy@costa.it</div>
                 </div>
                 <hr className="bg-black m-0 w-100 mt-3" />
               </div>
