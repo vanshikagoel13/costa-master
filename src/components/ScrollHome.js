@@ -307,10 +307,10 @@ function ScrollHome() {
 	return (
 
 		<div className="container-sh">
-			<h3 className="PoppBold" style={{ marginBottom: "1%" }}>
+			<h3 className=" heading-scrollhome PoppBold" style={{ marginBottom: "1%" }}>
 				Discover our India & Emirates itineraries - LIVE YOUR HOLIDAY TO THE FULLEST!
 			</h3>
-			<h6 className="PoppReg" style={{ marginBottom: "1%", fontWeight: 500 }}>
+			<h6 className=" subheading-scrollhome PoppReg" style={{ marginBottom: "1%", fontWeight: 500 }}>
 				Explore these marvellous destinations on some of the largest cruise ships and embark on a once-in-a-lifetime journey.
 			</h6>
 			<div className="gd-carousel-wrapper" style={{ marginTop: '30px' }}>
@@ -333,8 +333,8 @@ function ScrollHome() {
 								<div className="image-body-sh" style={{ height: "40%" }}>
 									<img src={process.env.PUBLIC_URL + image.url} className="card-img-top-sh img-fluid zoom" alt="..."></img>
 									<div className="banner-content-home">
-										<h className="banner-title-home PoppReg">{image.days}</h>
-										<h className="banner-subtitle-home PoppReg">nights</h>
+										<h6 className="banner-title-home PoppReg">{image.days}</h6>
+										<h6 className="banner-subtitle-home PoppReg">nights</h6>
 									</div>
 								</div>
 
@@ -342,8 +342,8 @@ function ScrollHome() {
 									<div style={{ justifyItems: "flex-start", marginLeft: "1%", marginRight: "1%", marginTop: "1%", }}>
 										<h5 className="card-title-sh PoppReg" style={{ fontWeight: "700" }}>{image.title}</h5>
 										<h6 className="card-subtitle-sh PoppReg">{image.loc}</h6>
-										<h className="departure-sh PoppReg"><small className="text-muted">{image.dates}<br /></small></h>
-										<h className="departure-sh-1 PoppReg"><small className="text-muted">{image.date}</small></h>
+										<h6 className="departure-sh PoppReg"><small className="text-muted">{image.dates}<br /></small></h6>
+										<h6 className="departure-sh-1 PoppReg"><small className="text-muted">{image.date}</small></h6>
 										<p className="price-per-person-sh PoppReg"><small className="text-muted">Price per person from</small></p>
 										<h4 className="price-sh PoppReg">{image.price}</h4>
 										<p className="taxes-sh PoppReg"><small className="text-muted">Mandatory gratuities, port taxes, taxes are not included in the above price.</small></p>

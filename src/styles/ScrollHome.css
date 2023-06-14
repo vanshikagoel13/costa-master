@@ -230,3 +230,11 @@
 		margin-top: 70px;
 	}
 }
+
+@media (max-width: 400px) {
+
+	.subheading-scrollhome{
+		font-size: 12px;
+	}
+}
+

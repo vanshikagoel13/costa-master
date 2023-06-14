@@ -50,12 +50,12 @@ const images = [
 function HomeDestinations() {
 
 	return (
-		<div className="best-offer-head" style={{ margin: "50px" }}>
+		<div className="best-offer-head">
 			<div>
-				<h3 className="PoppBold" style={{ marginBottom: "10px", marginLeft: "10px", fontSize: '32px' }}>
+				<h3 className="heading-dest-unique PoppBold" style={{ marginBottom: "10px", marginLeft: "10px", fontSize: '32px' }}>
 					Our Most Unique Destinations
 				</h3>
-				<h6 className="PoppReg" style={{ marginBottom: "30px", marginLeft: "10px", fontWeight: 500,  fontSize: '18px' }}>
+				<h6 className="subheading-dest-unique PoppReg" style={{ marginBottom: "30px", marginLeft: "10px", fontWeight: 500,  fontSize: '18px' }}>
 					Explore some of our most exotic destinations
 				</h6>
 			</div>

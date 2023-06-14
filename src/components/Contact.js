@@ -64,7 +64,7 @@ function Contact() {
                   </div>
                 </div>
                 <div className="otp-container">
-                  <h className="getotp-button PoppReg">Get OTP</h>
+                  <h5 className="getotp-button PoppReg">Get OTP</h5>
                 </div>
                 <div>
                   <input

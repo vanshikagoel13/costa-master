@@ -1,10 +1,11 @@
 .horizontal-scroll-container {
-  /* width: 90%; */
+  width: 92%;
   justify-content: center;
   align-items: center;
-  margin-top: 8px;
+  margin:auto;
+  /* margin-top: 8px;
   margin-right: 25px;
-  margin-left: 25px;
+  margin-left: 25px; */
 }
 
 /* @media (max-width: 768px) {
@@ -19,14 +20,13 @@
     margin-right: 30px; 
     margin-left: 30px;
   }
-}
+}*/
 
-@media (max-width: 480px) {
+/* @media (max-width: 480px) {
   .horizontal-scroll-container{
-    margin-right: 18px; 
-    margin-left: 18px;
+    height: 200px !important;
   }
-} */
+}  */
 
 .carousel-container {
   flex: 0;
@@ -80,6 +80,15 @@
   max-width: 100%;
   overflow: hidden;
 }
+
+@media (min-width: 400px) {
+ .horizontal-scroll-container{
+  width:100%;
+  margin-bottom: 70px;
+ }
+}
+
+
 
 .zoom {
   transition: transform 0.3s;

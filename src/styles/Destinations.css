@@ -7,13 +7,17 @@
 }
 
 .two-column-containerds {
-	margin-top: 100px;
-	margin-bottom: 100px;
+	/* margin-top: 100px; */
+	/* margin-bottom: 100px; */
+	margin-inline: auto !important;
+	width: 90%;
+	margin-top: 7%;
 	display: grid;
 	justify-content: center;
 	grid-template-columns: 1fr 1fr;
 	/* Divide the container into two columns with equal width */
-	gap: 20px;
+	gap: 2%;
+	/* background-color: #FFBF00; */
 	/* Add a gap between the columns */
 }
 
@@ -32,6 +36,7 @@
 	/* padding: 20px; */
 	align-self: center;
 	justify-self: center;
+	/* background-color: blue; */
 }
 
 .right-columnds {
@@ -41,6 +46,8 @@
 	/* padding-right: 30px; */
 	align-self: center;
 	justify-self: center;
+	/* margin: auto; */
+	/* background-color: red; */
 }
 
 @media (max-width: 768px) {
@@ -51,6 +58,7 @@
 		/* margin-top: 30px;
         margin-left: 40px;
         margin-right: 40px; */
+		/* background-color: red; */
 	}
 }
 
@@ -72,43 +80,50 @@
 	justify-content: flex-start;
 }
 
+@media (max-width: 1200px) {
+	.l1ds {
+		font-size: 45px;
+		/* background-color: blue; */
+	}
+
+	.l2ds {
+
+		font-size: 20px
+	}
+}
+
 @media (max-width: 768px) {
+	
 	.l2ds {
 		font-size: 16px;
 		justify-content: center;
 	}
 }
 
-.two-column-container2ds {
-	margin-top: 50px;
-	display: grid;
-	justify-content: center;
-	grid-template-columns: 1fr 1fr;
-	/* Divide the container into two columns with equal width */
-	gap: 10px;
-}
+@media (max-width: 500px) {
 
-@media (max-width: 800px) {
-	.two-column-container2ds {
-		grid-template-columns: 1fr;
-		/* Change to a single column layout */
-		gap: 0px;
+	.two-column-containerds {
+
+		margin-top: 10%;
 	}
 }
 
-.left-column2ds {
-	padding-left: 50px;
-	background-color: #fff;
-	/* align-self: center;
-    justify-self: center; */
-}
+@media (max-width: 400px) {
+	
+	.l1ds {
 
-.right-column2ds {
+		font-size: 30px;
+	}
+	
+	.l2ds {
+		font-size: 12px;
+		justify-content: center;
+	}
 
-	padding-right: 50px;
-	background-color: #fff;
-	/* align-self: center;
-    justify-self: center; */
+	.two-column-containerds {
+
+		margin-top: 15%;
+	}
 }
 
 .left-textds {
@@ -452,6 +467,33 @@
 		width: 100% !important;
 		height: 40px !important;
 	}
+}
+
+@media(max-width:400px){
+	.title-style-leftds,
+	.title-style-rightds {
+
+		font-size: 28px !important;
+	}
+
+	.text-style-leftds,
+	.text-style-rightds {
+
+		font-size: 13px !important;
+	}
+
+	.subtitle-style-leftds,
+	.subtitle-style-rightds {
+
+		font-size: 15px !important;
+	}
+	.rowds{
+		margin-top:50px !important;
+	}
+	/* .two-column-container2ds{
+		margin-bottom: 10px !important;
+	} */
+
 }
 
 .text-container {

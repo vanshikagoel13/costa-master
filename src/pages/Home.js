@@ -42,7 +42,7 @@ function Home() {
     <div>
       <Banner onBanner={handleBannerExpand} offBanner={handleBannerCollapse} />
       {isBannerCollapsed ? null : (
-        <>
+        <div className="vscroll-container">
           {/* <BestOfferCard /> */}
           {/* <HomeDestinations /> */}
           <OfferSection />
@@ -121,7 +121,7 @@ function Home() {
               </button>
             </Modal.Footer>
           </Modal>
-        </>
+        </div>
       )}
     </div>
   );

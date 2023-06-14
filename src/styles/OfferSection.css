@@ -365,4 +365,12 @@
 	.container-offersec{
 		margin-top: 70px;
 	}
+	
+}
+
+@media(max-width: 400px){
+	
+	.subhead-offersection{
+		font-size: 12px;
+	}
 }

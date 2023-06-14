@@ -99,3 +99,17 @@
         transform: scale(1.1);
     }
 }
+
+.best-offer-head{
+    width:92%;
+    margin:auto;
+}
+
+@media(max-width:400px){
+    .subheading-dest-unique{
+        font-size:12px !important;
+    }
+    .heading-dest-unique{
+        font-size:30px !important;
+    }
+}
