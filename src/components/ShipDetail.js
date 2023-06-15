@@ -1,10 +1,10 @@
 import React from "react";
 import "../styles/ShipDetail.css";
 import DetailPic from "../images/opendeck.jpg";
-import Plate from "../images/Plate.png";
-import Glass from "../images/Glass.png";
-import Pool from "../images/Pool.png";
-import Cabin from "../images/Cabin.png";
+import Plate from "../images/plate.png";
+import Glass from "../images/glass.png";
+import Pool from "../images/pool.png";
+import Cabin from "../images/cabin.png";
 
 function ShipDetail() {
 

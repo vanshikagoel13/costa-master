@@ -3,7 +3,7 @@ import "../styles/FAQ.css";
 import Footer from "./Footer.js";
 import TextBox from "./TextBox.js";
 import Header from "./Header";
-import NewFooter from "./NewFooter";
+// import NewFooter from "./NewFooter";
 import CallNowButton from "./CallNowButton";
 function FAQ() {
 	const [isHeaderExpanded, setIsHeaderExpanded] = useState(false);
@@ -170,7 +170,7 @@ function FAQ() {
 								/>
 							</div>
 						</div>
-						<NewFooter />
+						<Footer />
 						<CallNowButton />
 					</div>
 				)}

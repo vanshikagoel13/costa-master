@@ -37,6 +37,7 @@ function BannerToscana({ onBanner, offBanner }) {
 					Discover
 				</p>
 				<p className="banner-titlets PoppBold">Costa Toscana</p>
+				<button className="booknow-button-banner-toscana PoppReg">Book Now -&gt;</button>
 			</div>
 			</>
       		}

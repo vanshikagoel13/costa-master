@@ -128,7 +128,7 @@ import ToscanaArchie from "../components/ToscanaArchie";
 import ToscanaColosseo from "../components/ToscanaColosseo";
 import ToscanaDream from "../components/ToscanaDream";
 import CallNowButton from "../components/CallNowButton";
-import NewFooter from "../components/NewFooter";
+// import NewFooter from "../components/NewFooter";
 
 const images = [
   {
@@ -329,7 +329,7 @@ function CostaToscana() {
       />
       {isBannerCollapsed ? null : (
         <>
-          <div className="container">
+          <div className="containerts">
             {images.map((image, index) => (
               <div
                 key={image.id}
@@ -337,7 +337,7 @@ function CostaToscana() {
                   index % 2 === 0 ? "flex-row-reverse" : ""
                 }`}
               >
-                <div className="col-lg-6 class-tosca-img d-flex">
+                <div className="col-lg-6 class-tosca-img d-flex" >
                   <div className="image-containerts">
                     <img
                       src={process.env.PUBLIC_URL + image.url}
@@ -399,7 +399,7 @@ function CostaToscana() {
           <ToscanaDream scrollimages={scrollimagestos3} />
           <IdealCabin cabin={cabin} />
           <CallNowButton />
-          <NewFooter />
+          <Footer />
         </>
       )}
     </div>

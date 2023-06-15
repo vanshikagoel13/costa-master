@@ -9,6 +9,15 @@
 	margin-bottom: 7% !important;
 }
 
+@media (max-width: 400px) {
+
+	.containertc {
+
+		max-width: 90% !important;
+	}
+}
+
+
 .custom-col-1-tc {
 	
 	position: "relative";

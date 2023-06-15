@@ -1,37 +1,40 @@
-.allin-flagship {
+.allin-flagship-sf {
     display: flex;
     justify-content: center;
+    /* background-color: black; */
 }
 
-.container-flagship {
+.container-flagship-sf {
     margin-top: 7%;
     background-color: rgb(240, 239, 239);
     width: 90%;
     text-align: center;
 }
 
-.heading-flagship {
+.heading-flagship-sf {
     margin-top: 30px;
     font-size: 28px;
     color: rgb(62, 58, 58);
 }
 
-.text-flagship {
+.text-flagship-sf {
     font-size: 14px;
     font-weight: 600;
     color: rgb(95, 95, 95);
     margin-bottom: 20px;
 }
 
-.flag-scroll-container {
+.flag-scroll-container-sf {
 
     display: flex;
     justify-content: center;
     text-align: center;
     /* background-color: black; */
+
+    /* background-color: black; */
 }
 
-.toscana-flag-scroll {
+.toscana-flag-scroll-sf {
 
     /* display:flex; */
     width: 100%;
@@ -55,7 +58,7 @@
 
 @media (max-width: 400px) {
 
-    .heading-flagship {
+    .heading-flagship-sf {
 
         font-size: 25px;
     }
@@ -71,12 +74,12 @@
         object-fit: cover;
     } */
 
-    .text-flagship {
+    .text-flagship-sf {
 
         font-size: 12px;
     }
 
-    .flag-scroll-container {
+    .flag-scroll-container-sf {
 
         /* height: 50px; */
     }

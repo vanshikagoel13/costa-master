@@ -7,6 +7,12 @@
 	/* Enable vertical scrolling */
 }
 
+.img-fluid-dest {
+
+	width: 100%;
+	object-fit: cover;
+}
+
 .two-column-containerds {
 	/* margin-top: 100px; */
 	/* margin-bottom: 100px; */

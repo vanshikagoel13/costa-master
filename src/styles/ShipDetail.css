@@ -36,6 +36,7 @@
     max-width: 65%;
     max-height: 65%
 }
+
 .allin{
     display:flex;
     width:75%;
@@ -105,7 +106,8 @@
 
 	font-size: 12px;
 	text-align: center;
-	margin: 3%;
+	margin: 0 10px;
+
 }
 
 .chotu-sd {
@@ -164,7 +166,7 @@
 
     .test {
 
-        height: 130px;
+        height: 140px;
     }
 }
 
@@ -172,7 +174,7 @@
     
     .sub-head-text-1-sd {
 
-        font-size: 8px;
+        font-size: 10px;
     }
 
     .test {
@@ -183,5 +185,16 @@
     .sub-head-text-sd {
 
         font-size: 8px;
+    }
+}
+
+@media (max-width: 741px) {
+
+    .detail-container {
+        /* display: flex; */
+        width: 90%;
+        /* background-color: blue; */
+        justify-content: center;
+        align-items: center;
     }
 }

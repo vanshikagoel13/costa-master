@@ -9,7 +9,7 @@ import Footer from "../components/Footer.js";
 // import SubBanner from "../components/subBanner.js";
 import ExpSub from "../components/ExpSub.js";
 import CallNowButton from "../components/CallNowButton.js";
-import NewFooter from "../components/NewFooter";
+// import NewFooter from "../components/NewFooter";
 const images = [
 
 	{
@@ -190,7 +190,7 @@ function CostaExp() {
 						{images.map((image, index) => (
 							<div key={image.id} className={`row rowcs ${(index + 1) % 2 === 0 ? "flex-row-reverse" : ""}`}>
 								<div className="col-lg-6 d-flex">
-									<div className="image-containercs">
+									<div className="image-containercs" style={{width: '100%'}}>
 										<img src={process.env.PUBLIC_URL+ image.url} className="img-fluid zoom image-stylecs" alt={image.title} />
 									</div>
 								</div>
@@ -225,7 +225,7 @@ function CostaExp() {
 					</div>
 					<GridText />
 					<CallNowButton />
-					<NewFooter />
+					<Footer />
 				</>
 			}
 		</div>

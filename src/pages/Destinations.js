@@ -4,13 +4,14 @@ import Header from "../components/Header.js";
 import HorizontalScroll from "../components/HorizontalScroll.js";
 import "../styles/Destinations.css";
 import "../styles/Fonts.css";
-// import Footer from "../components/Footer.js";
-import NewFooter from "../components/NewFooter.js";
+import Footer from "../components/Footer.js";
+// import NewFooter from "../components/NewFooter.js";
 import HomeDestinations from "../components/HomeDestinations.js";
 // import BestOfferCardfrom "../components/BestOfferCard.js";
 // import DestinationDetail from "../components/DestinationDetail.js";
 import DestinationSubBanner from "../components/DestinationSubBanner.js";
 import CallNowButton from "../components/CallNowButton.js";
+import ScrollHome from "../components/ScrollHome.js";
 
 const images = [
 	{
@@ -192,7 +193,7 @@ function Destinations() {
 						{images.map((image, index) => (
 							<div key={image.id} className={`row rowds ${(index + 1) % 2 === 0 ? "flex-row-reverse" : ""}`}>
 								<div className="col-lg-6 d-flex">
-									<div className="image-containerds">
+									<div className="image-containerds" style={{backgroundColor: 'red', width: '100%'}}>
 										<img src={process.env.PUBLIC_URL + image.url} className="img-fluid zoom image-styleds" alt={image.title}/>
 									</div>
 								</div>
@@ -210,7 +211,7 @@ function Destinations() {
 													<span>
 														{image.text1}{' '}
 														<a href="#" className="clickable-text-ds PoppReg" onClick={() => xyz(index)}>
-															See More-&gt;
+															See More &rarr;
 														</a>
 													</span>
 												</>
@@ -219,7 +220,7 @@ function Destinations() {
 													<span>
 														{image.text}{' '}
 														<a href="#" className="clickable-text-ds PoppReg" onClick={() => xyz(index)}>
-															See Less-&gt;
+															See Less &rarr;
 														</a>
 													</span>
 												</>
@@ -233,9 +234,10 @@ function Destinations() {
 							</div>
 						))}
 					</div>
-					<HomeDestinations />
+					{/* <HomeDestinations /> */}
+					<ScrollHome />
 					<CallNowButton />
-					<NewFooter />
+					<Footer />
 				</>
 			)}
 		</div>

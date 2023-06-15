@@ -9,6 +9,14 @@
 	margin-bottom: 7% !important;
 }
 
+@media (max-width: 400px) {
+
+	.containerta {
+
+		max-width: 90% !important;
+	}
+}
+
 .custom-col-1-ta {
 	
 	position: "relative";

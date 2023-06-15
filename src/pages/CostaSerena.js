@@ -11,7 +11,7 @@ import ToscanaArchie from "../components/ToscanaArchie";
 import ToscanaColosseo from "../components/ToscanaColosseo";
 import ToscanaDream from "../components/ToscanaDream";
 import CallNowButton from "../components/CallNowButton";
-import NewFooter from "../components/NewFooter";
+// import NewFooter from "../components/NewFooter";
 
 const images = [
   {
@@ -215,7 +215,7 @@ function CostaSerena() {
       />
       {isBannerCollapsed ? null : (
         <>
-          <div className="container">
+          <div className="containerser">
             {images.map((image, index) => (
               <div
                 key={image.id}
@@ -286,7 +286,7 @@ function CostaSerena() {
           <ToscanaDream scrollimages={scrollimagesser3}/>
           <IdealCabin cabin={cabin} />
           <CallNowButton />
-          <NewFooter />
+          <Footer />
         </>
       )}
     </div>

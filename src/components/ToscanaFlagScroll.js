@@ -51,6 +51,7 @@ function ToscanaFlagScroll({ scrollimg }) {
 			window.removeEventListener("resize", handleResize);
 		};
 	}, []);
+  
   return (
     <div>
       <Carousel

@@ -195,7 +195,7 @@ function OfferSection() {
 								<img src={process.env.PUBLIC_URL + item.url} className="background-image-offer"></img>
 							</div>
 							<div className="banner-content-offer">
-								<h5 className="banner-subtitle-offer cta-hover-offer PoppBold">{item.cta}&rarr;</h5>
+								<h5 className="banner-subtitle-offer cta-hover-offer PoppBold">{item.cta}&nbsp;&rarr;</h5>
 							</div>
 						</div>
 					))}

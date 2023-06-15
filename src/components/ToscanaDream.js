@@ -1,5 +1,5 @@
 // import React from "react";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "../styles/ToscanaDream.css";
 import "../styles/test.css";
 import "../styles/Fonts.css";
@@ -73,6 +73,33 @@ const responsive = {
 };
 
 function ToscanaDream({scrollimages}) {
+
+	const [tog3, setTog3] = useState(false);
+
+	useEffect(() => {
+
+		const handleResize = () => {
+
+			const screenWidth = window.innerWidth;
+
+			if (screenWidth < 741) {
+
+				setTog3(true);
+			} else {
+
+				setTog3(false);
+			}
+		};
+
+		// Add event listener to detect window resize
+		window.addEventListener("resize", handleResize);
+
+		// Clean up the event listener on component unmount
+		return () => {
+			window.removeEventListener("resize", handleResize);
+		};
+	}, []);
+
 	const [currImage, setCurrImage] = useState(1);
 
 	const handleClick = (imageId) => {
@@ -98,6 +125,7 @@ function ToscanaDream({scrollimages}) {
 								responsive={responsive}
 								showDots={false}
 								swipeable={true}
+								arrows={!tog3 ? true : false}
 								infinite={true}
 								autoPlay={true}
 								autoPlaySpeed={3000}

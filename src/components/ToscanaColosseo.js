@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "../styles/ToscanaColosseo.css";
 import "../styles/Fonts.css";
 import Carousel from "react-multi-carousel";
@@ -82,6 +82,33 @@ const responsive = {
 	},
 };
 function ToscanaColosseo({scrollimages}) {
+
+	const [tog2, setTog2] = useState(false);
+
+	useEffect(() => {
+
+		const handleResize = () => {
+
+			const screenWidth = window.innerWidth;
+
+			if (screenWidth < 741) {
+
+				setTog2(true);
+			} else {
+
+				setTog2(false);
+			}
+		};
+
+		// Add event listener to detect window resize
+		window.addEventListener("resize", handleResize);
+
+		// Clean up the event listener on component unmount
+		return () => {
+			window.removeEventListener("resize", handleResize);
+		};
+	}, []);
+
 	const [currImage, setCurrImage] = useState(1);
 
 	const handleClick = (imageId) => {
@@ -124,6 +151,7 @@ function ToscanaColosseo({scrollimages}) {
 							<Carousel
 								responsive={responsive}
 								showDots={false}
+								arrows={!tog2 ? true : false}
 								swipeable={true}
 								infinite={true}
 								autoPlay={true}

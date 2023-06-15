@@ -2,7 +2,7 @@ import React from "react";
 import Sail2 from "../components/sail2";
 import Banner from "../components/Banner";
 import Footer from "../components/Footer";
-import NewFooter from "../components/NewFooter";
+// import NewFooter from "../components/NewFooter";
 // import BestOfferCard from '../components/BestOfferCard';
 // import HomeDestinations from '../components/HomeDestinations';
 import Testimonials from "../components/Testimonials";
@@ -54,7 +54,7 @@ function Home() {
           <Contact />
           <div style={{ marginBottom: "70px" }}></div>
           <CallNowButton />
-          <NewFooter />
+          <Footer />
           <Modal show={showModal}>
             <Modal.Header onClick={handleCloseModal} closeButton></Modal.Header>
             <Modal.Body>

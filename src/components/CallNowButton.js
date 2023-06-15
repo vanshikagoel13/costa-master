@@ -6,10 +6,12 @@ function CallNowButton() {
   return (
     <div className="floating-buttons">
     <a href="tel:2261792300" className="call-button">
-      <FaPhoneAlt />
+      {/* <FaPhoneAlt /> */}
+      <i className='fa-solid fa-phone'></i>
     </a>
     <a href="https://wa.me/+919820185084" className="whatsapp-button">
-      <FaWhatsapp />
+      {/* <FaWhatsapp /> */}
+      <i class="fa-brands fa-whatsapp"></i>
     </a>
   </div>
   )

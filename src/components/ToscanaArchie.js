@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "../styles/ToscanaArchie.css";
 import "../styles/Fonts.css";
 // import TrySlider from "../components/TrySlider";
@@ -71,7 +71,34 @@ const responsive = {
 	},
 };
 
-function ToscanaArchie({scrollimages}) {
+function ToscanaArchie({ scrollimages }) {
+
+	const [tog1, setTog1] = useState(false);
+
+	useEffect(() => {
+
+		const handleResize = () => {
+
+			const screenWidth = window.innerWidth;
+
+			if (screenWidth < 741) {
+
+				setTog1(true);
+			} else {
+
+				setTog1(false);
+			}
+		};
+
+		// Add event listener to detect window resize
+		window.addEventListener("resize", handleResize);
+
+		// Clean up the event listener on component unmount
+		return () => {
+			window.removeEventListener("resize", handleResize);
+		};
+	}, []);
+
 	const [currImage, setCurrImage] = useState(1);
 
 	const handleClick = (imageId) => {
@@ -81,7 +108,7 @@ function ToscanaArchie({scrollimages}) {
 
 	return (
 		<div
-			className=" container containerta"
+			className="container containerta"
 			style={{ backgroundColor: "rgb(240, 239, 239)" }}
 		>
 			<div className="row g-0 testta">
@@ -115,6 +142,7 @@ function ToscanaArchie({scrollimages}) {
 							<Carousel
 								responsive={responsive}
 								showDots={false}
+								arrows={!tog1 ? true : false}
 								swipeable={true}
 								infinite={true}
 								autoPlay={true}
