@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import "../styles/ContactUs.css";
 import Footer from "./Footer";
 import Header from "./Header"
+import NewFooter from "./NewFooter";
+import CallNowButton from "./CallNowButton";
 function ContactUs() {
   const [isHeaderExpanded, setIsHeaderExpanded] = useState(false);
   const handleHeaderExpand = () => {
@@ -92,7 +94,8 @@ function ContactUs() {
                 <hr className="bg-black m-0 w-100 mt-3" />
               </div>
             </div>
-            <Footer />
+            <NewFooter />
+            <CallNowButton />
           </>
         )}
       </div>

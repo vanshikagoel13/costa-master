@@ -11,7 +11,7 @@ function ExpSub ({ cont }) {
 
 		<>
 			{contLength === 15 ?
-				<div className="d-flex" style={{ backgroundColor: 'rgb(240, 239, 239)' }}>
+				<div className="d-flex test-expsub" style={{ backgroundColor: 'rgb(240, 239, 239)' }}>
 					<div style={{ width: '100%' }}>
 						<p className="PoppReg sub-head-text-1">{cont.h1}</p>
 						<div className="d-flex" style={{ justifyContent: 'space-between' }}>
@@ -59,7 +59,7 @@ function ExpSub ({ cont }) {
 					</div> */}
 				</div>
 				:
-				<div className="d-flex" style={{ backgroundColor: 'rgb(240, 239, 239)' }}>
+				<div className="d-flex test-expsub" style={{ backgroundColor: 'rgb(240, 239, 239)' }}>
 					<div style={{ width: '100%' }}>
 						<p className="PoppReg sub-head-text-1">{cont.h1}</p>
 						<div className="d-flex" style={{ justifyContent: 'space-between' }}>

@@ -1,16 +1,89 @@
-.container-faq{
+.container-faq {
     margin: 2% auto;
-    width: 70%;
-    text-align: center;
+    width: 100%;
+    text-align: left;
 }
 
-.allin-faq{
+.allin-faq {
     display: flex;
     justify-content: center;
     flex-direction: column;
     text-align: center;
 }
 
-.container .container-faq{
-
+.widset{
+    width:15%;
 }
+
+@media(max-width:800px){
+    .head-faq{
+        font-size:30px !important;
+    }
+    .widset{
+        width:20%;
+    }
+}
+.scroll-container {
+    height: 500px;
+    margin-bottom: 2%;
+    display: flex;
+    scrollbar-width: none;
+    scrollbar-color: transparent transparent;
+    width: 80%;
+    margin-inline: auto;
+    /* background-color: bisque; */
+    /* Set the desired height for the scrolling area */
+    overflow-y: scroll;
+    /* Enable vertical scrolling */
+}
+
+.scroll-container {
+    overflow-y: scroll;
+    /* Enable vertical scrolling */
+    scrollbar-width: thin;
+    /* Set the width of the scrollbar */
+    scrollbar-color: transparent transparent;
+    /* Set the color of the scrollbar track and thumb */
+}
+
+/* For WebKit browsers (e.g., Chrome, Safari) */
+.scroll-container::-webkit-scrollbar {
+    width: 6px;
+    /* Set the width of the scrollbar */
+}
+
+.scroll-container::-webkit-scrollbar-track {
+    background-color: transparent;
+    /* Set the background color of the scrollbar track */
+}
+
+@media (max-width: 1300px) {
+    
+    .scroll-container {
+
+        width: 80%;
+    }
+}
+
+@media (max-width: 1000px) {
+    
+    .scroll-container {
+
+        width: 90%;
+    }
+}
+
+@media (max-width: 700px) {
+    
+    .scroll-container {
+
+        width: 100%;
+    }
+}
+
+.scroll-container::-webkit-scrollbar-thumb {
+    background-color: transparent;
+    /* Set the color of the scrollbar thumb */
+}
+
+.container .container-faq {}

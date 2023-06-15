@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import "../styles/PrivacyPolicy.css";
 import Footer from "./Footer";
 import Header from "./Header";
+import NewFooter from "./NewFooter";
+import CallNowButton from "./CallNowButton";
 function PrivacyPolicy() {
   const [isHeaderExpanded, setIsHeaderExpanded] = useState(false);
   const handleHeaderExpand = () => {
@@ -149,7 +151,8 @@ function PrivacyPolicy() {
               </div>
             </div>
 
-            <Footer />
+            <NewFooter />
+            <CallNowButton />
           </>
         )}
       </div>

@@ -27,6 +27,8 @@
   /* Add more styles as desired */
   
   .floating-buttons {
+    z-index:10;
+    /* position:relative; */
     position: fixed;
     bottom: 20px;
     right: 30px;
@@ -48,6 +50,7 @@
     color: #fff;
     text-decoration: none;
     font-size: 30px;
+    
     transition: background-color 0.3s;
   }
   

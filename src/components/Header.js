@@ -33,7 +33,7 @@ function Header({ isExpanded, onExpand, onCollapse }) {
 			<nav className="navbar navbar-expand-lg bh-transparent mt-2">
 				<div className="container-fluid">
 					<button
-						className="navbar-toggler custom-navbar-toggler"
+						className="navbar-toggler sizeofmenu2 custom-navbar-toggler"
 						type="button"
 						data-bs-toggle="collapse"
 						data-bs-target="#navbarSupportedContent"

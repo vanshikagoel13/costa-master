@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "../styles/Contact.css";
 import contactimg from "../images/contact.png";
+import { Button } from "react-bootstrap";
 // import styles from "../styles/Contact.css";
 
 function Contact() {
@@ -63,9 +64,10 @@ function Contact() {
                     />
                   </div>
                 </div>
-                <div className="otp-container">
-                  <h5 className="getotp-button PoppReg">Get OTP</h5>
-                </div>
+                <button className="otp-container PoppReg">
+                Get OTP
+                  {/* <h5 className="getotp-button PoppReg"></h5> */}
+                </button>
                 <div>
                   <input
                     type="text"

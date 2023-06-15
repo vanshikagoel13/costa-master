@@ -11,7 +11,7 @@ import ToscanaArchie from "../components/ToscanaArchie";
 import ToscanaColosseo from "../components/ToscanaColosseo";
 import ToscanaDream from "../components/ToscanaDream";
 import CallNowButton from "../components/CallNowButton";
-
+import NewFooter from "../components/NewFooter";
 
 const images = [
   {
@@ -74,22 +74,22 @@ const cabin = [
 
 	{
 		id: 1,
-		url: "/Serena-Cabin/cabin1.jpg",
+		url: "/Serena-Cabin/cabin1.png",
 		text: "Balcony Cabin",
 	},
 	{
 		id: 2,
-		url: "/Serena-Cabin/cabin2.jpg",
+		url: "/Serena-Cabin/cabin2.png",
 		text: "Oceanview Cabin",
 	},
 	{
 		id: 3,
-		url: "/Serena-Cabin/cabin3.jpg",
+		url: "/Serena-Cabin/cabin3.png",
 		text: "Suite Balcony Cabin",
 	},
 	{
 		id: 4,
-		url: "/Serena-Cabin/Inside Cabin.jpg",
+		url: "/Serena-Cabin/Inside Cabin.png",
 		text: "Inside Cabin",
 	},
 ];
@@ -286,7 +286,7 @@ function CostaSerena() {
           <ToscanaDream scrollimages={scrollimagesser3}/>
           <IdealCabin cabin={cabin} />
           <CallNowButton />
-          <Footer />
+          <NewFooter />
         </>
       )}
     </div>

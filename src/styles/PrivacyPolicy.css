@@ -58,6 +58,11 @@
     .grid-contact-item{
         font-size: 0.9rem;
     }
+    
+    .main-heading{
+        font-size: 1.1rem;
+        line-height: 1rem;
+    }
     .content-sub{
         font-size: 0.9rem;
     }

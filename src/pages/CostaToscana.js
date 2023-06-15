@@ -128,6 +128,7 @@ import ToscanaArchie from "../components/ToscanaArchie";
 import ToscanaColosseo from "../components/ToscanaColosseo";
 import ToscanaDream from "../components/ToscanaDream";
 import CallNowButton from "../components/CallNowButton";
+import NewFooter from "../components/NewFooter";
 
 const images = [
   {
@@ -228,7 +229,7 @@ const scrollimagestos2 = [
   },
   {
     id: 4,
-    url: "/colosseotos/KIds Club.png",
+    url: "/colosseotos/Kidsclub.png",
     title: "Kids Club",
     text: "We take care of the little ones from 3 to 11 years old, offering many fun and stimulating activities!",
   },
@@ -307,7 +308,6 @@ const scrollimagestos3 = [
     title: "Shopping",
     text: "Shopping Gallery, with its exclusive boutiques that are perfect for window shopping or some indulgence. You can purchase beautiful gifts on board, and everything that you may need for your cruise.",
   },
-
 ];
 
 function CostaToscana() {
@@ -394,12 +394,12 @@ function CostaToscana() {
               </p>
             </div>
           </div>
-          <ToscanaArchie scrollimages={scrollimagestos1}/>
+          <ToscanaArchie scrollimages={scrollimagestos1} />
           <ToscanaColosseo scrollimages={scrollimagestos2} />
-          <ToscanaDream scrollimages={scrollimagestos3}/>
+          <ToscanaDream scrollimages={scrollimagestos3} />
           <IdealCabin cabin={cabin} />
           <CallNowButton />
-          <Footer />
+          <NewFooter />
         </>
       )}
     </div>

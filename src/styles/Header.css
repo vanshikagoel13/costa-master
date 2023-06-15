@@ -21,3 +21,10 @@
 	text-decoration-thickness: 3px;
 	text-underline-offset:9px;
 }
+
+@media(max-width:700px){
+	.sizeofmenu2{
+		font-size: 0.7rem !important;
+	}
+}
+

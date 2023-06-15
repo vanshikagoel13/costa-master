@@ -2,6 +2,7 @@
 	height: 100vh;
 	/* Set the height of the container to occupy the full viewport height */
 	overflow-y: scroll;
+	overflow-x: hidden;
 	/* background-color: red; */
 	/* Enable vertical scrolling */
 }

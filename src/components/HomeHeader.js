@@ -36,8 +36,8 @@ function HomeHeader({ isExpanded, onExpand, onCollapse }) {
           <button
             className={
               isNavCollapsed
-                ? "navbar-toggler hhcustom-navbar-toggler"
-                : "navbar-toggler nncustom-navbar-toggler"
+                ? "navbar-toggler sizeofmenu hhcustom-navbar-toggler"
+                : "navbar-toggler sizeofmenu nncustom-navbar-toggler"
             }
             type="button"
             data-bs-toggle="collapse"
@@ -46,6 +46,7 @@ function HomeHeader({ isExpanded, onExpand, onCollapse }) {
             aria-expanded={!isNavCollapsed}
             aria-label="Toggle navigation"
             onClick={handleNavCollapse}
+            
             style={{
               fontSize: "1.0rem",
               // color: isNavCollapsed ? "#000" : "#000",

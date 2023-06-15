@@ -1,14 +1,13 @@
 import { React, useState } from "react";
 import "../styles/sail2.css";
 import "../styles/Fonts.css";
-import Card from "./InfoCard";
 import InfoCard from "./InfoCard";
 
 const expr1 = [
 	{
 		id: "1",
 		title: "Accomodation",
-		text: "The cabin of your dreams, every Costa cabin is comfortable and cozy. The perfect place to relax after a busy day of activities and socializing, both on board and ashore. Costa has different types of cabins in terms of size and location that enable you to find the space that best suits your needs. We have Inside, Ocean View, Balcony or Suite cabins available, all of which are designed to provide maximum comfort, elegance and relaxation.",
+		text: "The cabin of your dreams, every Costa cabin is comfortable and cozy. The perfect place to relax after a busy day of activities and socializing, both on board and ashore. Costa has different types of cabins in terms of size and location that enable you to find the space that best suits your needs.",
 		images: [
 			{ iid: "1", url: "/Experiences/Accomodation/cabin1.jpg" },
 			{ iid: "2", url: "/Experiences/Accomodation/cabin2.jpg" },
@@ -32,7 +31,7 @@ const expr1 = [
 	{
 		id: "3",
 		title: "Corporate",
-		text: "We make conducting meetings, rewards, recognition, conferences and workshops at sea on a Costa cruise not only one of the most efficient but also economical ways to stage your event. We have hosted events of some of the top corporates in India and you will be amazed at how easy and affordable it is to conduct an event onboard a Costa Cruise ship, giving that wow factor to your clients or employees. So, let's help combine some work and some fun onboard your next Costa Cruise.",
+		text: "We make conducting meetings, rewards, recognition, conferences and workshops at sea on a Costa cruise not only one of the most efficient but also economical ways to stage your event. So, let's help combine some work and some fun onboard your next Costa Cruise.",
 		images: [
 			{ iid: "1", url: "/Experiences/Corporate/ci1.jpg" },
 			{ iid: "2", url: "/Experiences/Corporate/ci2.jpeg" },
@@ -46,7 +45,7 @@ const expr2 = [
 	{
 		id: "1",
 		title: "Destinations",
-		text: "Your holiday starts with your imagery. What does your gut say? Where does your heart take you? Imagine yourself already there. We take you to discover every corner of the world: from exploring the shores of Incredible India, to the white beaches of the Caribbean to the unspoiled nature of Northern Europe, from the silence of the desert in the United Arab Emirates to the bright colors of South America. The world is all to be explored: you just have to pack your bags!",
+		text: "Your holiday starts with your imagery. What does your gut say? Where does your heart take you? Imagine yourself already there. We take you to discover every corner of the world: you just have to pack your bags!",
 		images: [
 			{ iid: "1", url: "/Experiences/Destination/Cruise 1.png" },
 			{ iid: "2", url: "/Experiences/Destination/Dubai 1.png" },
@@ -58,7 +57,7 @@ const expr2 = [
 	{
 		id: "2",
 		title: "Entertainment",
-		text: "Let yourself be carried away by the entertainment. Whether you’re on board for a romantic trip for two, on cruise with your family or friends, we are here to ensure you have fun and live out your dreams. Every day you can wake up and plunge into the swimming pool, challenge your friends in the games room, and do a bit of shopping in our stores. And in the evening, shows and special performances are waiting for you at the theatre, to make every moment of your vacation unforgettable!",
+		text: "Let yourself be carried away by the entertainment. Every day you can wake up and plunge into the swimming pool, challenge your friends in the games room, and do a bit of shopping in our stores. And in the evening, shows and special performances are waiting for you at the theatre, to make every moment of your vacation unforgettable!",
 		images: [
 			{ iid: "1", url: "/Experiences/Entertainment/Entertainment 1.jpg" },
 			{ iid: "2", url: "/Experiences/Entertainment/Entertainment 2(1).jpg" },
@@ -111,17 +110,17 @@ function Sail2() {
 						{!seeMore ?
 							<>
 								<div className="sail-videos-container row flex-wrap">
-									<div className="sail-video-box col-md">
+									<div className="sail-video-box col-md" style={{ paddingLeft: 0, marginLeft: 0 }}>
 										<iframe
 											width="100%"
 											height="100%"
 											src="https://www.youtube.com/embed/bymaa1FzhJ4?list=PLID-JYl2JnP2J_1Zi21Gryunn-RtGM12r"
 											title="Costa Toscana Ship Tour"
-											frameborder="00"
+											frameborder="0"
 											allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen"
 										></iframe>
 									</div>
-									<div className="sail-video-box col-md">
+									<div className="sail-video-box col-md" style={{ paddingLeft: 0, marginLeft: 0 }}>
 										<iframe
 											width="100%"
 											height="100%"
@@ -141,7 +140,7 @@ function Sail2() {
 								</button>
 							</> : <>
 								<div className="sail-videos-container row flex-wrap">
-									<div className="sail-video-box col-md">
+									<div className="sail-video-box col-md" style={{ paddingLeft: 0, marginLeft: 0 }}>
 										<iframe
 											width="100%"
 											height="100%"
@@ -151,7 +150,7 @@ function Sail2() {
 											allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen"
 										></iframe>
 									</div>
-									<div className="sail-video-box col-md">
+									<div className="sail-video-box col-md" style={{ paddingLeft: 0, marginLeft: 0 }}>
 										<iframe
 											width="100%"
 											height="100%"
@@ -163,7 +162,7 @@ function Sail2() {
 									</div>
 								</div>
 								<div className="sail-videos-container row flex-wrap">
-									<div className="sail-video-box col-md">
+									<div className="sail-video-box col-md" style={{ paddingLeft: 0, marginLeft: 0 }}>
 										<iframe
 											width="100%"
 											height="100%"
@@ -173,7 +172,7 @@ function Sail2() {
 											allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen"
 										></iframe>
 									</div>
-									<div className="sail-video-box col-md">
+									<div className="sail-video-box col-md" style={{ paddingLeft: 0, marginLeft: 0 }}>
 										<iframe
 											width="100%"
 											height="100%"
@@ -203,7 +202,7 @@ function Sail2() {
 						{expr1.map((com) => (
 							<InfoCard comp={com} />
 						))}
-						<div class="w-100 row-settings"></div>
+						<div className="w-100 row-settings"></div>
 						{expr2.map((com) => (
 							<InfoCard comp={com} />
 						))}

@@ -94,3 +94,11 @@
         font-size: 8px;
     }
 }
+
+@media (max-width: 400px) {
+    
+    .test-expsub {
+
+        height: 135px;
+    }
+}

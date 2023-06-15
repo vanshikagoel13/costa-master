@@ -4,7 +4,8 @@ import Header from "../components/Header.js";
 import HorizontalScroll from "../components/HorizontalScroll.js";
 import "../styles/Destinations.css";
 import "../styles/Fonts.css";
-import Footer from "../components/Footer.js";
+// import Footer from "../components/Footer.js";
+import NewFooter from "../components/NewFooter.js";
 import HomeDestinations from "../components/HomeDestinations.js";
 // import BestOfferCardfrom "../components/BestOfferCard.js";
 // import DestinationDetail from "../components/DestinationDetail.js";
@@ -234,7 +235,7 @@ function Destinations() {
 					</div>
 					<HomeDestinations />
 					<CallNowButton />
-					<Footer />
+					<NewFooter />
 				</>
 			)}
 		</div>

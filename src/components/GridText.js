@@ -13,7 +13,7 @@ function GridText() {
 		<>
 			<div className="container con-style">
 				<h3 className="heading-gridtext PoppBold">Protecting the sea is our priority</h3>
-				<div className="row" style={{marginBottom:'-2%'}}>
+				<div className="row rowgt" style={{marginBottom:'-2%'}}>
 					<div className="col-sm-6 col-lg-3 col-style">
 						<div className="img">
 							<img

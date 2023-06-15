@@ -1,7 +1,7 @@
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import "../styles/ToscanaFlagScroll.css";
-
+import React, {useEffect, useState} from "react";
 const responsive = {
   desktop: {
     breakpoint: { max: 3000, min: 1024 },
@@ -26,6 +26,31 @@ const responsive = {
 };
 
 function ToscanaFlagScroll({ scrollimg }) {
+  const [tog, setTog] = useState(false);
+
+	useEffect(() => {
+
+		const handleResize = () => {
+
+			const screenWidth = window.innerWidth;
+
+			if (screenWidth < 800) {
+
+				setTog(true);
+			} else {
+
+				setTog(false);
+			}
+		};
+
+		// Add event listener to detect window resize
+		window.addEventListener("resize", handleResize);
+
+		// Clean up the event listener on component unmount
+		return () => {
+			window.removeEventListener("resize", handleResize);
+		};
+	}, []);
   return (
     <div>
       <Carousel
@@ -33,7 +58,7 @@ function ToscanaFlagScroll({ scrollimg }) {
         showDots={true}
         arrows={false}
         swipeable={true}
-        centerMode={true}
+        centerMode={!tog ? true : false}
         infinite={true}
         // partialVisbile={true}
         autoPlay={true}

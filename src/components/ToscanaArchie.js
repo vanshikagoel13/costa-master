@@ -85,7 +85,7 @@ function ToscanaArchie({scrollimages}) {
 			style={{ backgroundColor: "rgb(240, 239, 239)" }}
 		>
 			<div className="row g-0 testta">
-				<div className="col custom-col-1 d-flex text-decorta" style={{ width: "25%" }}>
+				<div className="col custom-col-1-ta d-flex text-decorta" style={{ width: "25%" }}>
 					<div style={{ width: "100%" }}>
 						<p className="categoryta PoppReg">RESTAURANTS AND BARS</p>
 						<h1 className="titleta PoppBold">
@@ -100,7 +100,7 @@ function ToscanaArchie({scrollimages}) {
 					className="col d-flex img-decorta"
 					style={{ width: "75%", position: "relative" }}
 				>
-					<div className="custom-col-2">
+					<div className="custom-col-2-ta">
 						<div
 							className="image-containerta"
 							style={{ position: "relative", zIndex: "1" }}

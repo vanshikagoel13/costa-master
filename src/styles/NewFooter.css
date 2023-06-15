@@ -1,0 +1,244 @@
+.column1-footer {
+    /* width:70%; */
+    /* background-color: aliceblue; */
+}
+
+.column1-settings {
+
+    width: 90%;
+    /* display: flex;
+    flex-direction: column; */
+    /* justify-content: center; */
+    margin: auto;
+    padding-top: 20px;
+}
+
+.cont-footer {
+
+    overflow-x: hidden;
+}
+
+.links-head {
+
+    color: orange;
+    text-align: left;
+    /* font-size: 60px; */
+    margin: 2% 0;
+}
+
+.logo-details {
+
+    margin-left: 20px;
+    color: white;
+    text-align: left;
+    /* max-width: 80%; */
+}
+
+.company-name-sec {
+
+    justify-content: flex-start;
+    margin-top: 2%;
+}
+
+.logo-foot {
+
+    height: 65px;
+    width: 80px;
+}
+
+.custom-col-1-newfooter {
+    max-width: 70%;
+    margin-bottom: 1%;
+}
+
+.company-logo {
+
+    height: auto;
+    width: 100%;
+    object-fit: cover;
+}
+
+.custom-col-2-newfooter {
+    max-width: 30%;
+    margin-top: 20px;
+    justify-content: left;
+}
+
+.foot-content {
+
+    text-align: left;
+    margin-top: 4%;
+    margin-bottom: 5%;
+    color: rgb(189, 189, 189);
+}
+
+.social-icons {
+
+    padding-left: 20px;
+}
+
+.book-now,
+.customer-support {
+
+    text-align: left;
+    color: white;
+    margin-top: 4%;
+}
+
+.headers {
+
+    margin: 2% 0;
+}
+
+.mail-num-details {
+
+    font-size: 16px;
+}
+
+.links {
+
+    text-align: start;
+    color: white;
+}
+
+.link-style {
+    text-decoration: none;
+    color: inherit;
+}
+
+.all-links {
+
+    margin-top: 40px;
+}
+
+@media (max-width: 500px) {
+
+    .foot-content {
+
+        font-size: 10px;
+    }
+
+    .mail-num-details {
+
+        font-size: 12px;
+    }
+/* 
+    .company-logo {
+
+        height: 20% !important;
+    } */
+
+    .headers {
+
+        font-size: 14px;
+    }
+
+    .logo-foot {
+
+        height: 60px;
+        width: 75px;
+        /* background-color: black; */
+        object-fit: cover !important;
+    }
+
+    .logo-details {
+
+        font-size: 10px;
+    }
+
+    .costa-cruise {
+
+        font-size: 20px;
+    }
+
+    .destinations {
+
+        font-size: 8px;
+    }
+
+    .link-style {
+
+        font-size: 10px;
+    }
+
+    .logo-details {
+
+        margin-left: 10px;
+    }
+
+    .all-links {
+
+        margin-top: 20px;
+    }
+
+    .book-now {
+
+        margin-top: 30px;
+    }
+
+    /* .custom-col-1 {
+
+        max-width: 80% !important;
+    }
+
+    .custom-col-2{
+
+        max-width: 20% !important;;
+    } */
+}
+
+@media (min-width: 500px) and (max-width: 700px) {
+
+    .foot-content {
+
+        font-size: 12px !important;
+    }
+
+    .headers {
+
+        font-size: 16px !important;
+    }
+
+    .mail-num-details {
+
+        font-size: 12px;
+    }
+
+    .link-style {
+
+        font-size: 13px !important;
+    }
+
+    .book-now {
+
+        margin-top: 30px;
+    }
+}
+
+@media (min-width: 700px) and (max-width: 1000px) {
+
+    .foot-content {
+
+        font-size: 14px !important;
+    }
+
+    .headers {
+
+        font-size: 18px !important;
+    }
+
+    .mail-num-details {
+
+        font-size: 14px;
+    }
+
+    .link-style {
+
+        font-size: 15px !important;
+    }
+
+    .book-now {
+
+        margin-top: 30px;
+    }
+}

@@ -18,6 +18,7 @@
 	/* align-self: center;
 	align-items: center; */
 	width: 100%;
+	margin: auto;
 	/* background-color: bisque; */
 }
 
@@ -25,6 +26,12 @@
 	display: flex;
 	width: 100%;
 	/* max-width: 1000px; */
+}
+
+iframe {
+
+	margin: 0;
+	padding: 0;
 }
 
 .sail-heading {
@@ -56,12 +63,18 @@
 	display: flex;
 	flex-grow: 1;
 	width: 100%;
-	height: 300px;
+	height: 300px;	
+	/* margin-left: 0; */
+	/* margin: 0; */
+	/* margin-right: 10%; */
+	/* background-color: yellow; */
 	/* object-fit: cover; */
 	/* Decreased width to make the videos closer */
 	/* height: 300px; */
 	/* background-color: #cccccc; */
+	/* background-color: red; */
 	margin: 2% 0;
+	/* background-color: black; */
 	/* Decreased margin to make the videos closer */
 }
 
@@ -132,20 +145,13 @@
 		height: 300px;
 		/* background-color: red; */
 	}
-	/* .sail-title {
-		font-size: 25px;
-		font-weight: 1000;
-	}
-	.sail-subtitle {
-		font-size: 14px;
-	} */
 }
 
 @media (max-width: 710px) {
 
 	.sail-video-box {
 
-		height: 280px;
+		height: 290px;
 		/* background-color: yellow; */
 	}
 }
@@ -154,7 +160,7 @@
 
 	.sail-video-box {
 
-		height: 250px;
+		height: 260px;
 		/* background-color: pink; */
 	}
 }
@@ -163,7 +169,7 @@
 
 	.sail-video-box {
 
-		height: 230px;
+		height: 240px;
 		/* background-color: green; */
 	}
 }
@@ -172,7 +178,37 @@
 
 	.sail-video-box {
 
-		height: 210px;
+		height: 220px;
 		/* background-color: blue; */
 	}
 }
+
+@media (max-width: 400px) {
+
+	.sail-video-box {
+
+		/* height: 210px; */
+		/* background-color: black; */
+		height: 180px;
+		padding-right: 0;
+		margin-right: 0;
+	}
+}
+
+/* media for font */
+
+@media (max-width: 800px) {
+
+	.sail-subtitle {
+
+		font-size: 14px !important;
+	}
+} 
+
+@media (max-width: 400px) {
+
+	.sail-subtitle {
+
+		font-size: 12px !important;
+	}
+} 

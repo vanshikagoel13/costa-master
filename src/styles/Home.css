@@ -56,7 +56,7 @@
   .submit-button:hover {
     background-color: #fdd65e;
   }
-  @media (max-width: 768px) {
+  @media (min-width:400px) and (max-width: 768px) {
     /* .popup {
       max-width: 100%;
       
@@ -65,7 +65,22 @@
       font-size: 25px;
     }
     .subheading-popup{
-      font-size: 15px;
+      font-size: 14px;
+    }
+    .form-box{
+        align-items: center;
+    }
+  }
+  @media (max-width: 400px) {
+    /* .popup {
+      max-width: 100%;
+      
+    } */
+    .heading-popup{
+      font-size: 20px;
+    }
+    .subheading-popup{
+      font-size: 12px;
     }
     .form-box{
         align-items: center;
@@ -100,6 +115,7 @@
 .vscroll-container {
   overflow-y: auto; /* Enable scrolling when necessary */
   scrollbar-width: thin; /* Set the width of the scrollbar */
+  overflow-x: hidden;
   scrollbar-color: transparent transparent; /* Set the color of the scrollbar track and thumb */
 }
 

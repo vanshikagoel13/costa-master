@@ -9,10 +9,9 @@
 	/* flex-direction: column; */
 }
 
-
 .card-title-info {
 	color: rgb(17, 167, 216) !important;
-	font-size: 18px;
+	font-size: 20px;
 }
 
 .card-img-top {
@@ -40,7 +39,7 @@
 	font-weight: 400;
 	padding-top: 10px;
 	color: black;
-	font-size: 12px;
+	font-size: 14px;
 
 }
 
@@ -78,11 +77,12 @@
 
 /* Media Settings */
 
-@media (max-width: 700px) {
+
+@media (max-width: 450px){
 
 	.card-info {
 
-		width: 400px !important;
+		width: 96% !important;
 		/* background-color: blue; */
 	}
 
@@ -93,21 +93,31 @@
 
 	.image-body-ic {
 
-		height: 50vw;
+		height: 55vw;
 	}
 
 	.button-info {
 
 		font-size: 12px;
 	}
+
+	.card-subtitle {
+
+		font-size: 13px !important;
+	}
+
+	.card-title-info {
+
+		font-size: 25px !important;
+	}
 }
 
-@media (max-width: 900px) and (min-width: 700px){
+@media (max-width: 650px) and (min-width: 450px) {
 
 	.card-info {
 
-		width: 400px !important;
-		/* background-color: pink; */
+		width: 97% !important;
+		/* background-color: blue; */
 	}
 
 	.cg {
@@ -117,11 +127,55 @@
 
 	.image-body-ic {
 
+		height: 55vw;
+	}
+
+	.button-info {
+
+		font-size: 12px;
+	}
+
+	.card-subtitle {
+
+		font-size: 15px !important;
+	}
+
+	.card-title-info {
+
+		font-size: 25px !important;
+	}
+}
+
+@media (max-width: 900px) and (min-width: 650px){
+
+	.card-info {
+
+		width: 400px !important;
+		/* background-color: pink; */
+	}
+
+	/* .cg {
+
+		flex-direction: column;
+	} */
+
+	.image-body-ic {
+
 		height: 40vw;
 	}
 
 	.button-info {
 
 		font-size: 12px;
+	}
+
+	.card-subtitle {
+
+		font-size: 12px !important;
+	}
+
+	.card-title-info {
+
+		font-size: 20px !important;
 	}
 }
