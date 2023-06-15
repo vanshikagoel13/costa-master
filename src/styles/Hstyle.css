@@ -84,8 +84,14 @@
 }
 
 .image-container {
-  max-width: 100%;
+  width: 100%;
+  height:100%;
   overflow: hidden;
+}
+
+.img-fluid-new{
+  width:100%;
+  object-fit: cover;
 }
 
 @media (min-width: 400px) and (max-width: 550){

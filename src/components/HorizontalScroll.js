@@ -27,7 +27,7 @@ function HorizontalScroll({scrollimg}) {
 							<img
 								src={process.env.PUBLIC_URL + item.url}
 								alt={`Image ${item.id}`}
-								className="img-fluid zoom"
+								className="img-fluid-new zoom"
 							/>
 						</div>
 					))}
