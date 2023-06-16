@@ -1,11 +1,11 @@
 .containertd {
 
-	max-width: 80% !important;
+	max-width: 90% !important;
 	margin: auto;
-	padding-left: 2%;
+	padding-right: 2%;
 	padding-bottom: 2%;
 	padding-top: 2%;
-	padding-right: 4%;
+	padding-left: 4%;
 	margin-bottom: 7% !important;
 	/* margin-bottom: 7%; */
 }

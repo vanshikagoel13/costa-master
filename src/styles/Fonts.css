@@ -40,31 +40,37 @@
 	/* Additional font properties if needed */
 }
 
+@font-face {
+	font-family: 'Open-Sans-Regular';
+	src: url('../fonts/OpenSans-Regular.ttf') format('truetype');
+	/* Additional font properties if needed */
+}
+
 .PoppMed {
 
-	font-family: 'PoppinsMedium';
+	font-family: 'PoppinsMedium', 'Open-Sans-Regular', Arial, Helvetica, sans-serif;
 }
 
 .AltBold {
-	font-family: 'AltoneBold';
+	font-family: 'AltoneBold', 'Open-Sans-Regular', Arial, Helvetica, sans-serif;
 }
 
 .AltReg {
-	font-family: 'AltoneReg';
+	font-family: 'AltoneReg', 'Open-Sans-Regular', Arial, Helvetica, sans-serif;
 }
 
 .PoppReg {
-	font-family: 'PoppinsReg';
+	font-family: 'PoppinsReg', 'Open-Sans-Regular', Arial, Helvetica, sans-serif;
 }
 
 .PoppBold {
-	font-family: 'PoppinsBold';
+	font-family: 'PoppinsBold', 'Open-Sans-Regular', Arial, Helvetica, sans-serif;
 }
 
 .PoppExBold {
-	font-family: 'PoppinsExBold';
+	font-family: 'PoppinsExBold', 'Open-Sans-Regular', Arial, Helvetica, sans-serif;
 }
 
 .KepStd {
-	font-family: 'keplerStd';
+	font-family: 'keplerStd', 'Open-Sans-Regular', Arial, Helvetica, sans-serif;
 }

@@ -1,12 +1,15 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "../styles/FAQ.css";
 import Footer from "./Footer.js";
 import TextBox from "./TextBox.js";
 import Header from "./Header";
 // import NewFooter from "./NewFooter";
 import CallNowButton from "./CallNowButton";
+
 function FAQ() {
+
 	const [isHeaderExpanded, setIsHeaderExpanded] = useState(false);
+
 	const handleHeaderExpand = () => {
 		setIsHeaderExpanded(true);
 	};
@@ -14,7 +17,44 @@ function FAQ() {
 	const handleHeaderCollapse = () => {
 		setIsHeaderExpanded(false);
 	};
+
+	// useEffect(() => {
+	// 	const svg = document.getElementById('my-lol');
+
+	// 	const handleResize = () => {
+	// 		const screenHeight = window.innerHeight;
+	// 		const screenWidth = window.innerWidth;
+	// 		const viewBoxWidth = 500;
+	// 		const viewBoxHeight = (screenHeight / screenWidth) * viewBoxWidth;
+	// 		svg.setAttribute('viewBox', `0 0 ${viewBoxWidth} ${viewBoxHeight}`);
+	// 		console.log(svg.getAttribute('viewBox'));
+	// 	};
+
+	// 	window.addEventListener('resize', handleResize);
+
+	// 	// Call the resize handler initially
+	// 	handleResize();
+
+	// 	return () => window.removeEventListener('resize', handleResize);
+	// }, []);
+
+	// const [viewBoxHeight, setViewBoxHeight] = useState(200);
+
+	// useEffect(() => {
+	// 	const handleResize = () => {
+	// 		const screenWidth = window.innerWidth;
+	// 		const newViewBoxHeight = screenWidth > 500 ? 150 : 200;
+	// 		setViewBoxHeight(newViewBoxHeight);
+	// 		// console.log(newViewBoxHeight);
+	// 	};
+
+	// 	window.addEventListener('resize', handleResize);
+
+	// 	return () => window.removeEventListener('resize', handleResize);
+	// }, []);
+
 	return (
+
 		<>
 			<div className="v-scroll">
 				<Header
@@ -25,12 +65,17 @@ function FAQ() {
 				{isHeaderExpanded ? null : (
 					<div>
 						<div className="background-image-flow">
-							<svg viewBox="0 0 500 150" preserveAspectRatio="none" style={{ position: 'absolute', height: '100%', width: '100%' }}>
-								<path d="M-4.28,31.98 C63.99,87.09 373.81,-16.23 511.51,21.16 L500.00,149.60 L-0.00,149.60 Z" fill="#b9e8fc" fill-opacity="1"></path>
+							<svg
+								id="my-lol"
+								viewBox={`0 0 500 200`}
+								preserveAspectRatio="none"
+								style={{ position: 'absolute', height: '100vh', width: '100%' }}
+							>
+								<path d="M-4.28,31.98 C63.99,87.09 373.81,-16.23 511.51,21.16 L500.00,149.60 L-0.00,149.60 Z" fill="#b2e4fa" fillOpacity="1"></path>
 							</svg>
 						</div>
 						<div className="ship-container">
-							<img src={process.env.PUBLIC_URL + '/ship_faq.png'} className="image-ship" alt="Image"></img>
+							<img src={process.env.PUBLIC_URL + '/ship_faq_1.png'} className="image-ship" alt="Image"></img>
 						</div>
 						<div className="heading">
 							<h3 className="head-faq PoppBold" >Frequently Asked<br />Questions</h3>

@@ -22,7 +22,7 @@ function CostaFlagship() {
 				<div className="flag-scroll-container-sf">
 					<div className="toscana-flag-scroll-sf">
 						<img
-							src={process.env.PUBLIC_URL + 'flagshipserena.jpg'}
+							src={process.env.PUBLIC_URL + 'flagshipserena1.png'}
 							className="img-fluid-serenaflag"
 							alt={'Flagship'}
 						/>

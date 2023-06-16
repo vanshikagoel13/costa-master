@@ -16,7 +16,7 @@ import ScrollHome from "../components/ScrollHome.js";
 const images = [
 	{
 		id: 1,
-		url: "/Destination/IndiaDestination.png",
+		url: "/Destination/IndiaDestination2.png",
 		title: "<u class='underline-textds'>India</u>",
 		subtitle: "A tapestry of colours",
 		text1: "Prepare to be enchanted by the alluring beauty of India, where a vibrant tapestry of colors creates a mesmerizing backdrop. Picture azure blues merging seamlessly with the earthy browns, ochres, and greens of coffee and spice plantations, crafting an infinite palette ",
@@ -24,7 +24,7 @@ const images = [
 	},
 	{
 		id: 2,
-		url: "/Destination/Mediterranean.png",
+		url: "/Destination/Mediterranean2.png",
 		title: "<u class='underline-textds'>Mediterranean</u>",
 		subtitle: "Sunny and astounding, all year round",
 		text1:"Choose your cruise and embark at your nearest port, either in winter or summer. Depart from the Ligurian beaches of Savona or from the lively Marseilles seafront. With confidence in our decades of experience, allow us take you on a cruise across the Mediterranean Sea. ",
@@ -33,7 +33,7 @@ const images = [
 
 	{
 		id: 3,
-		url: "/Destination/NorthEurope.png",
+		url: "/Destination/NorthEurope2.png",
 		title: "<u class='underline-textds'>North Europe</u>",
 		subtitle: "A sense of discovery",
 		text1: "The unspoiled, proud beauty of the wilderness that dominates the northern seas reflects the characteristics of the Viking people, once masters of these waters. Admire the majesty of the Norwegian fjords aboard our Costa ships on our cruises in the North Sea. ",
@@ -41,7 +41,7 @@ const images = [
 	},
 	{
 		id: 4,
-		url: "/Destination/Caribbean.png",
+		url: "/Destination/Caribbean2.png",
 		title: "<u class='underline-textds'>Caribbean</u>",
 		subtitle: "A tropical wonder",
 		text1: "A rainbow of colours creates the allure of this location, where the clear blues of the sea and sky mix with the infinite variety of the browns, ochres and greens of coffee and spices plantations, all framed in a breathtaking scenery. The cities you will visit during the Caribbean cruise come alive with music and fragrances ",
@@ -49,7 +49,7 @@ const images = [
 	},
 	{
 		id: 5,
-		url: "/Destination/UAE.png ",
+		url: "/Destination/UAE2.png ",
 		title: "<u class='underline-textds'>Dubai and the Emirates</u>",
 		subtitle: "One land, a thousand and one souls",
 		text1: "Every house and every street in the desert has been painstakingly reclaimed from the suffocating presence of the sand. That's why in the UAE everything aims at greatness, excess and amazement. Magnificent mosques, one of the highest skyscrapers in the world, hotels with more stars ",
@@ -59,8 +59,8 @@ const images = [
 
 const scrollimages = [
 
-	{ id: 1, url: "/DestinationBanner/India Banner - Destination.png" },
-	{ id: 2, url: "/DestinationBanner/Lakshadweep Banner - Destination .png" },
+	{ id: 1, url: "/DestinationBanner/India Banner - Destination2.png" },
+	{ id: 2, url: "/DestinationBanner/Lakshadweep Banner - Destination 2.png" },
 ];
 
 const details = [

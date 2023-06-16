@@ -68,7 +68,7 @@ function Footer() {
                   </li>
                   <li>
                     <Link className="link-style" to="../ContactUs">
-                      Contact us
+                      Contact Us
                     </Link>
                   </li>
                   <li>

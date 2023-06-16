@@ -126,8 +126,8 @@ const images = [
 
 const scrollimages = [
 
-	{ id: 1, url: "ExperienceBanner/Experience Page - 1.png" },
-	{ id: 2, url: "ExperienceBanner/Experience Page - 2.png" },
+	{ id: 1, url: "ExperienceBanner/Experience Page - 11.png" },
+	{ id: 2, url: "ExperienceBanner/Experience Page - 22.png" },
 ];
 
 const txt1 = "Our aim is to accompany you as you explore <b>the world in the most sustainable, delicious, relaxing and surprising way.</b>";

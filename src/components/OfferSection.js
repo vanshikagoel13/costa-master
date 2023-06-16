@@ -123,17 +123,17 @@ const images = [
 
 	{
 		id: 1,
-		url: "/Offer-Section/Homev1.png",
+		url: "/Offer-Section/Homev11.png",
 		cta: "Know more",
 	},
 	{
 		id: 2,
-		url: "/Offer-Section/Homev2.png",
+		url: "/Offer-Section/Homev22.png",
 		cta: "Know more",
 	},
 	{
 		id: 3,
-		url: "/Offer-Section/Homev3.png",
+		url: "/Offer-Section/Homev33.png",
 		cta: "Book your cruise",
 	},
 ];

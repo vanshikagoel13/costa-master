@@ -38,9 +38,11 @@ function Home() {
   const handleCloseModal = () => {
     setShowModal(false);
   };
+
   const [firstName, setFirstName] = useState('');
   const [phoneNumber, setPhoneNumber] = useState('');
   const [email, setEmail] = useState('');
+  const [thankYou, setThankYou] = useState(false);
 
   const handleFirstNameChange = (event) => {
     setFirstName(event.target.value);
@@ -51,8 +53,14 @@ function Home() {
   const handleEmailChange = (event) => {
     setEmail(event.target.value);
   };
+  const handleCloseThankYou = () => {
+    setThankYou(false);
+  };
 
   const handleSubmit = async (event) => {
+
+    setThankYou(true);
+
     event.preventDefault();
 
     const leadData =
@@ -77,7 +85,6 @@ function Home() {
       "source": "1148358"
     }
 
-
     try {
       fetch('https://api.kylas.io/v1/leads/', {
         'method': 'POST',
@@ -100,7 +107,9 @@ function Home() {
       // Handle the error or show an error message to the user
     }
   };
+
   return (
+    
     <div>
       <Banner onBanner={handleBannerExpand} offBanner={handleBannerCollapse} />
       {isBannerCollapsed ? null : (
@@ -188,6 +197,25 @@ function Home() {
                 Submit
               </button>
             </Modal.Footer>
+          </Modal>
+
+          <Modal show={thankYou}>
+            <Modal.Header onClick={handleCloseThankYou} closeButton></Modal.Header>
+            <Modal.Body>
+              <div className="allin-logo-popup">
+                <img
+                  src={process.env.PUBLIC_URL + "/logo.png"}
+                  alt="Logo"
+                  className="logo-popup"
+                />
+              </div>
+              <p>&nbsp;</p>
+              <h2 className="heading-popup PoppReg">Thank you for reaching out!</h2>
+              <p className="subheading-popup PoppReg">
+                Our executives shall shortly connect with you.
+              </p>
+              <p>&nbsp;</p>
+            </Modal.Body>
           </Modal>
         </div>
       )}

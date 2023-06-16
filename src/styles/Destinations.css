@@ -24,6 +24,7 @@
 	grid-template-columns: 1fr 1fr;
 	/* Divide the container into two columns with equal width */
 	gap: 2%;
+	/* background-color: yellow; */
 	/* background-color: #FFBF00; */
 	/* Add a gap between the columns */
 }
@@ -537,6 +538,7 @@
 	font-size: 53px;
 	/* justify-self: flex-start; */
 	align-self: center;
+	/* font-family: 'PoppinsBold', Arial, Helvetica, sans-serif; */
 	/* padding-right: 200px; */
 }
 

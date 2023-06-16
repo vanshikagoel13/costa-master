@@ -29,7 +29,7 @@ function BannerSerena({ onBanner, offBanner }) {
 			{ isHeaderExpanded ? null : 
       		<>
 			<div className="component-backgroundser">
-                <img src={process.env.PUBLIC_URL + "/bannerserena.jpg"} className="background-imageser">
+                <img src={process.env.PUBLIC_URL + "/bannerserena1.png"} className="background-imageser">
                 </img>
 			</div>
 			<div className="banner-contentser">

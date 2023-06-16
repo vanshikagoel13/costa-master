@@ -7,15 +7,15 @@ import CallNowButton from "./CallNowButton";
 function ContactUs() {
   const [isHeaderExpanded, setIsHeaderExpanded] = useState(false);
   const handleHeaderExpand = () => {
-		setIsHeaderExpanded(true);
-	};
+    setIsHeaderExpanded(true);
+  };
 
-	const handleHeaderCollapse = () => {
-		setIsHeaderExpanded(false);
-	};
+  const handleHeaderCollapse = () => {
+    setIsHeaderExpanded(false);
+  };
   return (
     <>
-      <div className="v-scrollcs">
+      <div>
         <Header
           isExpanded={isHeaderExpanded}
           onExpand={handleHeaderExpand}
@@ -23,10 +23,11 @@ function ContactUs() {
         />
         {isHeaderExpanded ? null : (
           <>
-            <div className="contact-box">
-              <div className="heading">
-                <h1 className="Main-Heading PoppBold">Contact Us</h1>
+            <div className="contactus-box">
+              <div className="heading-contact">
+                <h2 className="Main-Heading PoppBold">Contact Us</h2>
               </div>
+              
               <div className="content">
                 <h6 className="content-sub PoppReg">
                   We are passionate about what we do and we want to make sure
@@ -36,7 +37,7 @@ function ContactUs() {
                   and clear up any issues. Below is a list of links where you
                   can find information and e-mail addresses you can write to for
                   whatever you need.<br></br>
-                  Please be aware: these email addresses are for the USA
+                  Please be aware: these email addresses are for the Indian
                   residents only.
                   <br></br>
                   <br></br>
@@ -46,31 +47,29 @@ function ContactUs() {
                 </h6>
               </div>
 
-              <div className="contact-info">
-                <hr className="bg-black m-0 w-100 " />
-                <div class="grid-contact-container">
-                  <div class="grid-contact-item PoppReg">Costa Club information</div>
-                  <div class="grid-contact-item PoppReg">costaclub@us.costa.it</div>
+              <div className="contact-info justify-content-between align-content-center">
+                <hr className="bg-black m-0 w-100 mb-3" />
+                <div className="grid-contact-container align-content-center">
+                  <div className="grid-contact-item PoppReg">Cruise Customer Service</div>
+                  <div className="grid-contact-item PoppReg">info@costacruiseindia.com</div>
                 </div>
-                <hr className="bg-black m-0 w-100 mt-3" />
-                <div class="grid-contact-container">
-                  <div class="grid-contact-item PoppReg">
-                    Cruise Information / reservation​
-                  </div>
-                  <div class="grid-contact-item PoppReg">
-                    Please call 1-800-462-6782
-                  </div>
+                <hr className="bg-black m-0 w-100 mt-3 mb-3" />
+                <div className="grid-contact-container">
+                  <div className="grid-contact-item PoppReg">Phone number</div>
+                  <div className="grid-contact-item PoppReg">+91 9820185084</div>
                 </div>
-                <hr className="bg-black m-0 w-100 mt-3" />
-
-                <div class="grid-contact-container">
-                  <div class="grid-contact-item PoppReg">
-                    Post Cruise Customer Service
-                  </div>
-                  <div class="grid-contact-item PoppReg">customercare@us.costa.it</div>
+                <hr className="bg-black m-0 w-100 mt-3 mb-3" />
+                <div className="grid-contact-container">
+                  <div className="grid-contact-item PoppReg">Telephone number</div>
+                  <div className="grid-contact-item PoppReg">+91 2261792300</div>
                 </div>
-                <hr className="bg-black m-0 w-100 mt-3" />
-                <div class="grid-contact-container">
+                <hr className="bg-black m-0 w-100 mt-3 mb-3" />
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                {/* <div class="grid-contact-container">
                   <div class="grid-contact-item PoppReg">
                     Group, Incentives & Meetings
                   </div>
@@ -91,7 +90,7 @@ function ContactUs() {
                   </div>
                   <div class="grid-contact-item PoppReg">privacy@costa.it</div>
                 </div>
-                <hr className="bg-black m-0 w-100 mt-3" />
+                <hr className="bg-black m-0 w-100 mt-3" /> */}
               </div>
             </div>
             <Footer />

@@ -1,6 +1,6 @@
 import React from "react";
 import "../styles/ShipDetail.css";
-import DetailPic from "../images/opendeck.jpg";
+import DetailPic from "../images/opendeck1.png";
 import Plate from "../images/plate.png";
 import Glass from "../images/glass.png";
 import Pool from "../images/pool.png";

@@ -2,16 +2,20 @@ import React, { useState } from "react";
 import "../styles/Contact.css";
 import contactimg from "../images/contact.png";
 import { Button } from "react-bootstrap";
+import { Modal, FormControl } from "react-bootstrap";
 // import styles from "../styles/Contact.css";
 
 function Contact() {
+
   const handleInputChange = (e) => {
     // Prevent the user from manually typing non-numeric characters
     if (isNaN(e.target.value)) {
       e.target.value = "";
     }
   };
+
   const [otp, setOtp] = useState(false);
+  const [thankYou, setThankYou] = useState(false);
 
   const handlerOtp = () => {
     setOtp(true);
@@ -20,6 +24,10 @@ function Contact() {
   const [firstName, setFirstName] = useState('');
   const [phoneNumber, setPhoneNumber] = useState('');
   const [dialCode, setDialCodeName] = useState('');
+
+  const handleCloseThankYou = () => {
+    setThankYou(false);
+  };
 
   const handleFirstNameChange = (event) => {
     setFirstName(event.target.value);
@@ -31,51 +39,54 @@ function Contact() {
     setDialCodeName(event.target.value);
   };
   const handleSubmit = async (event) => {
-		event.preventDefault();
 
-		// const firstName = event.target.elements.firstName.value;
+    setThankYou(true);
+
+    event.preventDefault();
+
+    // const firstName = event.target.elements.firstName.value;
     // const phoneNumber = event.target.elements.phoneNumber.value;
-		// const dialCode = event.target.elements.dialCode.value;
-  //  const email = event.target.elements.email.value;
+    // const dialCode = event.target.elements.dialCode.value;
+    //  const email = event.target.elements.email.value;
 
-		
-  const leadData=
-  {
-    "firstName": firstName,
-    "phoneNumbers": [
-      {
-        "type": "MOBILE",
-        "code": "IN",
-        "value": phoneNumber,
-        "dialCode": dialCode,
-        "primary": true
-      }
-    ],
-    "source": "1148358"
-  }
-   
-			
-	  
-		try {
-		  fetch('https://api.kylas.io/v1/leads/',  {
-			'method': 'POST',
-			 body: JSON.stringify(leadData),
-			'headers': {
-			  'Content-Type': "application/json",
-			  'api-key': '255396e8-ff72-4479-80df-4582aae58939:8443',
-			  'Accept': 'application/json'
-			},
-		  });
-	  
-		  console.log('Lead generated successfully:', leadData);
-     // setShowModal(false);
-		  // Reset the form or show a success message to the user
-		} catch (error) {
-		  console.error('Failed to generate lead:', error);
-     // setShowModal(false);
-		  // Handle the error or show an error message to the user
-		}
-	  };
+
+    const leadData =
+    {
+      "firstName": firstName,
+      "phoneNumbers": [
+        {
+          "type": "MOBILE",
+          "code": "IN",
+          "value": phoneNumber,
+          "dialCode": dialCode,
+          "primary": true
+        }
+      ],
+      "source": "1148358"
+    }
+
+
+
+    try {
+      fetch('https://api.kylas.io/v1/leads/', {
+        'method': 'POST',
+        body: JSON.stringify(leadData),
+        'headers': {
+          'Content-Type': "application/json",
+          'api-key': '255396e8-ff72-4479-80df-4582aae58939:8443',
+          'Accept': 'application/json'
+        },
+      });
+
+      console.log('Lead generated successfully:', leadData);
+      // setShowModal(false);
+      // Reset the form or show a success message to the user
+    } catch (error) {
+      console.error('Failed to generate lead:', error);
+      // setShowModal(false);
+      // Handle the error or show an error message to the user
+    }
+  };
 
 
   return (
@@ -85,8 +96,8 @@ function Contact() {
           <div className="col-lg-6 d-flex" style={{ width: "40%" }}>
             <div className="image-container">
               <img
-                src={process.env.PUBLIC_URL + "/Contact Us.png"}
-                className="img-fluid  img-style"
+                src={process.env.PUBLIC_URL + "/Contact Us2.png"}
+                className="img-fluid img-style"
               ></img>
             </div>
           </div>
@@ -130,7 +141,7 @@ function Contact() {
                   </div>
                 </div>
                 <button className="otp-container PoppReg">
-                Get OTP
+                  Get OTP
                   {/* <h5 className="getotp-button PoppReg"></h5> */}
                 </button>
                 <div>
@@ -149,6 +160,24 @@ function Contact() {
           </div>
         </div>
       </div>
+      <Modal show={thankYou}>
+        <Modal.Header onClick={handleCloseThankYou} closeButton></Modal.Header>
+        <Modal.Body>
+          <div className="allin-logo-popup">
+            <img
+              src={process.env.PUBLIC_URL + "/logo.png"}
+              alt="Logo"
+              className="logo-popup"
+            />
+          </div>
+          <p>&nbsp;</p>
+          <h2 className="heading-popup PoppReg">Thank you for reaching out!</h2>
+          <p className="subheading-popup PoppReg">
+            Our executives shall shortly connect with you.
+          </p>
+          <p>&nbsp;</p>
+        </Modal.Body>
+      </Modal>
     </section>
   );
 }
@@ -159,27 +188,27 @@ export default Contact;
   /* 
 
 <div className="col-lg-6 d-flex">
-	<div className="image-container">
-		<img src={image.url} className="img-fluid zoom image-style" alt={image.title} />
-	</div>
+  <div className="image-container">
+    <img src={image.url} className="img-fluid zoom image-style" alt={image.title} />
+  </div>
 </div>
 <div className="col-lg-6 d-flex">
-	<div className={`text-container align-self-end ${(index + 1) % 2 !== 0 ? "right-text" : "left-text"}`}>
-		<h4 className={`PoppReg ${(index + 1) % 2 !== 0 ? "category-style-right" : "category-style-left"}`}>{image.category}</h4>
-		<h3 className={`AltBold ${(index + 1) % 2 !== 0 ? "title-style-right" : "title-style-left"}`}><span dangerouslySetInnerHTML={{ __html: image.title }} /></h3>
-		<p className={`AltReg ${(index + 1) % 2 !== 0 ? "text-style-right" : "text-style-left"}`}><span dangerouslySetInnerHTML={{ __html: image.text }} /></p>
-		{index >= 0 && (
-			<img
-				src={process.env.PUBLIC_URL + subImages[index].url}
-				className={`${
-				index % 2 !== 0
-					? "subimage-style-right"
-					: "subimage-style-left"
-				}`}
-				alt=""
-			/>
-		)}
-	</div>
+  <div className={`text-container align-self-end ${(index + 1) % 2 !== 0 ? "right-text" : "left-text"}`}>
+    <h4 className={`PoppReg ${(index + 1) % 2 !== 0 ? "category-style-right" : "category-style-left"}`}>{image.category}</h4>
+    <h3 className={`AltBold ${(index + 1) % 2 !== 0 ? "title-style-right" : "title-style-left"}`}><span dangerouslySetInnerHTML={{ __html: image.title }} /></h3>
+    <p className={`AltReg ${(index + 1) % 2 !== 0 ? "text-style-right" : "text-style-left"}`}><span dangerouslySetInnerHTML={{ __html: image.text }} /></p>
+    {index >= 0 && (
+      <img
+        src={process.env.PUBLIC_URL + subImages[index].url}
+        className={`${
+        index % 2 !== 0
+          ? "subimage-style-right"
+          : "subimage-style-left"
+        }`}
+        alt=""
+      />
+    )}
+  </div>
 </div> 
 
 */
