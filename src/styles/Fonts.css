@@ -1,0 +1,70 @@
+@font-face {
+	font-family: 'AltoneBold';
+	src: url('../fonts/AltoneTrial-Bold.ttf') format('truetype');
+	/* Additional font properties if needed */
+}
+
+@font-face {
+	font-family: 'AltoneReg';
+	src: url('../fonts/AltoneTrial-Regular.ttf') format('truetype');
+	/* Additional font properties if needed */
+}
+
+@font-face {
+	font-family: 'PoppinsReg';
+	src: url('../fonts/Poppins-Regular.ttf') format('truetype');
+	/* Additional font properties if needed */
+}
+
+@font-face {
+	font-family: 'PoppinsBold';
+	src: url('../fonts/Poppins-Bold.ttf') format('truetype');
+	/* Additional font properties if needed */
+}
+
+@font-face {
+	font-family: 'PoppinsExBold';
+	src: url('../fonts/Poppins-ExtraBold.ttf') format('truetype');
+	/* Additional font properties if needed */
+}
+
+@font-face {
+	font-family: 'keplerStd';
+	src: url('../fonts/KeplerStd-MediumSubh.otf') format('opentype');
+	/* Additional font properties if needed */
+}
+
+@font-face {
+	font-family: 'PoppinsMedium';
+	src: url('../fonts/Poppins-Medium.ttf') format('truetype');
+	/* Additional font properties if needed */
+}
+
+.PoppMed {
+
+	font-family: 'PoppinsMedium';
+}
+
+.AltBold {
+	font-family: 'AltoneBold';
+}
+
+.AltReg {
+	font-family: 'AltoneReg';
+}
+
+.PoppReg {
+	font-family: 'PoppinsReg';
+}
+
+.PoppBold {
+	font-family: 'PoppinsBold';
+}
+
+.PoppExBold {
+	font-family: 'PoppinsExBold';
+}
+
+.KepStd {
+	font-family: 'keplerStd';
+}

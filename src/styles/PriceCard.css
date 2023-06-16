@@ -1,0 +1,115 @@
+.card-group {
+    width: 100%;
+    margin: auto;
+}
+
+.card {
+    border: none;
+}
+
+.card-body {
+
+    /* background-color: red; */
+}
+
+.button {
+    display: flex;
+    margin: auto;
+    background-color: #f7ec29;
+    font-size: 14px;
+    width: 100%;
+    height: 35px;
+    justify-content: center;
+    align-items: center;
+    border: 0px;
+    /* border-radius: 2px; */
+}
+
+.card-img-top {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    object-fit: cover;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-prc {
+    /* position: relative; */
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.img-prc img {
+    /* position: absolute; */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-img-top-pc {
+
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.card-subtitle {
+    font-weight: 200;
+    padding-top: 2px;
+}
+
+.departure {
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+.departure-date {
+    margin-top: -17px;
+    font-size: 15px;
+}
+
+.price {
+    margin-top: -10px;
+    color: rgba(42, 80, 247, 0.953);
+}
+
+.price-per-person {
+
+    font-size: 15px;
+}
+
+.taxes {
+    margin-top: 15px;
+    font-size: 12px;
+    font-weight: 200;
+}
+
+.zoom {
+    transition: transform 0.3s;
+    /* overflow: hidden; */
+}
+
+@media {
+    .zoom:hover {
+        transform: scale(1.1);
+    }
+}
+
+.best-offer-head{
+    width:92%;
+    margin:auto;
+}
+
+@media(max-width:400px){
+    .subheading-dest-unique{
+        font-size:12px !important;
+    }
+    .heading-dest-unique{
+        font-size:30px !important;
+    }
+}

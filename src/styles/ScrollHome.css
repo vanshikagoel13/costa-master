@@ -1,0 +1,252 @@
+.card-group-sh {
+	width: 100%;
+	margin: auto;
+}
+
+.card-body-sh {
+
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: 60%;
+	/* background-color: lightgrey; */
+	justify-content: flex-end;
+}
+
+.card-sh {
+
+	border: none;
+	height: 100%;
+	/* width: 25%; */
+	/* width: 100%; */
+	/* height: 200px; */
+	/* width: 100px; */
+}
+
+.image-body-sh {
+
+	height: 100%;
+	overflow: hidden;
+	position: relative;
+}
+
+.card-img-top-sh {
+
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	z-index: 0;
+}
+
+.button-sh {
+	display: flex;
+	margin: auto;
+	background-color: rgb(255, 221, 2);
+	font-size: 14px;
+	width: 100%;
+	height: 35px;
+	justify-content: center;
+	align-items: center;
+	border: 0px;
+	border-radius: 2px;
+}
+
+.card-title-sh {
+
+	font-size: 20px;
+	/* margin: 3px 0px; */
+	margin-top: 10px;
+	/* background-color: red; */
+	/* margin: 0; */
+}
+
+.card-subtitle-sh {
+	font-weight: 200;
+	font-size: 16px;
+	/* margin: 3px 0px; */
+	/* background-color: yellow; */
+	/* margin: 1; */
+	/* padding-top: 2px; */
+}
+
+.departure-sh {
+	/* margin-top: 10px; */
+	font-size: 13px;
+	margin-top: 20px;
+	/* margin: 1; */
+}
+
+.departure-sh-1 {
+	/* margin-top: 10px; */
+	font-size: 13px;
+	/* margin-top: 10px; */
+	/* margin: 1; */
+}
+
+.price-sh {
+	/* margin-top: -10px; */
+	color: rgba(42, 80, 247, 0.953);
+	font-size: 25px;
+	/* background-color: red; */
+}
+
+.price-per-person-sh {
+	font-size: 13px;
+	/* margin: 0; */
+	margin-top: 30px;
+	/* background-color: red; */
+}
+
+.taxes-sh {
+	/* margin-top: 15px; */
+	font-size: 11px;
+	font-weight: 200;
+	/* background-color: red; */
+	/* margin: 0; */
+	margin-bottom: 10px;
+}
+
+/* ---------------- */
+
+.container-sh {
+
+	width: 92%;
+	margin-left: auto;
+	margin-right: auto;
+	/* display: flex; */
+	/* justify-content: center; */
+	/* margin-bottom: 7%; */
+	margin-top: 7%;
+}
+
+.gd-carousel-wrapper {
+	position: relative;
+}
+
+.gd-carousel-sh {
+	
+	position: unset;
+
+	.react-multiple-carousel__arrow {
+		position: absolute;
+		
+	}
+
+	.react-multiple-carousel__arrow--left {
+		left: calc(-3% + 1px) !important
+	}
+
+	.react-multiple-carousel__arrow--right {
+		right: calc(-3% + 1px) !important
+		
+	}
+}
+
+/* .carousel-dots {
+
+	bottom: 30px;
+} */
+
+@media (max-width: 600px) {
+	
+	.card-title-sh {
+		font-size: 21px;
+	}
+
+	.card-subtitle-sh {
+		font-size: 17px;
+	}
+
+	.departure-sh {
+		font-size: 14px;
+	}
+
+	.departure-sh-1 {
+		font-size: 14px;
+	}
+
+	.price-sh {
+		font-size: 26px;
+	}
+
+	.price-per-person-sh {
+		font-size: 14px;
+	}
+
+	.taxes-sh {
+		font-size: 12px;
+	}
+}
+
+.banner-content-home {
+
+	position: absolute;
+	height: 25%;
+	width: 20%;
+	z-index: 1;
+	bottom: 0;
+	left: 0;
+	text-align: start;
+	margin-left: auto;
+	/* background-color: red; */
+	/* filter: brightness(95%); */
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	/* background: transparent; */
+	background-color: rgba(0, 0, 0, 0.6);
+}
+
+.banner-title-home {
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 22px;
+	/* text-align: center; */
+	margin-bottom: 0;
+	color: white;
+	z-index: 3;
+	cursor: pointer;
+}
+
+
+.banner-subtitle-home {
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 12px;
+	/* text-align: center; */
+	margin-bottom: 0;
+	color: white;
+	z-index: 3;
+	cursor: pointer;
+}
+
+.subheading-scrollhome {
+
+	font-size: 16px;
+}
+
+@media (max-width: 500px) {
+
+	.container-sh{
+		margin-top: 70px;
+	}
+}
+
+@media (max-width: 400px) {
+
+	.subheading-scrollhome{
+		font-size: 12px;
+	}
+}
+
+@media (min-width: 400px) and (max-width: 800px){
+
+	.subheading-scrollhome{
+		font-size: 14px;
+	}
+}
+

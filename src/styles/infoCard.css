@@ -1,0 +1,181 @@
+.card-info {
+	width: 200px;
+	height: auto;
+	justify-content: center;
+	display: flex;
+	border: 2px;
+	border-radius: 0;
+	margin: 2%;
+	/* flex-direction: column; */
+}
+
+.card-title-info {
+	color: rgb(17, 167, 216) !important;
+	font-size: 20px;
+}
+
+.card-img-top {
+	height: 60%;
+	/* width:300px; */
+	object-fit: cover;
+}
+
+.button-info {
+	/* display: flex; */
+	/* margin-top: 15px; */
+	font-size: 14px;
+	width: 60%;
+	color: rgb(17, 167, 216);
+	padding: 10px;
+	height: auto;
+	justify-content: center;
+	align-items: center;
+	border: 3px solid;
+	background-color: white;
+	border-radius: 3px;
+}
+
+.card-info .card-subtitle {
+	font-weight: 400;
+	padding-top: 10px;
+	color: black;
+	font-size: 14px;
+
+}
+
+/* --------------------------- */
+
+.card-ic {
+
+	border: none;
+	height: 100%;
+}
+
+.image-body-ic {
+
+	height: 18vw;
+	width: 100%;
+	object-fit: fill;
+}
+
+.card-img-top-ic {
+
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+
+.zoom {
+	transition: transform 0.3s;
+}
+
+@media {
+	.zoom:hover {
+		transform: scale(1.1);
+	}
+}
+
+/* Media Settings */
+
+
+@media (max-width: 450px){
+
+	.card-info {
+
+		width: 96% !important;
+		/* background-color: blue; */
+	}
+
+	.cg {
+
+		flex-direction: column;
+	}
+
+	.image-body-ic {
+
+		height: 55vw;
+	}
+
+	.button-info {
+
+		font-size: 12px;
+	}
+
+	.card-subtitle {
+
+		font-size: 13px !important;
+	}
+
+	.card-title-info {
+
+		font-size: 25px !important;
+	}
+}
+
+@media (max-width: 650px) and (min-width: 450px) {
+
+	.card-info {
+
+		width: 97% !important;
+		/* background-color: blue; */
+	}
+
+	.cg {
+
+		flex-direction: column;
+	}
+
+	.image-body-ic {
+
+		height: 55vw;
+	}
+
+	.button-info {
+
+		font-size: 12px;
+	}
+
+	.card-subtitle {
+
+		font-size: 15px !important;
+	}
+
+	.card-title-info {
+
+		font-size: 25px !important;
+	}
+}
+
+@media (max-width: 900px) and (min-width: 650px){
+
+	.card-info {
+
+		width: 400px !important;
+		/* background-color: pink; */
+	}
+
+	/* .cg {
+
+		flex-direction: column;
+	} */
+
+	.image-body-ic {
+
+		height: 40vw;
+	}
+
+	.button-info {
+
+		font-size: 12px;
+	}
+
+	.card-subtitle {
+
+		font-size: 12px !important;
+	}
+
+	.card-title-info {
+
+		font-size: 20px !important;
+	}
+}

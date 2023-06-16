@@ -1,0 +1,89 @@
+.allin-flagship-sf {
+    display: flex;
+    justify-content: center;
+    /* background-color: black; */
+}
+
+.container-flagship-sf {
+    margin-top: 7%;
+    background-color: rgb(240, 239, 239);
+    width: 90%;
+    text-align: center;
+}
+
+.heading-flagship-sf {
+    margin-top: 30px;
+    font-size: 28px;
+    color: rgb(62, 58, 58);
+}
+
+.text-flagship-sf {
+    font-size: 14px;
+    font-weight: 600;
+    color: rgb(95, 95, 95);
+    margin-bottom: 20px;
+}
+
+.flag-scroll-container-sf {
+
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    /* background-color: black; */
+
+    /* background-color: black; */
+}
+
+.toscana-flag-scroll-sf {
+
+    /* display:flex; */
+    width: 100%;
+    /* max-height:40% !important; */
+    /* justify-content: center; */
+    /* text-align: center; */
+    /* background-color: pink; */
+}
+
+.below-text-flag {
+
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+.img-fluid-serenaflag {
+
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+@media (max-width: 400px) {
+
+    .heading-flagship-sf {
+
+        font-size: 25px;
+    }
+
+    .toscana-flag-scroll-sf {
+
+        height: 120px !important;
+        object-fit: cover;
+        /* background-color: red; */
+    }
+
+    .img-fluid-serenaflag {
+
+        height: 120px;
+        object-fit: fill;
+    }
+
+    .text-flagship-sf {
+
+        font-size: 12px;
+    }
+
+    .flag-scroll-container-sf {
+
+        /* height: 50px; */
+    }
+}

@@ -1,0 +1,255 @@
+.contact-card{
+    max-width: 90%;
+    margin:auto;
+    margin-top: 60px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 2%; 
+}
+
+.image-container {
+    /* margin-top: 50px; */
+    width: 100%;
+    overflow: hidden;
+    /* background-color: purple; */
+}
+
+
+.img-style {
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* justify-content: center;
+    align-self: center; */
+}
+
+.first-name {
+
+    display: flex;
+    margin-top: none;
+    align-self: left;
+    margin-left: 0px !important;
+    justify-content: flex-start;
+}
+
+.rowcon{
+    margin-top: 0px !important;
+    display: flex;
+    width: 100%;
+    border-radius: 5px;
+    /* justify-content: flex-start; */
+}
+
+.row .rowcon {
+    
+    /* margin-bottom: 70px; */
+}
+
+.contact-body{
+    padding: 2rem;
+    align-self: center;
+}
+
+.contact-title{
+    font-size: 45px;
+    font-weight: 420;
+}
+
+.contact-text{
+    color: lightslategrey;
+    /* margin-left:5px; */
+    font-size: 16px;
+    margin-top:-3px;
+}
+
+input[type="text"]{
+   
+}
+
+
+input[type="number"]{
+    padding: 0.5rem;
+    margin-top: 10px;
+    /* margin-left: 20px; */
+    width: 90%;
+    height: 40px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    font-size: 14px;
+    background-color: rgb(244, 242, 242);
+}
+
+.name-input {
+
+    max-width: 89%;
+}
+
+.contact-dropdown{
+    padding: 0.4rem;
+    margin-top: 10px;
+    margin-left: 12px;
+    margin-right: 21px;
+    width: 20%;
+    height: 40px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    font-size: 14px;
+    background-color: rgb(244, 242, 242);
+}
+
+@media(max-width:800){
+    .contact-dropdown{
+        width: 100% !important;;
+    }
+}
+
+.phone-contact{
+    margin-top: 10px !important;
+    width: 90%;
+    height: 40px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    font-size: 14px;
+    background-color: rgb(244, 242, 242);
+    padding: 0.5rem;
+}
+
+.dropdown{
+    border: 0px solid transparent;
+    background-color: rgb(244, 242, 242);
+    padding: 2px;
+    font-size: 14px;
+    padding-right: 25px;
+    color : lightslategray;
+}
+
+.contact-button{
+    /* display: flex; */
+    /* padding: 20px; */
+    background-color: #fbc02d;
+    font-size: 16px;
+    font-weight:500;
+    color: #fff;
+    width: 90%;
+    height: 40px;
+    margin-top: 30px;
+    /* margin-left: 20px; */
+    justify-content: center;
+    align-items: center;
+    border: 0px;
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+
+.name-input{
+    padding: 0.5rem;
+    margin-top: 30px;
+    /* margin-left: 20px; */
+    width: 90%;
+    height: 40px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    font-size: 14px;
+    background-color: rgb(244, 242, 242);
+}
+
+.otp-container {
+    /* display:flex; */
+	/* padding: 0 0.75rem; */
+	margin-top: 30px;
+    padding-top: 50%;
+    align-content: center;
+    justify-content: center;
+	width: 20%;
+	/* height: 40px; */
+    font-weight:500;
+    padding: 0.5rem;
+    color: white !important;
+	border: 1px solid transparent;
+	border-radius: 5px;
+	font-size: 14px;
+    text-align: center;
+	background-color: #fbc02d;
+}
+
+/* .otp-container-input{
+    padding: 0.5rem;
+    width: 90%;
+    height: 40px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    font-size: 14px;
+    background-color: rgb(244, 242, 242);
+} */
+
+.otp-receiver{
+    margin-top: 10px !important;
+    width: 40%;
+    height: 40px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    font-size: 14px;
+    background-color: rgb(244, 242, 242);
+    padding: 0.5rem;
+}
+
+.getotp-button{
+    /* font-weight: 600; */
+    justify-self: center;
+    text-align: center;
+}
+
+@media(min-width:700px) and (max-width:1000px){
+    .contact-title{
+        font-size: 30px;
+    }
+    .contact-text{
+        font-size: 12px;
+    }
+    .getotp-button{
+        font-size: 12px;
+        
+    }
+    .otp-container{
+        width:30%;
+    }
+    .contact-dropdown{
+        width:31%;
+    }
+}
+
+@media(min-width:400px) and (max-width:600px){
+    /* .contact-title{
+        font-size: 30px;
+    }
+    .contact-text{
+        font-size: 12px;
+    } */
+    .getotp-button{
+        font-size: 14px;    
+    }
+    .otp-container{
+        width:30%;
+    }
+    .contact-dropdown{
+        width:31%;
+    }
+}
+@media(max-width:400px){
+    /* .contact-title{
+        font-size: 30px;
+    }
+    .contact-text{
+        font-size: 12px;
+    } */
+    .getotp-button{
+        font-size: 12px;    
+    }
+    .otp-container{
+        width:35%;
+        font-size: 12px;
+    }
+    .contact-dropdown{
+        width:40%;
+    }
+}
