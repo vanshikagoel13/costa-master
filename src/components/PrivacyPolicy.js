@@ -23,10 +23,9 @@ function PrivacyPolicy() {
         />
         {isHeaderExpanded ? null : (
           <>
-            <div className="contact-box">
-              <div className="heading">
-                <h1 className="main-heading PoppBold">Privacy Policy</h1>
-                <hr className="bg-black m-5 w-50 mx-auto" />
+            <div className="contactt-box">
+              <div className="heading-common">
+                <h2 className="main-heading PoppBold">Privacy Policy</h2>
               </div>
               {/* <h5 className="main-heading-2">Terms And Conditions</h5> */}
 
@@ -38,7 +37,6 @@ function PrivacyPolicy() {
                   our website, you agree to comply with these terms and
                   conditions. Please read them carefully.
                 </h6>
-                <br></br>
                 <br></br>
                 <br></br>
                 <div>

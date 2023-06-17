@@ -4,7 +4,9 @@ import Footer from "./Footer";
 import Header from "./Header";
 // import NewFooter from "./NewFooter";
 import CallNowButton from "./CallNowButton";
+
 function TermsConditions() {
+
   const [isHeaderExpanded, setIsHeaderExpanded] = useState(false);
   const handleHeaderExpand = () => {
     setIsHeaderExpanded(true);
@@ -13,6 +15,7 @@ function TermsConditions() {
   const handleHeaderCollapse = () => {
     setIsHeaderExpanded(false);
   };
+
   return (
     <>
       <div className="v-scrollcs">
@@ -23,10 +26,9 @@ function TermsConditions() {
         />
         {isHeaderExpanded ? null : (
           <>
-            <div className="contact-box">
-              <div className="heading">
-                <h1 className="main-heading PoppBold">Terms and Conditions</h1>
-                <hr className="bg-black m-5 w-50 mx-auto" />
+            <div className="contactt-box">
+              <div className="heading-common">
+                <h2 className="main-heading PoppBold">Terms and Conditions</h2>
               </div>
               {/* <h5 className="main-heading-2">Terms And Conditions</h5> */}
 
@@ -38,7 +40,6 @@ function TermsConditions() {
                   our website, you agree to comply with these terms and
                   conditions. Please read them carefully.
                 </h6>
-                <br></br>
                 <br></br>
                 <br></br>
                 <div>

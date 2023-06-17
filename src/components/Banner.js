@@ -76,7 +76,7 @@ function Banner({ onBanner, offBanner }) {
 						</video>
 					</div>
 					<div className="banner-content">
-						<h1 className="banner-title PoppBold">Book Your Cruise</h1>
+						<h1 className="banner-title PoppBold">Book Your India Cruise</h1>
 						<p className="banner-subtitle PoppReg">
 							Discover the world from the unique perpective of the sea
 						</p>
