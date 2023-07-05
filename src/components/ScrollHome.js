@@ -45,6 +45,7 @@ const images = [
 		loc: "From Mumbai",
 		date: "24 Nov 2023",
 		price: "₹17,400",
+		book: "#",
 	},
 	{
 		id: 2,
@@ -55,6 +56,7 @@ const images = [
 		loc: "From Mumbai",
 		date: "04 Nov 2023",
 		price: "₹21,950",
+		book: "#",
 	},
 	{
 		id: 3,
@@ -65,6 +67,7 @@ const images = [
 		loc: "From Cochin",
 		date: "21 Nov 2023",
 		price: "₹24,950",
+		book: "#",
 	},
 	{
 		id: 4,
@@ -75,6 +78,7 @@ const images = [
 		loc: "From Mumbai",
 		date: "19 Nov 2023",
 		price: "₹15,600",
+		book: "https://www.costacruiseindia.com/costa-serena-2-nights-mumbai-cruising-cochin",
 	},
 	{
 		id: 5,
@@ -85,6 +89,7 @@ const images = [
 		loc: "From Mumbai",
 		date: "19 Nov 2023",
 		price: "Rs. 2869",
+		book: "#",
 	},
 	{
 		id: 6,
@@ -95,6 +100,7 @@ const images = [
 		loc: "From Dubai",
 		date: "16 Dec 2023",
 		price: "₹8,559",
+		book: "#",
 	},
 	{
 		id: 7,
@@ -105,6 +111,7 @@ const images = [
 		loc: "From Dubai",
 		date: "22 Dec 2023",
 		price: "₹15,475",
+		book: "#",
 	},
 	{
 		id: 8,
@@ -115,6 +122,7 @@ const images = [
 		loc: "From Abu Dhabi",
 		date: "18 Dec 2023",
 		price: "₹25,849",
+		book: "#",
 	},
 	{
 		id: 9,
@@ -125,6 +133,7 @@ const images = [
 		loc: "From Dubai",
 		date: "16 Dec 2023",
 		price: "₹18,069",
+		book: "#",
 	},
 ];
 
@@ -173,7 +182,7 @@ function ScrollHome() {
 										<p className="price-per-person-sh PoppReg"><small className="text-muted">Price per person from</small></p>
 										<h4 className="price-sh PoppReg">{image.price}</h4>
 										<p className="taxes-sh PoppReg"><small className="text-muted">Mandatory gratuities, port taxes, taxes are not included in the above price.</small></p>
-										<button className="button-sh PoppReg">Explore Cruises</button>
+										<a href={image.book} style={{textDecoration: 'none'}}><button className="button-sh PoppReg">Book Now</button></a>
 									</div>
 								</div>
 							</div>

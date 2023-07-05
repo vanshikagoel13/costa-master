@@ -19,6 +19,8 @@ import "../styles/Home.css";
 import CallNowButton from "../components/CallNowButton";
 
 function Home() {
+
+  const phoneNum = "Enter your phone number <u className='red-color-ast'>*</u>"
   const [isBannerCollapsed, setIsBannerCollapsed] = useState(false);
 
   const handleBannerExpand = () => {
@@ -58,6 +60,8 @@ function Home() {
   };
 
   const handleSubmit = async (event) => {
+
+    console.log("submit triggered");
 
     setThankYou(true);
 
@@ -109,7 +113,7 @@ function Home() {
   };
 
   return (
-    
+
     <div>
       <Banner onBanner={handleBannerExpand} offBanner={handleBannerCollapse} />
       {isBannerCollapsed ? null : (
@@ -127,6 +131,7 @@ function Home() {
           <Footer />
           <Modal show={showModal}>
             <Modal.Header onClick={handleCloseModal} closeButton></Modal.Header>
+            <form method="POST" onSubmit={handleSubmit}>
             <Modal.Body>
               <div className="allin-logo-popup">
                 <img
@@ -142,7 +147,8 @@ function Home() {
               </p>
               <div className="row justify-content-center form-box">
                 <div className="col-10 col-md-6 form-input">
-                  <form method="POST">
+
+                  {/* <form method="POST" onSubmit={handleSubmit}> */}
                     <div className="mb-3">
                       <input
                         type="text"
@@ -150,7 +156,8 @@ function Home() {
                         value={firstName}
                         onChange={handleFirstNameChange}
                         className="input-settings mt-3"
-                        placeholder="Enter your name"
+                        placeholder="Enter your name*"
+                        required
                       />
                     </div>
                     <div className="mb-3">
@@ -160,7 +167,8 @@ function Home() {
                         value={email}
                         onChange={handleEmailChange}
                         className="input-settings"
-                        placeholder="Enter your email"
+                        placeholder="Enter your email*"
+                        required
                       />
                     </div>
                     <div className="mb-3">
@@ -170,9 +178,10 @@ function Home() {
                         className="mb-3 input-settings"
                         value={phoneNumber}
                         onChange={handlePhoneNumberChange}
-                        placeholder="Enter your phone number"
+                        placeholder="Enter your phone number*"
+                        required
                       />
-                      <button type="submit" className="otp-button font-otp-popup PoppReg">
+                      <button type="button" className="otp-button font-otp-popup PoppReg">
                         Get OTP
                       </button>
                     </div>
@@ -181,22 +190,24 @@ function Home() {
                         type="text"
                         id="otp"
                         className="input-settings"
-                        placeholder="Enter OTP"
+                        placeholder="Enter OTP*"
+                        // required
                       />
                     </div>
-                  </form>
+                  {/* </form> */}
                 </div>
               </div>
             </Modal.Body>
             <Modal.Footer>
               <button
-                type="button"
-                className="btn submit-button PoppReg"
-                onClick={handleSubmit}
+                // type="button"
+                className="submit btn submit-button PoppReg"
+                // onClick={handleSubmit}
               >
                 Submit
               </button>
             </Modal.Footer>
+            </form>
           </Modal>
 
           <Modal show={thankYou}>

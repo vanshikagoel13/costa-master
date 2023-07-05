@@ -5,19 +5,19 @@ function Footer() {
   return (
     <div>
       <footer
-        className="text-center text-lg-start text-white"
+        className="text-lg-start text-white"
         style={{ backgroundColor: "#1078FC ", marginTop: "40px" }}
       >
-        <section
-          className="d-flex justify-content-center"
+        <div
+          className="d-flex head-logo-footer"
           style={{ backgroundColor: "#1078FC" }}
         > 
-          <Link className="logo-wrapper mt-3" to="../">
+          <Link className="logo-wrapper-logo mt-3" to="../">
             <img
               src={process.env.PUBLIC_URL + "/logo2.png"}
               alt="Company Logo"
               className="logo"
-              style={{ height: "80%" }}
+              style={{ height: "80%"}}
             />
           </Link>
           {/* <div className="top-right-text">
@@ -30,7 +30,7 @@ function Footer() {
               </a>
             </span>
           </div> */}
-        </section>
+        </div>
         <section>
           <div className="container text-center mt-3">
             <div className="row mt-3 justify-content-between">
@@ -46,15 +46,17 @@ function Footer() {
                 <h5 className="text-uppercase heading-footer fw-bold PoppReg">
                   About Costa
                 </h5>
-                <hr
-                  className="mb-4 mt-0 d-inline-block mx-auto"
-                  style={{
-                    width: "80px",
-                    backgroundColor: "#7c4dff",
-                    height: "2px",
-                  }}
-                />
-                <ul className="ul">
+                <div className="underline-container">
+                  <hr
+                    className="underline"
+                    style={{
+                      width: "80px",
+                      backgroundColor: "#7c4dff",
+                      height: "2px",
+                    }}
+                  />
+                </div>
+                <ul className="ul" style={{ paddingLeft: '0'}}>
                   <li>
                     <Link className="link-style2 PoppReg" to="">
                       Costa Cruise is an Italian company under Carnival Corporation, known for its Italian style and hospitality. It operates globally, offering routes in the Mediterranean, North Europe, Baltic Sea, Caribbean, North and Central America, South America, UAE, and Asia. From December 2023 to March 2024, their flagship Costa Toscana, powered by LNG, will operate in Dubai with 2,663 cabins and a tonnage of 185,000.
@@ -88,15 +90,17 @@ function Footer() {
                 <h5 className="text-uppercase heading-footer fw-bold PoppReg">
                   USEFUL LINKS
                 </h5>
-                <hr
-                  className="mb-4 mt-0 d-inline-block mx-auto"
-                  style={{
-                    width: "80px",
-                    backgroundColor: "#7c4dff",
-                    height: "2px",
-                  }}
-                />
-                <ul className="ul">
+                <div className="underline-container">
+                  <hr
+                    className="underline"
+                    style={{
+                      width: "80px",
+                      backgroundColor: "#7c4dff",
+                      height: "2px",
+                    }}
+                  />
+                </div>
+                <ul className="ul" style={{ paddingLeft: '0'}}>
                   <li>
                     <Link to="../Destinations" className="link-style PoppReg">
                       Destinations
@@ -125,22 +129,24 @@ function Footer() {
               </div>
 
               <div className="col-md-4 col-lg-4 col-xl-4 mx-auto mb-4">
-                <h5 className="text-uppercase heading-footer text-align-center fw-bold PoppReg">
+                <h5 className="text-uppercase heading-footer fw-bold PoppReg">
                   OUR FOUNDATION
                 </h5>
-                <hr
-                  className="mb-4 mt-0 d-inline-block mx-auto"
-                  style={{
-                    width: "80px",
-                    backgroundColor: "#7c4dff",
-                    height: "2px",
-                  }}
-                />
-                <div className="logo-wrapper d-flex justify-content-center me-5">
+                <div className="underline-container">
+                  <hr
+                    className="underline"
+                    style={{
+                      width: "80px",
+                      backgroundColor: "#7c4dff",
+                      height: "2px",
+                    }}
+                  />
+                </div>
+                <div className="logo-wrapper d-flex me-5">
                   <img
                     src={process.env.PUBLIC_URL + "/foundationLogo.png"}
                     alt="Company Logo"
-                    style={{ height: "80%", marginLeft: "14%" }}
+                    style={{ height: "80%", paddingLeft: '0' }}
                   />
                 </div>
               </div>
@@ -158,19 +164,19 @@ function Footer() {
           {/* Copyright */}
           <div className="icon col-lg-3 col-sm-3 col-md-3 d-flex justify-content-end">
             <a
-              href="https://www.facebook.com/CostaCruiseIndia"
+              href="https://www.facebook.com/CostaCruiseIndia" target="_blank" rel="noopener noreferrer"
               className="text-white me-4"
             >
-              <i className="fab fa-facebook-f icon size-icon"></i>
+              <i className="fab fa-facebook-f icon size-icon" ></i>
             </a>
             <a
-              href="https://www.instagram.com/costacruisesindia/"
+              href="https://www.instagram.com/costacruisesindia/" target="_blank" rel="noopener noreferrer"
               className="text-white me-4"
             >
-              <i className="fab fa-instagram icon  size-icon"></i>
+              <i className="fab fa-instagram icon size-icon"></i>
             </a>
             <a
-              href="https://www.youtube.com/@costacruiseindia4623"
+              href="https://www.youtube.com/@costacruiseindia4623" target="_blank" rel="noopener noreferrer"
               className="text-white me-4"
             >
               <i className="fab fa-youtube icon size-icon"></i>

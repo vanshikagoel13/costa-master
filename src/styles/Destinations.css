@@ -81,6 +81,10 @@
 	}
 }
 
+@media (max-width: 400px) {
+	
+}
+
 .l2ds {
 	font-size: 25px;
 	font-weight: medium;
@@ -121,8 +125,15 @@
 	.l1ds {
 
 		font-size: 30px;
+		text-align: left;
+		/* background-color: red; */
 	}
 	
+	.left-columnds {
+
+		justify-self: left;
+	}
+
 	.l2ds {
 		font-size: 12px;
 		justify-content: center;

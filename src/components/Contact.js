@@ -93,8 +93,8 @@ function Contact() {
     <section id="Contact">
       <div className="card contact-card mb-3">
         <div className="row rowcon g-0">
-          <div className="col-lg-6 d-flex" style={{ width: "40%" }}>
-            <div className="image-container">
+          <div className="col-lg-6 d-flex" style={{ width: "40%",  }}>
+            <div className="image-container" style={{ padding: '0'}}>
               <img
                 src={process.env.PUBLIC_URL + "/Contact Us2.png"}
                 className="img-fluid img-style"
@@ -103,20 +103,22 @@ function Contact() {
           </div>
           <div className="col-lg-6 d-flex" style={{ width: "60%" }}>
             <div className="contact-body">
-              <h5 className="contact-title KepStd">Get in touch with us</h5>
+              <h5 className="contact-title PoppMed">Get in touch with us</h5>
               <p className="contact-text PoppReg">
                 To make your seacation safe and memorable, we have added all the
                 necessary precautions.
               </p>
 
-              <form method="POST">
+              <form method="POST" onSubmit={handleSubmit}>
                 <div className="first-name">
                   <input
                     type="text"
                     value={firstName}
                     onChange={handleFirstNameChange}
-                    placeholder="First Name"
+                    placeholder="First Name*"
                     className="name-input"
+                    style={{ marginTop: 0 }}
+                    required
                   />
                 </div>
                 <div className="row rowcon">
@@ -135,12 +137,13 @@ function Contact() {
                       value={phoneNumber}
                       onChange={handlePhoneNumberChange}
                       onInput={handleInputChange}
-                      placeholder="Phone Number"
+                      placeholder="Phone Number*"
                       className="phone-contact"
+                      required
                     />
                   </div>
                 </div>
-                <button className="otp-container PoppReg">
+                <button type="button" className="otp-container PoppReg">
                   Get OTP
                   {/* <h5 className="getotp-button PoppReg"></h5> */}
                 </button>
@@ -149,12 +152,12 @@ function Contact() {
                     type="text"
                     pattern="[0-9]*"
                     onInput={handleInputChange}
-                    placeholder="Enter OTP"
+                    placeholder="Enter OTP*"
                     className="otp-receiver"
+                    // required
                   />
                 </div>
-
-                <button className="contact-button PoppReg" onClick={handleSubmit}>Submit</button>
+                <button className="submit contact-button PoppReg">Submit</button>
               </form>
             </div>
           </div>
