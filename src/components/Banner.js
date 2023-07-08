@@ -80,7 +80,7 @@ function Banner({ onBanner, offBanner }) {
 						<p className="banner-subtitle PoppReg">
 							Discover the world from the unique perpective of the sea
 						</p>
-						<button className="booknow-button-banner PoppReg">Book Now &rarr;</button>
+						{/* <button className="booknow-button-banner PoppReg">Book Now &rarr;</button> */}
 					</div>
 
 				</>

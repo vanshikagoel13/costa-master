@@ -39,7 +39,7 @@ const responsive = {
 const images = [
 	{
 		id: 1,
-		url: "/ScrollHome/image8.png",
+		url: "/ScrollHome/image10.png",
 		title: "Doha",
 		days: "7",
 		dates: "16 Dec, 23 Dec, 30 Dec 2023; 06 Jan, 13 Jan, 20 Jan, 27 Jan, 29 Jan 03 Feb, 10 Feb, 17 Feb, 24 Feb, 02 Mar 2024",
@@ -50,7 +50,7 @@ const images = [
 	},
 	{
 		id: 2,
-		url: "/ScrollHome/image9.jpg",
+		url: "/ScrollHome/image11.png",
 		title: "Muscat",
 		days: "4",
 		dates: "18 Dec, 25 Dec 2023; 01 Jan, 08 Jan, 15 Jan, 22 Jan, 29 Jan 05 Feb, 12 Feb, 19 Feb, 26 Feb, 04 Mar 2024",
@@ -61,7 +61,7 @@ const images = [
 	},
 	{
 		id: 3,
-		url: "/ScrollHome/image7.jpg",
+		url: "/ScrollHome/image12.png",
 		title: "Dubai",
 		days: "2",
 		dates: "16 Dec 2023",
@@ -72,7 +72,7 @@ const images = [
 	},
 	{
 		id: 4,
-		url: "/ScrollHome/image6.jpg",
+		url: "/ScrollHome/image13.png",
 		title: "Abu Dhabi",
 		days: "3",
 		dates: "22 Dec, 29 Dec 2023; 05 Jan, 12 Jan, 19 Jan, 26 Jan, 02 Feb, 09 Feb, 16 Feb, 23 Feb, 01 Mar, 08 Mar 2024",

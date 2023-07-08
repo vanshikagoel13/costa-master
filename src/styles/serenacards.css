@@ -72,7 +72,8 @@
 
 .card-subtitle-sercard {
 	font-weight: 200;
-	font-size: 12px;
+	font-size: 16px;
+	/* color:red; */
 	/* margin: 3px 0px; */
 	/* background-color: yellow; */
 	/* margin: 1; */
@@ -161,31 +162,31 @@
 @media (max-width: 600px) {
 	
 	.card-title-sercard {
-		font-size: 21px;
+		font-size: 25px;
 	}
 
 	.card-subtitle-sercard {
-		font-size: 17px;
+		font-size: 18px;
 	}
 
 	.departure-sercard {
-		font-size: 14px;
+		font-size: 16px;
 	}
 
 	.departure-sercard-1 {
-		font-size: 14px;
+		font-size: 15px;
 	}
 
 	.price-sercard {
-		font-size: 26px;
+		font-size: 30px;
 	}
 
 	.price-per-person-sercard {
-		font-size: 14px;
+		font-size: 15px;
 	}
 
 	.taxes-sercard {
-		font-size: 12px;
+		font-size: 13px;
 	}
 }
 
@@ -240,11 +241,11 @@
 	font-size: 16px;
 }
 
-@media(min-width: 600px) and (max-width: 1024px){
+/* @media(min-width: 600px) and (max-width: 1024px){
     .card-subtitle-sercard{
         font-size: 12px !important;
     }
-}
+} */
 
 @media (max-width: 500px) {
 
@@ -264,6 +265,36 @@
 
 	.subheading-scrollhome{
 		font-size: 14px;
+	}
+}
+
+@media (min-width:700px) and (max-width: 1024px) {
+	.card-title-sercard {
+		font-size: 20px!important;
+	}
+
+	.card-subtitle-sercard {
+		font-size: 14px!important;
+	}
+
+	.departure-sercard {
+		font-size: 13px!important;
+	}
+
+	.departure-sercard-1 {
+		font-size: 13px!important;
+	}
+
+	.price-sercard {
+		font-size: 24px!important;
+	}
+
+	.price-per-person-sercard {
+		font-size: 13px!important;
+	}
+
+	.taxes-sercard {
+		font-size: 12px!important;
 	}
 }
 

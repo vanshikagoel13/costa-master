@@ -224,8 +224,22 @@ function CallNowButton() {
           <p>&nbsp;</p>
           <h2 className="heading-popup PoppReg">Thank you for reaching out!</h2>
           <p className="subheading-popup PoppReg">
-          You can call us on: <u>2261792300</u>
+          You can call us on
+          {/* (Telephone Number): <u>2261792300</u> */}
           </p>
+          <h6>&nbsp;</h6>
+          <p  style={{marginBottom:"25px"}} className="subheading-popup PoppReg">
+          Phone Number:&nbsp; <u> 9820185084</u><br></br>
+          {/* (Telephone Number): <u>2261792300</u> */}
+          </p>
+          {/* <p>&nbsp;</p> */}
+          <p className="subheading-popup PoppReg">
+          
+
+          {/* You can call us on (Phone Number): <u>9820185084</u><br></br> */}
+          Telephone Number:&nbsp; <u>2261792300</u>
+          </p>
+
           <p>&nbsp;</p>
         </Modal.Body>
       </Modal>

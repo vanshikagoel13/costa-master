@@ -104,7 +104,7 @@ const images = [
 	},
 	{
 		id: 7,
-		url: "/ScrollHome/image1.jpg",
+		url: "/ScrollHome/image7.png",
 		title: "Lakshwadweep",
 		days: "3",
 		dates: "28 Nov, 26 Dec 2023",
@@ -119,7 +119,7 @@ const images = [
 		title: "Cochin",
 		days: "5",
 		dates: "26 Nov, 24 Dec 2023",
-		loc: "8.	MUMBAI – CRUISING – COCHIN- AGATTI ISLAND INDIA, LAKSHADWEEP – CRUISING - MUMBAI",
+		loc: "MUMBAI – CRUISING – COCHIN- AGATTI ISLAND INDIA, LAKSHADWEEP – CRUISING - MUMBAI",
 		// date: "22 Dec 2023",
 		price: "₹51,900",
 		book: "https://www.costacruiseindia.com/costa-serena-5-nights-mumbai-cruising-cochin-lakshadweep-cruising-mumbai",

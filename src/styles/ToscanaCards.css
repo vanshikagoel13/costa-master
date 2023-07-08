@@ -63,7 +63,7 @@
 
 .card-subtitle-tc {
 	font-weight: 200;
-	font-size: 12px;
+	font-size: 14px;
 	/* margin: 3px 0px; */
 	/* background-color: yellow; */
 	/* margin: 1; */
@@ -148,40 +148,46 @@
 	bottom: 30px;
 } */
 
-@media(min-width: 600px){
+@media(min-width: 1024px){
     .card-subtitle-tc{
-        font-size: 12px !important;
+        font-size: 14px !important;
     }
+	.departure-tc {
+		font-size: 16px;
+	}
+	.departure-tc-1 {
+		font-size: 13px;
+	}
 }
 
 @media (max-width: 600px) {
 	
 	.card-title-tc {
-		font-size: 21px;
+		font-size: 25px;
 	}
 
 	.card-subtitle-tc {
-		font-size: 17px;
+		font-size: 18px;
 	}
 
 	.departure-tc {
-		font-size: 14px;
+		font-size: 16px;
 	}
 
 	.departure-tc-1 {
-		font-size: 14px;
+		font-size: 15px;
 	}
 
 	.price-tc {
-		font-size: 26px;
+		font-size: 30px;
 	}
 
 	.price-per-person-tc {
-		font-size: 14px;
+		font-size: 15px;
 	}
 
 	.taxes-tc {
-		font-size: 12px;
+		font-size: 13px;
 	}
 }
 
@@ -254,6 +260,35 @@
 
 	.subheading-scrollhome{
 		font-size: 14px;
+	}
+}
+@media (min-width:700px) and (max-width: 1024px) {
+	.card-title-tc {
+		font-size: 21px!important;
+	}
+
+	.card-subtitle-tc {
+		font-size: 15px!important;
+	}
+
+	.departure-tc {
+		font-size: 13px!important;
+	}
+
+	.departure-tc-1 {
+		font-size: 13px!important;
+	}
+
+	.price-tc {
+		font-size: 24px!important;
+	}
+
+	.price-per-person-tc {
+		font-size: 13px!important;
+	}
+
+	.taxes-tc {
+		font-size: 12px!important;
 	}
 }
 

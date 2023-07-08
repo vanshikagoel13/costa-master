@@ -38,7 +38,7 @@ function BannerSerena({ onBanner, offBanner }) {
 				</p>
 				<p className="banner-titleser PoppBold">Costa Serena India</p>
 				<p className="banner-titleser2 PoppMed">Sailing India Nov & Dec 2023</p>
-				<button className="booknow-button-banner-serena PoppReg">Book Your Cruise &rarr;</button>
+				{/* <button className="booknow-button-banner-serena PoppReg">Book Your Cruise &rarr;</button> */}
 			</div>
 			</>
       		}
