@@ -53,6 +53,22 @@
   transition: background-color 0.3s;
 }
 
+.message-button{
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: rgba(6, 93, 147, 0.949);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 8px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 25px;
+  transition: background-color 0.3s;
+}
+
+.message-button:hover,
 .call-button:hover,
 .whatsapp-button:hover {
   background-color: #0056b3;
@@ -60,7 +76,7 @@
 
 
 @media (max-width: 1000px) and (min-width: 400px) {
-
+  .message-button,
   .call-button,
   .whatsapp-button {
 
@@ -76,7 +92,10 @@
 
     font-size: 25px;
   }
-
+  .fa-solid.fa-message{
+    font-size: 20px;
+  }
+  
   .floating-buttons {
 
     right: 10px;
@@ -85,7 +104,7 @@
 }
 
 @media (max-width: 400px) {
-
+  .message-button,
   .call-button,
   .whatsapp-button {
 
@@ -100,6 +119,10 @@
   .fa-brands.fa-whatsapp {
 
     font-size: 25px;
+  }
+
+  .fa-solid.fa-message{
+    font-size: 16px;
   }
 
   .floating-buttons {
