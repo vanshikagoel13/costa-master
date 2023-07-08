@@ -24,6 +24,7 @@
 	grid-template-columns: 1fr 1fr;
 	/* Divide the container into two columns with equal width */
 	gap: 2%;
+	/* background-color: yellow; */
 	/* background-color: #FFBF00; */
 	/* Add a gap between the columns */
 }
@@ -80,6 +81,10 @@
 	}
 }
 
+@media (max-width: 400px) {
+	
+}
+
 .l2ds {
 	font-size: 25px;
 	font-weight: medium;
@@ -120,8 +125,15 @@
 	.l1ds {
 
 		font-size: 30px;
+		text-align: left;
+		/* background-color: red; */
 	}
 	
+	.left-columnds {
+
+		justify-self: left;
+	}
+
 	.l2ds {
 		font-size: 12px;
 		justify-content: center;
@@ -537,6 +549,7 @@
 	font-size: 53px;
 	/* justify-self: flex-start; */
 	align-self: center;
+	/* font-family: 'PoppinsBold', Arial, Helvetica, sans-serif; */
 	/* padding-right: 200px; */
 }
 

@@ -66,9 +66,20 @@
   /* margin-bottom: 10px; */
 }
 
-@media (max-width: 786px) {
+@media (min-width:500px) and (max-width: 786px) {
   .banner-titlets {
-    font-size: 40px;
+    font-size: 45px;
+  }
+}
+
+@media(min-width:400px) and (max-width: 500px) {
+  .banner-titlets {
+    font-size: 36px;
+  }
+}
+@media (max-width: 400px) {
+  .banner-titlets {
+    font-size: 30px;
   }
 }
 

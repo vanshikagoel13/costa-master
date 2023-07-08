@@ -1,135 +1,148 @@
-  .logo-popup {
-    width: 23%;
-    height: 23%;
-    justify-self:center;
-    margin-bottom: 10px;
-    /* margin-left: 40%; */
-  }
-  .allin-logo-popup{
-    display: flex;
-    justify-content: center;
-  }
+.logo-popup {
+	width: 23%;
+	height: 23%;
+	justify-self: center;
+	margin-bottom: 10px;
+	/* margin-left: 40%; */
+}
+
+.allin-logo-popup {
+	display: flex;
+	justify-content: center;
+}
 
 .heading-popup {
 
-    line-height: 2;;
-    color: #1d6ca8;
-    font-weight: 700;
-    font-size: 30px;
-    margin-bottom: 2%;
-    text-align:center;
-  }
+	line-height: 2;
+	color: #1d6ca8;
+	font-weight: 700;
+	font-size: 30px;
+	margin-bottom: 2%;
+	text-align: center;
+}
 
-  .subheading-popup {
-    color: #1d6ca8;
-    line-height: 0;
-    font-size: 18px;
-    margin-bottom: 4%;
-    text-align: center;
-  }
+.subheading-popup {
+	color: #1d6ca8;
+	line-height: 0;
+	font-size: 18px;
+	margin-bottom: 4%;
+	text-align: center;
+}
 
-  .form-input{
-    width: 70%;
-    /* object-fit: cover; */
-    /* max-width: 70%; */
-   }
+.form-input {
+	width: 70%;
+	/* object-fit: cover; */
+	/* max-width: 70%; */
+}
 
-   .input-field{
-    width: 100%;
-   }
+.input-field {
+	width: 100%;
+}
 
-   .submit-button {
-    background-color: #fbc02d;
-    color: #000000;
-    width: 70%;
-    margin:auto;
-  }
-  .otp-button{
-    background-color: transparent;
-    color: #000000;
-    border: none;
-    font-weight: 800;
-    color: #1d6ca8;
+.submit-button {
+	background-color: #fbc02d;
+	color: #fff;
+	width: 70%;
+	margin: auto;
+}
 
-  }
- 
-  .submit-button:hover {
-    background-color: #fdd65e;
-  }
-  @media (min-width:400px) and (max-width: 768px) {
-    /* .popup {
-      max-width: 100%;
-      
-    } */
-    .heading-popup{
-      font-size: 25px;
-    }
-    .subheading-popup{
-      font-size: 14px;
-    }
-    .form-box{
-        align-items: center;
-    }
-  }
-  @media (max-width: 400px) {
-    /* .popup {
-      max-width: 100%;
-      
-    } */
-    .heading-popup{
-      font-size: 20px;
-    }
-    .subheading-popup{
-      font-size: 12px;
-    }
-    .form-box{
-        align-items: center;
-    }
-  }
+.btn {
 
-  .input-settings{
-    /* background-color: white; */
-    width:100%;
-    padding: 0.5rem;
-    /* margin-top: 30px; */
-    height: 40px;
-    border: 2px solid transparent;
-    border-radius: 5px;
-    font-size: 14px;
-    background-color: rgb(244, 242, 242);
+	color:white;
+}
 
-  }
-  
+.otp-button {
+	background-color: transparent;
+	color: #000000;
+	border: none;
+	font-weight: 800;
+	color: #1d6ca8;
+}
 
-  input[type="text"]{
-    
+.submit-button:hover {
+	background-color: #fdd65e;
+}
+
+@media (min-width:400px) and (max-width: 768px) {
+
+	/* .popup {
+	max-width: 100%;
+	
+	} */
+	.heading-popup {
+		font-size: 25px;
+	}
+
+	.subheading-popup {
+		font-size: 14px;
+	}
+
+	.form-box {
+		align-items: center;
+	}
+}
+
+@media (max-width: 400px) {
+
+	/* .popup {
+	max-width: 100%;
+	
+} */
+	.heading-popup {
+		font-size: 20px;
+	}
+
+	.subheading-popup {
+		font-size: 12px;
+	}
+
+	.form-box {
+		align-items: center;
+	}
+}
+
+.input-settings {
+	/* background-color: white; */
+	width: 100%;
+	padding: 0.5rem;
+	/* margin-top: 30px; */
+	height: 40px;
+	border: 2px solid transparent;
+	border-radius: 5px;
+	font-size: 14px;
+	background-color: rgb(244, 242, 242);
+
 }
 
 .font-otp-popup:hover {
-    text-decoration: underline;
+	text-decoration: underline;
 	text-decoration-thickness: 2px;
-	text-underline-offset:4px;
+	text-underline-offset: 4px;
 }
 
-
 .vscroll-container {
-  overflow-y: auto; /* Enable scrolling when necessary */
-  scrollbar-width: thin; /* Set the width of the scrollbar */
-  overflow-x: hidden;
-  scrollbar-color: transparent transparent; /* Set the color of the scrollbar track and thumb */
+	overflow-y: auto;
+	/* Enable scrolling when necessary */
+	scrollbar-width: thin;
+	/* Set the width of the scrollbar */
+	overflow-x: hidden;
+	scrollbar-color: transparent transparent;
+	/* Set the color of the scrollbar track and thumb */
 }
 
 .vscroll-container::-webkit-scrollbar {
-  width: 0; /* Set the width of the scrollbar */
+	width: 0;
+	/* Set the width of the scrollbar */
 }
 
 .vscroll-container::-webkit-scrollbar-track {
-  background-color: transparent; /* Set the background color of the scrollbar track */
+	background-color: transparent;
+	/* Set the background color of the scrollbar track */
 }
 
 .vscroll-container::-webkit-scrollbar-thumb {
-  background-color: transparent; /* Set the color of the scrollbar thumb */
+	background-color: transparent;
+	/* Set the color of the scrollbar thumb */
 }
-.container .vscroll-container{
 
-}
+.container .vscroll-container {}

@@ -59,9 +59,9 @@ function Testimonials() {
       <div className="test-box">
         <div className="test-content">
           <div className="test-heading" >
-            <h1 className="test-title PoppBold" style={{ fontWeight: 600 }}>
+            <h3 className="test-title PoppBold" style={{ fontWeight: 600 }}>
               Testimonials
-            </h1>
+            </h3>
             <p className="test-subtitle PoppReg" style={{ fontWeight: 400 }}>
               What our customers are saying about us
             </p>

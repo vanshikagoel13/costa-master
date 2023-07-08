@@ -78,6 +78,135 @@
     align-items: center;
 }
 
+
+.two-column-containerser {
+    /* margin-top: 100px; */
+    /* margin-bottom: 100px; */
+    margin-inline: auto !important;
+    width: 90%;
+    margin-top: 7%;
+    margin-bottom: 7%;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr;
+    /* Divide the container into two columns with equal width */
+    gap: 2%;
+    /* background-color: #FFBF00; */
+    /* Add a gap between the columns */
+}
+
+@media (max-width: 768px) {
+    .two-column-containerser {
+        grid-template-columns: 1fr;
+        /* Change to a single column layout */
+        gap: 0px;
+    }
+}
+
+.left-columnser {
+    /* margin-top: 30px;
+    margin-left: 40px;
+    margin-right: 40px; */
+    /* padding: 20px; */
+    align-self: center;
+    justify-self: center;
+    /* background-color: blue; */
+}
+
+.right-columnser {
+    /* margin-top: 30px;
+    margin-left: 40px;
+    margin-right: 40px; */
+    /* padding-right: 30px; */
+    align-self: center;
+    justify-self: center;
+    /* margin: auto; */
+    /* background-color: red; */
+}
+
+@media (max-width: 768px) {
+
+    .left-columnser,
+    .right-columnser {
+        padding: 5px;
+        /* margin-top: 30px;
+        margin-left: 40px;
+        margin-right: 40px; */
+        /* background-color: red; */
+    }
+}
+
+
+.l1ser {
+    font-size: 55px;
+    /* font-weight: bold; */
+}
+
+@media (max-width: 768px) {
+    .l1ser {
+        font-size: 35px;
+    }
+}
+
+.l2ser {
+    font-size: 20px;
+    font-weight: medium;
+    display: flex;
+    justify-content: flex-start;
+}
+
+@media (max-width: 1200px) {
+    .l1ser {
+        font-size: 40px;
+        /* background-color: blue; */
+    }
+
+    .l2ser {
+
+        font-size: 16px
+    }
+}
+
+@media (max-width: 768px) {
+
+    .l2ser {
+        font-size: 16px;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .two-column-containerser {
+
+        margin-top: 10%;
+    }
+}
+
+@media (max-width: 400px) {
+
+    .l1ser {
+
+        font-size: 25px;
+    }
+
+    .l2ser {
+        font-size: 12px;
+        justify-content: center;
+    }
+
+    .two-column-containerser {
+
+        margin-top: 15%;
+    }
+
+    .left-columnser {
+
+        justify-self: left;
+    }
+}
+
+
 .text-outerser {
     justify-content: center;
 }

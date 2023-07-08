@@ -36,9 +36,9 @@ function InfoCard({ comp }) {
           arrows={false}
           swipeable={true}
           centerMode={false}
-          infinite={true}
-          autoPlay={true}
-          autoPlaySpeed={2000}
+          // infinite={true}
+          autoPlay={false}
+          // autoPlaySpeed={2000}
           partialVisbile={false}
         >
           {comp.images.map((image) => {

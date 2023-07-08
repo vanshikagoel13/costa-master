@@ -7,7 +7,6 @@
 	/* Enable vertical scrolling */
 }
 
-
 .two-column-containercs {
 	/* margin-top: 100px; */
 	/* margin-bottom: 100px; */
@@ -171,6 +170,9 @@
 	/* background-color: purple; */
 	/* background-color: #FFEF00; */
 }
+.carousel-container0 {
+	width: 100%;
+   }
 
 .zoomcs {
 	transition: transform 0.3s;
@@ -658,4 +660,27 @@
 	color: blue;
 	cursor: pointer;
 	/* Add additional styles as needed */
+}
+
+.gd-carousel-wrapper {
+    /* position:relative; */
+}
+
+.gd-carousel {
+    position:unset;
+
+    .react-multiple-carousel__arrow {
+        position:absolute;
+		width: 15px;
+		height:auto;
+    }
+
+    .react-multiple-carousel__arrow--left {
+        left: calc(-6% )
+
+    }
+
+    .react-multiple-carousel__arrow--right {
+        right: calc(-6% )
+    }
 }

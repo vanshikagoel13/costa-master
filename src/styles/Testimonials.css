@@ -13,7 +13,6 @@
 
 .test-content {
 	width: 95%;
-
 }
 
 .row-testimonial {
@@ -27,7 +26,7 @@
 }
 
 .test-title {
-	font-size: 32px;
+	/* font-size: 32px; */
 	font-weight: 400;
 	color: white;
 	margin-top: 30px;

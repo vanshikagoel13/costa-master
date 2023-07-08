@@ -29,6 +29,7 @@
     margin-top: none;
     align-self: left;
     margin-left: 0px !important;
+    /* background-color: yellow; */
     justify-content: flex-start;
 }
 
@@ -251,5 +252,41 @@ input[type="number"]{
     }
     .contact-dropdown{
         width:40%;
+    }
+    
+    .contact-title {
+        margin-top: 10px;
+        font-size: 25px;
+    }
+
+    .contact-text {
+        font-size: 12px;
+    }
+
+    .contact-body {
+        padding: 0;
+    }
+
+    .name-input, 
+    .phone-contact,
+    .contact-dropdown, 
+    .otp-receiver,
+    .contact-button  {
+
+        height: 30px;
+        font-size: 12px;
+    }
+
+    .dropdown,
+    .otp-container {
+
+        font-size: 12px;
+    }
+
+    .phone-contact,
+    .name-input,
+    .contact-button {
+
+        width: 100% !important;
     }
 }

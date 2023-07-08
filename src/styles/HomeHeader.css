@@ -26,8 +26,25 @@
 	text-underline-offset:9px;
 }
 
-@media(max-width:700px){
+@media(max-width:500px){
 	.sizeofmenu{
-		font-size: 0.7rem !important;
+		font-size: 12px !important;
+	}
+}
+
+@media (max-width: 991px) {
+	
+	.hhcustom-navbar-toggler {
+
+		position: absolute;
+		left: 20px;
+		top: 25px;
+	}
+
+	.nncustom-navbar-toggler {
+
+		position: absolute;
+		left: 20px;
+		top: 25px;
 	}
 }

@@ -6,6 +6,7 @@ import { Link, Route } from "react-router-dom";
 
 function HomeHeader({ isExpanded, onExpand, onCollapse }) {
   const [isNavCollapsed, setIsNavCollapsed] = useState(true);
+  const [imgUrll, setImgUrll] = useState("/logo2.png");
 
   const handleNavCollapse = () => {
     setIsNavCollapsed(!isNavCollapsed);
@@ -14,6 +15,13 @@ function HomeHeader({ isExpanded, onExpand, onCollapse }) {
       onCollapse();
     } else {
       onExpand();
+    }
+
+    if (!isNavCollapsed) {
+      setImgUrll("/logo2.png");
+    }
+    else {
+      setImgUrll("/logo.png");
     }
   };
 
@@ -46,7 +54,7 @@ function HomeHeader({ isExpanded, onExpand, onCollapse }) {
             aria-expanded={!isNavCollapsed}
             aria-label="Toggle navigation"
             onClick={handleNavCollapse}
-            
+
             style={{
               fontSize: "1.0rem",
               // color: isNavCollapsed ? "#000" : "#000",
@@ -66,18 +74,17 @@ function HomeHeader({ isExpanded, onExpand, onCollapse }) {
 
           <Link className={`navbar-brand mx-auto`} to="../">
             <img
-              src={process.env.PUBLIC_URL + "/logo2.png"}
+              src={process.env.PUBLIC_URL + imgUrll}
               alt="Costa"
               width="75"
               height="60"
-              style={navLinkStyle}
+            // style={imgBanner}
             />
           </Link>
 
           <div
-            className={`collapse navbar-collapse ${
-              isNavCollapsed ? "" : "show"
-            }`}
+            className={`collapse navbar-collapse ${isNavCollapsed ? "" : "show"
+              }`}
             id="navbarSupportedContent"
           >
             <ul className="navbar-nav me-auto flex-grow-1 m-2 mb-lg-0">
@@ -105,7 +112,7 @@ function HomeHeader({ isExpanded, onExpand, onCollapse }) {
                   to="../CostaToscana"
                   style={navLinkStyle}
                 >
-                  Costa Toscana
+                  Costa Toscana Dubai
                 </Link>
               </li>
               <li className="nav-item">
@@ -114,7 +121,7 @@ function HomeHeader({ isExpanded, onExpand, onCollapse }) {
                   to="../CostaSerena"
                   style={navLinkStyle}
                 >
-                  Costa Serena
+                  Costa Serena India
                 </Link>
               </li>
             </ul>

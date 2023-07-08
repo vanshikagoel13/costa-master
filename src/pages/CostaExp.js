@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "bootstrap/dist/css/bootstrap.css";
 import Header from "../components/Header.js";
 import HorizontalScroll from "../components/HorizontalScroll.js";
@@ -10,11 +10,52 @@ import Footer from "../components/Footer.js";
 import ExpSub from "../components/ExpSub.js";
 import CallNowButton from "../components/CallNowButton.js";
 // import NewFooter from "../components/NewFooter";
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
+// import "../styles/test.css";
+
+const url0 = [
+	{url: "/Untitled-design/1.png", key: 1},
+	{url: "/Untitled-design/2.png", key: 2},
+	{url: "/Untitled-design/3.png", key: 3}
+];
+
+const url1 = [
+	{url: "/Untitled-design1/1.png", key: 5},
+	{url: "/Untitled-design1/2.png", key: 6},
+	{url: "/Untitled-design1/3.png", key: 7}
+];
+
+const url2 = [
+	{url: "/Untitled-design2/1.png", key: 8},
+	{url: "/Untitled-design2/2.png", key: 9},
+	{url: "/Untitled-design2/3.png", key: 10}
+];
+
+const url3 = [
+	{url: "/Untitled-design3/1.png", key: 11},
+	{url: "/Untitled-design3/2.png", key: 12},
+	{url: "/Untitled-design3/3.png", key: 13}
+];
+
+const url4 = [
+	{url: "/Untitled-design4/1.png", key: 14},
+	{url: "/Untitled-design4/2.png", key: 15},
+	{url: "/Untitled-design4/3.png", key: 16}
+];
+
 const images = [
 
 	{
 		id: 0,
-		url: "https://www.costacruises.com/content/dam/costa/costa-asset/discovery/new-pillars-2021/C442_Il_tuo_risveglio_sul_mare_3Renditions_696x423.jpg.image.696.420.high.jpg",
+		url: [
+			{url: "/Untitled-design/1.png", key: 1},
+			{url: "/Untitled-design/2.png", key: 2},
+			{url: "/Untitled-design/3.png", key: 3}
+		],
+		// url1: "/Untitled-design/1.png",
+		// url2: "/Untitled-design/2.png",
+		// url3: "/Untitled-design/3.png",
 		category: "YOUR CABIN",
 		title: "<u class='underline-textcs'>Wake up on the sea</u>",
 		text1: "Choose your cabin or suite on your Costa Cruises ship, the most intimate part of your cruise. For pampering, relaxation and every comfort, every Costa cabin is comfortable and cozy. The perfect place to relax after a busy day of activities and socializing, both on board and ashore. ",
@@ -29,7 +70,10 @@ const images = [
 	},
 	{
 		id: 1,
-		url: "https://www.costacruises.com/content/dam/costa/costa-asset/images/people/C442_Benessere_696x423_v5.jpg.image.696.420.high.jpg",
+		// url1: "/Untitled-design1/1.png",
+		// url2: "/Untitled-design1/2.png",
+		// url3: "/Untitled-design1/3.png",
+		url: url1,
 		category: "SPORT, BEAUTY & RELAX",
 		title: "Wellness with a view and the <u class='underline-textcs'>one you deserve</u>",
 		text1: "Take time for yourself: a relaxing massage and a yoga class are at your disposal, or for the really sporty, a gym overlooking the sea. Choose the best way to relax on board our ships. A massage before dinner? A dip in the hot tub after a great shore excursion? Or, why not simply sunbathe ",
@@ -46,7 +90,11 @@ const images = [
 	},
 	{
 		id: 2,
-		url: "https://www.costacruises.com/content/dam/costa/costa-asset/discovery/new-pillars-2021/C442_Emozioni_a_non_finire_3Renditions_696x423.jpg.image.696.420.high.jpg",
+		// url: "https://www.costacruises.com/content/dam/costa/costa-asset/discovery/new-pillars-2021/C442_Emozioni_a_non_finire_3Renditions_696x423.jpg.image.696.420.high.jpg",
+		url: url2,
+		// url1: "/Untitled-design2/1.png",
+		// url2: "/Untitled-design2/2.png",
+		// url3: "/Untitled-design2/3.png",
 		category: "ENTERTAINMENT",
 		title: "Endless <u class='underline-textcs'>thrills</u>",
 		text1: "Whether you’re on board for a romantic trip for two, or on a cruise with your family or friends, we are here to ensure you have fun and live out your dreams. Every day you can wake up and plunge into the swimming pool, challenge your friends in the games room, and allow yourself to do shopping ",
@@ -63,7 +111,11 @@ const images = [
 	},
 	{
 		id: 3,
-		url: "https://www.costacruises.com/content/dam/costa/costa-asset/discovery/new-pillars-2021/C442_Una_nuova_esperienza_di_gusto_3Renditions_696x423.jpg",
+		// url: "https://www.costacruises.com/content/dam/costa/costa-asset/discovery/new-pillars-2021/C442_Una_nuova_esperienza_di_gusto_3Renditions_696x423.jpg",
+		url: url3,
+		// url1: "/Untitled-design3/1.png",
+		// url2: "/Untitled-design3/2.png",
+		// url3: "/Untitled-design3/3.png",
 		category: "FOOD",
 		title: "Set sail with Costa Cruise and <u class='underline-textcs'>taste the world</u>",
 		text1: "A culinary adventure awaits! From classic Italian delicacies to tangy street chaats, explore a wide range of cuisine options. Let the world's best chefs create a dining experience like never before. Pack your appetite and join us as we sail through a sea of flavors, treating your palate to an array ",
@@ -80,7 +132,11 @@ const images = [
 	},
 	{
 		id: 4,
-		url: "https://www.costacruises.com/content/dam/costa/costa-asset/images/people/C442_Benessere_696x423_v5.jpg.image.696.420.high.jpg",
+		// url: "https://www.costacruises.com/content/dam/costa/costa-asset/images/people/C442_Benessere_696x423_v5.jpg.image.696.420.high.jpg",
+		url: url4,
+		// url1: "/Untitled-design4/1.png",
+		// url2: "/Untitled-design4/2.png",
+		// url3: "/Untitled-design4/3.png",
 		category: "SHOPPING",
 		title: "Shall we go <u class='underline-textcs'>shopping?</u>",
 		text1: "Yes, you can also go shopping while on a cruise! On board you will find lots of cruise shops to make your purchases. From a brand-name bag to the perfect dress for a romantic evening. Did you know that on board there is a Duty Free shop? ",
@@ -97,7 +153,11 @@ const images = [
 	},
 	{
 		id: 5,
-		url: "https://www.costacruises.com/content/dam/costa/costa-asset/discovery/new-pillars-2021/C442_Anche_in_vacanza_dalla_parte_del_mare_3Renditions_696x423.jpg.image.696.420.high.jpg",
+		// url: "https://www.costacruises.com/content/dam/costa/costa-asset/discovery/new-pillars-2021/C442_Anche_in_vacanza_dalla_parte_del_mare_3Renditions_696x423.jpg.image.696.420.high.jpg",
+		url: url0,
+		// url1: "/Untitled-design4/1.png",
+		// url2: "/Untitled-design4/2.png",
+		// url3: "/Untitled-design4/3.png",
 		category: "SUSTAINABILITY",
 		title: "Even on holiday, <u class='underline-textcs'>we’re looking out for the sea</u>",
 		text1: "Choosing a Costa cruise means experiencing a holiday that respects the environment and the local communities you’ll meet each day in the destinations we explore. What does it mean to be a responsible explorer? It means discovering new destinations in harmony ",
@@ -126,12 +186,32 @@ const images = [
 
 const scrollimages = [
 
-	{ id: 1, url: "ExperienceBanner/Experience Page - 1.png" },
-	{ id: 2, url: "ExperienceBanner/Experience Page - 2.png" },
+	{ id: 1, url: "ExperienceBanner/Experience Page - 11.png" },
+	{ id: 2, url: "ExperienceBanner/Experience Page - 22.png" },
 ];
 
 const txt1 = "Our aim is to accompany you as you explore <b>the world in the most sustainable, delicious, relaxing and surprising way.</b>";
 const htext = "Unmissable News";
+
+const responsive = {
+	desktop: {
+		breakpoint: { max: 3000, min: 1024 },
+		items: 1,
+		slidesToSlide: 1, // optional, default to 1.
+	},
+
+	tablet: {
+		breakpoint: { max: 1024, min: 464 },
+		items: 1,
+		slidesToSlide: 1, // optional, default to 1.
+	},
+
+	mobile: {
+		breakpoint: { max: 464, min: 0 },
+		items: 1,
+		slidesToSlide: 1, // optional, default to 1.
+	},
+};
 
 function CostaExp() {
 
@@ -141,6 +221,30 @@ function CostaExp() {
 		const initialReadMore = Array(images.length).fill(false);
 		return initialReadMore;
 	});
+
+	const [tog1, setTog1] = useState(false);
+
+	useEffect(() => {
+
+		const handleResize = () => {
+
+			const screenWidth = window.innerWidth;
+
+			if (screenWidth < 741) {
+
+				setTog1(true);
+			} else {
+
+				setTog1(false);
+			}
+		};
+
+		// Add event listener to detect window resize
+		window.addEventListener("resize", handleResize);
+		return () => {
+			window.removeEventListener("resize", handleResize);
+		};
+	}, []);
 
 	const onPressHandle = (index) => {
 
@@ -190,9 +294,35 @@ function CostaExp() {
 						{images.map((image, index) => (
 							<div key={image.id} className={`row rowcs ${(index + 1) % 2 === 0 ? "flex-row-reverse" : ""}`}>
 								<div className="col-lg-6 d-flex">
-									<div className="image-containercs" style={{width: '100%'}}>
-										<img src={process.env.PUBLIC_URL+ image.url} className="img-fluid zoom image-stylecs" alt={image.title} />
-									</div>
+									{/* <div className="image-containercs" style={{width: '100%'}}> */}
+									{/* <div className="gd-carousel-wrapper"> */}
+									<Carousel
+										responsive={responsive}
+										showDots={false}
+										// arrows={!tog1 ? true : false}
+										arrows={true}
+										swipeable={true}
+										infinite={true}
+										autoPlay={false}
+										containerClass="carousel-container0"
+										// autoPlaySpeed={5000}
+										// className="gd-carousel"
+										// preventMovementUntilSwipeScrollTolerance={false}
+									>	
+									{/* <h6>hhhhh</h6> */}
+									{image.url.map((urls) => {
+										return(<>
+											{/* <h5>hello</h5> */}
+											<div className="image-containercs" style={{width: '100%', backgroundColor:"black"}} key = {urls.key}>
+												<img key = {urls.key} src={process.env.PUBLIC_URL+ urls.url} className="img-fluid zoom image-stylecs" alt={image.title} />
+											</div>
+											</>
+										)
+									})}
+									
+									</Carousel>
+									{/* <h6>kii</h6> */}
+									{/* </div> */}
 								</div>
 								<div className="col-lg-6 d-flex">
 									<div className={`text-container align-self-end ${(index + 1) % 2 !== 0 ? "right-textcs" : "left-textcs"}`}>
@@ -203,7 +333,7 @@ function CostaExp() {
 												<>
 													<span>{image.text1}{' '}
 														<a href="#" className="clickable-text PoppReg" onClick={() => xyz(index)}>
-															See More-&gt;
+															See More &rarr;
 														</a>
 													</span>
 												</>
@@ -211,7 +341,7 @@ function CostaExp() {
 												<>
 													<span>{image.text}{' '}
 														<a href="#" className="clickable-text PoppReg" onClick={() => xyz(index)}>
-															See Less-&gt;
+															See Less &rarr;
 														</a>
 													</span>
 												</>

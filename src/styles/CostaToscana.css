@@ -23,7 +23,7 @@
     align-self: center;
 }
 
-.class-tosca-img{
+.class-tosca-img {
     align-items: stretch;
     /* display: flex; */
 
@@ -41,6 +41,7 @@
     /* background-color: purple; */
     /* background-color: #FFEF00; */
 }
+
 .zoomts {
     transition: transform 0.3s;
 }
@@ -51,13 +52,14 @@
         transform: scale(1.2);
     }
 }
-.rowts{
+
+.rowts {
     margin-top: 100px !important;
     /* background-color: pink; */
 }
 
 .row .rowts {
-   
+
     /* max-width: 100%; */
     justify-content: center;
     /* margin-bottom: 50px; */
@@ -74,14 +76,144 @@
     align-items: center;
 }
 
-.text-outerts{
+.two-column-containerts {
+    /* margin-top: 100px; */
+    /* margin-bottom: 100px; */
+    margin-inline: auto !important;
+    width: 90%;
+    margin-top: 7%;
+    margin-bottom: 7%;
+    display: grid;
     justify-content: center;
+    grid-template-columns: 1fr 1fr;
+    /* Divide the container into two columns with equal width */
+    gap: 2%;
+    /* background-color: #FFBF00; */
+    /* Add a gap between the columns */
+}
+
+@media (max-width: 768px) {
+    .two-column-containerts {
+        grid-template-columns: 1fr;
+        /* Change to a single column layout */
+        gap: 0px;
+    }
+}
+
+.left-columnts {
+    /* margin-top: 30px;
+    margin-left: 40px;
+    margin-right: 40px; */
+    /* padding: 20px; */
+    align-self: center;
+    justify-self: center;
+    /* background-color: blue; */
+}
+
+.right-columnts {
+    /* margin-top: 30px;
+    margin-left: 40px;
+    margin-right: 40px; */
+    /* padding-right: 30px; */
+    align-self: center;
+    justify-self: center;
+    /* margin: auto; */
+    /* background-color: red; */
+}
+
+@media (max-width: 768px) {
+
+    .left-columnts,
+    .right-columnts {
+        padding: 5px;
+        /* margin-top: 30px;
+        margin-left: 40px;
+        margin-right: 40px; */
+        /* background-color: red; */
+    }
+}
+
+
+.l1ts {
+    font-size: 55px;
+    /* font-weight: bold; */
+}
+
+@media (max-width: 768px) {
+    .l1ts {
+        font-size: 35px;
+    }
+}
+
+.l2ts {
+    font-size: 20px;
+    font-weight: medium;
+    display: flex;
+    justify-content: flex-start;
+}
+
+@media (max-width: 1200px) {
+    .l1ts {
+        font-size: 40px;
+        /* background-color: blue; */
+    }
+
+    .l2ts {
+
+        font-size: 16px
+    }
+}
+
+@media (max-width: 768px) {
+
+    .l2ts {
+        font-size: 16px;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .two-column-containerts {
+
+        margin-top: 10%;
+    }
+}
+
+@media (max-width: 400px) {
+
+    .l1ts {
+
+        font-size: 25px;
+    }
+
+    .l2ts {
+        font-size: 12px;
+        justify-content: center;
+    }
+
+    .two-column-containerts {
+
+        margin-top: 15%;
+    }
+
+    .left-columnts {
+
+        justify-self: left;
+    }
+}
+
+
+
+.text-outerts {
+    justify-content: center;
+    /* background-color: yellow; */
 }
 
 .text-containerts {
 
     width: 82%;
-    justify-self:center;
+    justify-self: center;
     /* background-color: pink; */
 }
 
@@ -96,7 +228,7 @@
     .container {
 
         max-width: 90%;
-        margin:auto;
+        margin: auto;
         /* background-color: purple; */
     }
 
@@ -152,7 +284,7 @@
     .container {
 
         max-width: 90%;
-        margin:auto;
+        margin: auto;
     }
 
     .col-lg-6 {
@@ -213,7 +345,7 @@
     .container {
 
         max-width: 90%;
-        margin:auto;
+        margin: auto;
     }
 
     .col-lg-6 {
@@ -274,7 +406,7 @@
     .container {
 
         max-width: 90%;
-        margin:auto;
+        margin: auto;
         padding-left: 0;
         padding-right: 0;
     }
@@ -460,18 +592,18 @@
     border-radius: 3px;
 }
 
-.underline-textts{
+.underline-textts {
     text-decoration: underline;
     text-decoration-color: #FFEF00;
     text-decoration-thickness: 8px;
 }
 
-.bold-style{
-    color:black;
+.bold-style {
+    color: black;
 }
 
-.showtime-container{
-    display:flex;
+.showtime-container {
+    display: flex;
     /* background-color: blue; */
     justify-content: center;
     text-align: center;
@@ -480,20 +612,20 @@
 
 }
 
-.showtime-box{
-    width:75%;
+.showtime-box {
+    width: 75%;
     /* background-color: purple; */
     justify-content: left;
     text-align: left;
 
 }
 
-.showtime-heading{
+.showtime-heading {
     font-size: 38px;
     margin-bottom: 20px;
 }
 
-.showtime-text{
+.showtime-text {
     font-size: 17px;
-    color:rgb(82, 80, 80)
+    color: rgb(82, 80, 80)
 }

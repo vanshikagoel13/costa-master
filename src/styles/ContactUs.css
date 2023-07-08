@@ -1,29 +1,49 @@
-.contact-box{
+.contactus-box {
     /* padding: 70px; */
-    margin-top: 0;
+    margin-top: 30px;
+    /* background-color: yellow; */
+    padding-left: 0;
+    margin-left: 0;
+    width: 90%;
+    margin-inline: auto;
 }
-.Main-Heading{
-    font-size: 2.5rem;
-    line-height: 1.0rem;
+
+.heading-contact {
+
+    width: 100%;
+    /* margin-top: 0; */
+    /* background-color: red; */
+}
+
+.Main-Heading {
+    /* font-size: 2.5rem; */
+    /* margin-top: 0; */
+    display: flex;
     /* font-family: Poppins-800,Open-Sans-800,Arial,Helvetica,sans-serif; */
     font-weight: 800;
     letter-spacing: 0.5;
-    color: #292929; 
+    color: #292929;
     text-align: center;
     justify-content: center;
     margin-bottom: 0;
+    line-height: 1.2;
 }
-.content{
-    margin-top: 30px;
 
+.content {
+    margin-top: 30px;
+    /* background-color: yellow; */
+    width: 100%;
+    margin-inline: auto;
 }
-.content-sub{
+
+.content-sub {
     /* font-family: Arial,Helvetica,sans-serif; */
     font-size: 1.1rem;
     font-weight: 250;
     line-height: 1.5;
 }
-.contact-info{
+
+.contact-info {
     margin-top: 4rem;
 }
 
@@ -31,36 +51,54 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 10px;
-    margin-top:0px;
-  }
-  
-  .grid-contact-item {
+    margin-top: 0px;
+}
+
+.grid-contact-item {
     display: flex;
     justify-content: space-between;
-    position : relative;
+    position: relative;
     margin-top: 0px;
     font-size: 1.1rem;
     font-weight: 250;
     line-height: 1.5;
-  }
+}
 
-  @media(max-width:767px){
-    .grid-contact-item{
+@media(max-width:767px) {
+    .grid-contact-item {
         font-size: 0.9rem;
     }
-    .content-sub{
+
+    .content-sub {
         font-size: 0.9rem;
     }
-  }
-  
+}
 
-  @media(max-width:500px){
-    .grid-contact-item{
+
+@media(max-width:500px) {
+    .grid-contact-item {
         font-size: 0.7rem;
     }
-    .content-sub{
+
+    .content-sub {
         font-size: 0.7rem;
     }
-  }
-  
-  
+}
+
+@media (max-width: 586px) {
+    
+    .Main-Heading {
+
+        text-align: left;
+    }
+}
+
+@media (max-width: 400px) {
+
+    .Main-Heading {
+
+        font-size: 25px;
+    }
+
+
+}

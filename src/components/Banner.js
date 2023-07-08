@@ -5,88 +5,88 @@ import HomeHeader from "../components/HomeHeader";
 import { useState } from "react";
 
 function Banner({ onBanner, offBanner }) {
-  const [isHeaderExpanded, setIsHeaderExpanded] = useState(false);
-  const [where, setWhere] = useState(false);
-  const [when, setWhen] = useState(false);
-  const [who, setWho] = useState(false);
+	const [isHeaderExpanded, setIsHeaderExpanded] = useState(false);
+	const [where, setWhere] = useState(false);
+	const [when, setWhen] = useState(false);
+	const [who, setWho] = useState(false);
 
-  const settWhere = () => {
-    setWhere(!where);
+	const settWhere = () => {
+		setWhere(!where);
 
-    if (when) {
-      settWhen(!when);
-    }
+		if (when) {
+			settWhen(!when);
+		}
 
-    if (who) {
-      settWho(!who);
-    }
-  };
+		if (who) {
+			settWho(!who);
+		}
+	};
 
-  const settWhen = () => {
-    setWhen(!when);
+	const settWhen = () => {
+		setWhen(!when);
 
-    if (where) {
-      settWhere(!where);
-    }
+		if (where) {
+			settWhere(!where);
+		}
 
-    if (who) {
-      settWho(!who);
-    }
-  };
+		if (who) {
+			settWho(!who);
+		}
+	};
 
-  const settWho = () => {
-    setWho(!who);
+	const settWho = () => {
+		setWho(!who);
 
-    if (where) {
-      settWhere(!where);
-    }
+		if (where) {
+			settWhere(!where);
+		}
 
-    if (when) {
-      settWhen(!when);
-    }
-  };
+		if (when) {
+			settWhen(!when);
+		}
+	};
 
-  const handleHeaderExpand = () => {
-    setIsHeaderExpanded(true);
-    offBanner();
-  };
+	const handleHeaderExpand = () => {
+		setIsHeaderExpanded(true);
+		offBanner();
+	};
 
-  const handleHeaderCollapse = () => {
-    setIsHeaderExpanded(false);
-    onBanner();
-  };
+	const handleHeaderCollapse = () => {
+		setIsHeaderExpanded(false);
+		onBanner();
+	};
 
-  return (
-    <div className="banner">
-      <div className="banner-header">
-        <HomeHeader
-          isExpanded={isHeaderExpanded}
-          onExpand={handleHeaderExpand}
-          onCollapse={handleHeaderCollapse}
-        />
-      </div>
-      {isHeaderExpanded ? null : (
-        <>
-          <div className="component-background">
-            <video autoPlay loop muted className="background-video">
-              <source
-                src={process.env.PUBLIC_URL + "/Homebannervideo.mp4"}
-                type="video/mp4"
-              />
-            </video>
-          </div>
-          <div className="banner-content">
-            <h1 className="banner-title PoppBold">Book Your Cruise</h1>
-            <p className="banner-subtitle PoppReg">
-              Discover the world from the unique perpective of the sea
-            </p>
-			<button className="booknow-button-banner PoppReg">Book Now -&gt;</button>
-          </div>
-          
-        </>
-      )}
-    </div>
-  );
+	return (
+		<div className="banner">
+			<div className="banner-header">
+				<HomeHeader
+					isExpanded={isHeaderExpanded}
+					onExpand={handleHeaderExpand}
+					onCollapse={handleHeaderCollapse}
+				/>
+			</div>
+			{isHeaderExpanded ? null : (
+				<>
+					<div className="component-background">
+						<video autoPlay loop muted className="background-video">
+							<source
+								src={process.env.PUBLIC_URL + "/Homebannervideo.mp4"}
+								type="video/mp4"
+							/>
+						</video>
+					</div>
+					<div className="banner-content">
+						<h1 className="banner-title PoppBold">Book Your India Cruise</h1>
+						<p className="banner-subtitle PoppReg">
+							Discover the world from the unique perpective of the sea
+						</p>
+						<button className="booknow-button-banner PoppReg">Book Now &rarr;</button>
+					</div>
+
+				</>
+			)}
+		</div>
+	);
 }
 export default Banner;
 

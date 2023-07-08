@@ -33,7 +33,10 @@ function Header({ isExpanded, onExpand, onCollapse }) {
 			<nav className="navbar navbar-expand-lg bh-transparent mt-2">
 				<div className="container-fluid">
 					<button
-						className="navbar-toggler sizeofmenu2 custom-navbar-toggler"
+						className={isNavCollapsed
+							? "navbar-toggler sizeofmenu custom-navbar-toggler"
+							: "navbar-toggler sizeofmenu newcustom-navbar-toggler"
+						}
 						type="button"
 						data-bs-toggle="collapse"
 						data-bs-target="#navbarSupportedContent"
@@ -56,7 +59,7 @@ function Header({ isExpanded, onExpand, onCollapse }) {
 							alt="Costa"
 							width="75"
 							height="60"
-							style={navLinkStyle}
+						// style={navLinkStyle}
 						/>
 					</Link>
 
@@ -74,12 +77,12 @@ function Header({ isExpanded, onExpand, onCollapse }) {
 							</li>
 							<li className="nav-item">
 								<Link className="nav-link font-nav2 PoppReg" to="../CostaToscana" style={navLinkStyle}>
-									Costa Toscana
+									Costa Toscana Dubai
 								</Link>
 							</li>
 							<li className="nav-item">
 								<Link className="nav-link font-nav2 PoppReg" to="../CostaSerena" style={navLinkStyle}>
-									Costa Serena
+									Costa Serena India
 								</Link>
 							</li>
 						</ul>

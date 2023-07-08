@@ -53,6 +53,7 @@
 .img-fluid-serenaflag {
 
     width: 100%;
+    height: auto;
     object-fit: cover;
 }
 
@@ -63,16 +64,18 @@
         font-size: 25px;
     }
 
-    /* .toscana-flag-scroll {
+    .toscana-flag-scroll-sf {
 
-        height: 80px !important;
-        object-fit: fill;
+        height: 120px !important;
+        object-fit: cover;
+        /* background-color: red; */
     }
 
     .img-fluid-serenaflag {
 
-        object-fit: cover;
-    } */
+        height: 120px;
+        object-fit: fill;
+    }
 
     .text-flagship-sf {
 

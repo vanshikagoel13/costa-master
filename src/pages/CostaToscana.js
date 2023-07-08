@@ -128,6 +128,7 @@ import ToscanaArchie from "../components/ToscanaArchie";
 import ToscanaColosseo from "../components/ToscanaColosseo";
 import ToscanaDream from "../components/ToscanaDream";
 import CallNowButton from "../components/CallNowButton";
+import ToscanaCards from "../components/ToscanaCards";
 // import NewFooter from "../components/NewFooter";
 
 const images = [
@@ -179,7 +180,7 @@ const scrollimagestos1 = [
   {
     id: 4,
     url: "/archietos/Heinken Bar.jpg",
-    title: "Heiniken Bar & Bistro",
+    title: "Heineken Bar & Bistro",
     text: "The first floating Heineken Star Club & Bistro in the world, a 'contemporary pub' where the gastronomic offer meets the best of Heineken entertainment.",
   },
   {
@@ -310,7 +311,11 @@ const scrollimagestos3 = [
   },
 ];
 
+// const txt1 : "A memorable ship for a memorable cruise. <br /> Costa Toscana will amaze you with its <b>large outdoor spaces</b> where you can enjoy sun and sea, its brightly coloures furnishings, its{" "}<b>Italian and international cuisine</b>, designer boutiques and, above all, a whole lot of <b>fun for everyone!</b><br />Discover the most beautiful areas of the ship now:";
+const txt1 = "A memorable ship for a memorable cruise. <br /><br /> Costa Toscana will amaze you with its <b>large outdoor spaces</b> where you can enjoy sun and sea, its brightly coloured furnishings, its <b>Italian and international cuisine</b>, designer boutiques and, above all, a whole lot of <b>fun for everyone!</b><br /><br />Discover the most beautiful areas of the ship now:";
+
 function CostaToscana() {
+
   const [isBannerCollapsed, setIsBannerCollapsed] = useState(false);
 
   const handleBannerExpand = () => {
@@ -329,13 +334,13 @@ function CostaToscana() {
       />
       {isBannerCollapsed ? null : (
         <>
+          <ToscanaCards />
           <div className="containerts">
             {images.map((image, index) => (
               <div
                 key={image.id}
-                className={`row rowts ${
-                  index % 2 === 0 ? "flex-row-reverse" : ""
-                }`}
+                className={`row rowts ${index % 2 === 0 ? "flex-row-reverse" : ""
+                  }`}
               >
                 <div className="col-lg-6 class-tosca-img d-flex" >
                   <div className="image-containerts">
@@ -348,26 +353,23 @@ function CostaToscana() {
                 </div>
                 <div className="col-lg-6 text-outerts d-flex">
                   <div
-                    className={`text-containerts align-self-center ${
-                      index % 2 !== 0 ? "right-textts" : "right-textts"
-                    }`}
+                    className={`text-containerts align-self-center ${index % 2 !== 0 ? "right-textts" : "right-textts"
+                      }`}
                   >
                     {/* <h4 className={`PoppReg ${(index) % 2 !== 0 ? "category-style-rightts" : "category-style-leftts"}`}>{image.category}</h4> */}
                     <h3
-                      className={`PoppBold ${
-                        index % 2 !== 0
+                      className={`PoppBold ${index % 2 !== 0
                           ? "title-style-rightts"
                           : "title-style-rightts"
-                      }`}
+                        }`}
                     >
                       <span dangerouslySetInnerHTML={{ __html: image.title }} />
                     </h3>
                     <p
-                      className={`PoppReg ${
-                        index % 2 !== 0
+                      className={`PoppReg ${index % 2 !== 0
                           ? "text-style-rightts"
                           : "text-style-rightts"
-                      }`}
+                        }`}
                     >
                       <span dangerouslySetInnerHTML={{ __html: image.text }} />
                     </p>
@@ -378,12 +380,12 @@ function CostaToscana() {
           </div>
           <ToscanaShipDetail />
           <CostaFlagship />
-          <div className="showtime-container">
+          {/* <div className="showtime-container">
             <div className="showtime-box">
-              <h1 className="showtime-heading PoppBold">
+              <h2 className="showtime-heading PoppBold">
                 On board, it's <u class="underline-textts">always showtime</u>
-              </h1>
-              <p className="showtime-text PoppReg">
+              </h2>
+              <h6 className="showtime-text PoppReg">
                 A memorable ship for a memorable cruise. <br /> Costa Toscana
                 will amaze you with its <b>large outdoor spaces</b> where you
                 can enjoy sun and sea, its brightly coloures furnishings, its{" "}
@@ -391,7 +393,17 @@ function CostaToscana() {
                 and, above all, a whole lot of <b>fun for everyone!</b>
                 <br />
                 Discover the most beautiful areas of the ship now:
-              </p>
+              </h6>
+            </div>
+          </div> */}
+          <div className="two-column-containerts mx-3">
+            <div className="left-columnts">
+              <h2 className="l1ts PoppBold">On board, it's <u class="underline-textts">always showtime</u></h2>
+            </div>
+            <div className="right-columnts">
+              <h6 className="l2ts PoppReg">
+                <span dangerouslySetInnerHTML={{ __html: txt1 }} />
+              </h6>
             </div>
           </div>
           <ToscanaArchie scrollimages={scrollimagestos1} />

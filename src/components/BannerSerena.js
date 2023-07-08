@@ -29,15 +29,16 @@ function BannerSerena({ onBanner, offBanner }) {
 			{ isHeaderExpanded ? null : 
       		<>
 			<div className="component-backgroundser">
-                <img src={process.env.PUBLIC_URL + "/bannerserena.jpg"} className="background-imageser">
+                <img src={process.env.PUBLIC_URL + "/bannerserena1.png"} className="background-imageser">
                 </img>
 			</div>
 			<div className="banner-contentser">
 				<p className="banner-subtitleser PoppReg">
 					Discover
 				</p>
-				<p className="banner-titleser PoppBold">Costa Serena</p>
+				<p className="banner-titleser PoppBold">Costa Serena India</p>
 				<p className="banner-titleser2 PoppMed">Sailing India Nov & Dec 2023</p>
+				<button className="booknow-button-banner-serena PoppReg">Book Your Cruise &rarr;</button>
 			</div>
 			</>
       		}

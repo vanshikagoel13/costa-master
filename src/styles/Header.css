@@ -9,6 +9,29 @@
 	background-color: transparent !important;
 }
 
+.newcustom-navbar-toggler {
+	color: black !important;
+	border-color: black !important;
+	background-color: transparent !important;
+}
+
+@media (max-width: 991px) {
+	
+	.custom-navbar-toggler {
+
+		position: absolute;
+		left: 20px;
+		top: 25px;
+	}
+
+	.newcustom-navbar-toggler {
+
+		position: absolute;
+		left: 20px;
+		top: 25px;
+	}
+}
+
 @media (max-width: 400px) {
 	.home-style {
 		margin-left: 60px;
@@ -22,9 +45,9 @@
 	text-underline-offset:9px;
 }
 
-@media(max-width:700px){
+@media(max-width:500px){
 	.sizeofmenu2{
-		font-size: 0.7rem !important;
+		font-size: 12px !important;
 	}
 }
 

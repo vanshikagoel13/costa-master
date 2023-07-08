@@ -1,0 +1,269 @@
+.card-group-sercard {
+	width: 100%;
+	margin: auto;
+}
+
+.card-body-sercard {
+
+	display: flex;
+	flex-direction: column;
+    align-items: stretch;
+    justify-content: space-between;
+    flex-grow: 1;
+	width: 100%;
+	height: 60%;
+	/* background-color: lightgrey; */
+	/* justify-content: flex-end; */
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 1%;
+  }
+
+.card-sercard {
+
+	border: none;
+	height: 100%;
+	/* width: 25%; */
+	/* width: 100%; */
+	/* height: 200px; */
+	/* width: 100px; */
+}
+
+.image-body-sercard {
+
+	height: 100%;
+	overflow: hidden;
+	position: relative;
+}
+
+.card-img-top-sercard {
+
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	z-index: 0;
+}
+
+.button-sercard {
+	display: flex;
+	margin: auto;
+	background-color: rgb(255, 221, 2);
+	font-size: 14px;
+	width: 100%;
+	height: 35px;
+	justify-content: center;
+	align-items: center;
+	border: 0px;
+	border-radius: 2px;
+}
+
+.card-title-sercard {
+
+	font-size: 20px;
+	/* margin: 3px 0px; */
+	margin-top: 10px;
+	/* background-color: red; */
+	/* margin: 0; */
+}
+
+.card-subtitle-sercard {
+	font-weight: 200;
+	font-size: 12px;
+	/* margin: 3px 0px; */
+	/* background-color: yellow; */
+	/* margin: 1; */
+	/* padding-top: 2px; */
+}
+
+.departure-sercard {
+	/* margin-top: 10px; */
+	font-size: 13px;
+	margin-top: 20px;
+	/* margin: 1; */
+}
+
+.departure-sercard-1 {
+	/* margin-top: 10px; */
+	font-size: 13px;
+	/* margin-top: 10px; */
+	/* margin: 1; */
+}
+
+.price-sercard {
+	/* margin-top: -10px; */
+	color: rgba(42, 80, 247, 0.953);
+	font-size: 25px;
+	/* background-color: red; */
+}
+
+.price-per-person-sercard {
+	font-size: 13px;
+	/* margin: 0; */
+	margin-top: 30px;
+	/* background-color: red; */
+}
+
+.taxes-sercard {
+	/* margin-top: 15px; */
+	font-size: 11px;
+	font-weight: 200;
+	/* background-color: red; */
+	/* margin: 0; */
+	margin-bottom: 10px;
+}
+
+/* ---------------- */
+
+.container-sercard {
+
+	width: 92%;
+	margin-left: auto;
+	margin-right: auto;
+    height: auto;
+	/* display: flex; */
+	/* justify-content: center; */
+	/* margin-bottom: 7%; */
+	margin-top: 7%;
+}
+
+.gd-carousel-wrapper {
+	position: relative;
+}
+
+.gd-carousel-sercard {
+	
+	position: unset;
+
+	.react-multiple-carousel__arrow {
+		position: absolute;
+		
+	}
+
+	.react-multiple-carousel__arrow--left {
+		left: calc(-3% + 1px) !important
+	}
+
+	.react-multiple-carousel__arrow--right {
+		right: calc(-3% + 1px) !important
+		
+	}
+}
+
+/* .carousel-dots {
+
+	bottom: 30px;
+} */
+
+@media (max-width: 600px) {
+	
+	.card-title-sercard {
+		font-size: 21px;
+	}
+
+	.card-subtitle-sercard {
+		font-size: 17px;
+	}
+
+	.departure-sercard {
+		font-size: 14px;
+	}
+
+	.departure-sercard-1 {
+		font-size: 14px;
+	}
+
+	.price-sercard {
+		font-size: 26px;
+	}
+
+	.price-per-person-sercard {
+		font-size: 14px;
+	}
+
+	.taxes-sercard {
+		font-size: 12px;
+	}
+}
+
+.banner-content-home {
+
+	position: absolute;
+	height: 25%;
+	width: 20%;
+	z-index: 1;
+	bottom: 0;
+	left: 0;
+	text-align: start;
+	margin-left: auto;
+	/* background-color: red; */
+	/* filter: brightness(95%); */
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	/* background: transparent; */
+	background-color: rgba(0, 0, 0, 0.6);
+}
+
+.banner-title-home {
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 22px;
+	/* text-align: center; */
+	margin-bottom: 0;
+	color: white;
+	z-index: 3;
+	cursor: pointer;
+}
+
+
+.banner-subtitle-home {
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 12px;
+	/* text-align: center; */
+	margin-bottom: 0;
+	color: white;
+	z-index: 3;
+	cursor: pointer;
+}
+
+.subheading-scrollhome {
+
+	font-size: 16px;
+}
+
+@media(min-width: 600px) and (max-width: 1024px){
+    .card-subtitle-sercard{
+        font-size: 12px !important;
+    }
+}
+
+@media (max-width: 500px) {
+
+	.container-sercard{
+		margin-top: 70px;
+	}
+}
+
+@media (max-width: 400px) {
+
+	.subheading-scrollhome{
+		font-size: 12px;
+	}
+}
+
+@media (min-width: 400px) and (max-width: 800px){
+
+	.subheading-scrollhome{
+		font-size: 14px;
+	}
+}
+

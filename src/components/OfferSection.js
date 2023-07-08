@@ -123,17 +123,17 @@ const images = [
 
 	{
 		id: 1,
-		url: "/Offer-Section/Homev1.png",
+		url: "/Offer-Section/Homev11.png",
 		cta: "Know more",
 	},
 	{
 		id: 2,
-		url: "/Offer-Section/Homev2.png",
+		url: "/Offer-Section/Homev22.png",
 		cta: "Know more",
 	},
 	{
 		id: 3,
-		url: "/Offer-Section/Homev3.png",
+		url: "/Offer-Section/Homev33.png",
 		cta: "Book your cruise",
 	},
 ];
@@ -179,7 +179,7 @@ function OfferSection() {
 	return (
 
 		<div className="container-offersec">
-			<h2 className="PoppBold heading-offersection">Irresistible Deals</h2>
+			<h3 className="PoppBold heading-offersection">Irresistible Deals</h3>
 			<h4
 				className="PoppReg subhead-offersection"
 				style={{ marginBottom: "1%", fontWeight: 500 }}
